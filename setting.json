@@ -1,0 +1,59 @@
+{
+  "order": false,
+  "user": false,
+  "description": {
+    "tr": "Düzkanban: ekipler için proje ve görev yönetimi yazılımı; özellikler, fiyatlar, veri güvenliği ve demo talebi. (Demo site — gerçek kayıt yoktur)",
+    "en": "Düzkanban: project and task management software for teams; features, pricing, data security and demo requests. (Demo site — no real sign-up)",
+    "ar": "دوزكانبان: برنامج إدارة المشاريع والمهام للفرق مع الميزات والأسعار وأمن البيانات وطلب عرض تجريبي. (موقع تجريبي — لا يوجد تسجيل فعلي)"
+  },
+  "keyword": {
+    "tr": "proje yönetimi, görev takibi, SaaS",
+    "en": "project management, task tracking, SaaS",
+    "ar": "إدارة المشاريع، تتبع المهام، SaaS"
+  },
+  "category": "Galeri",
+  "name": "Düzkanban",
+  "domain": "saas-3.webyapar.com",
+  "langs": {
+    "tr": true,
+    "en": true,
+    "ar": true,
+    "de": false,
+    "ru": false,
+    "es": false,
+    "fr": false,
+    "it": false,
+    "ja": false,
+    "zh": false,
+    "ko": false,
+    "pt": false
+  },
+  "logo": "logo.png",
+  "multi": false,
+  "publishMode": "static",
+  "font": {
+    "body": "inter",
+    "heading": "inter",
+    "ar": {
+      "body": "ibm-plex-sans-arabic",
+      "heading": "noto-kufi-arabic"
+    }
+  },
+  "colorScheme": "auto",
+  "theme_color": "#1A1A1A",
+  "seo": {
+    "noindex": true
+  },
+  "cssTokens": {
+    "--mx-radius-sm": "0px",
+    "--mx-radius-md": "0px",
+    "--mx-radius-lg": "0px",
+    "--mx-radius-xl": "0px",
+    "--mx-shadow-md": "none",
+    "--mx-dur": "200ms"
+  },
+  "icon": "icon.png",
+  "phone": "+90 342 000 00 00",
+  "email": "merhaba@duzkanban.example",
+  "address": "Teknokent Bina 3 No: 21, Şehitkamil, Gaziantep (kurgusal adres)"
+}

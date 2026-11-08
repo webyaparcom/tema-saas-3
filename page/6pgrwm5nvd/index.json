@@ -1,0 +1,39 @@
+{
+  "id": "6pgrwm5nvd",
+  "name": {
+    "tr": "Ürün",
+    "en": "Product",
+    "ar": "المنتج"
+  },
+  "description": {
+    "tr": "Soyut ürün ekranları ve çalışma alanı görüntüleri; metin içermez.",
+    "en": "Abstract product screens and workspace images; no text.",
+    "ar": "شاشات منتج تجريدية وصور مساحة العمل؛ بدون نصوص."
+  },
+  "keyword": {
+    "tr": "galeri, fotoğraf",
+    "en": "gallery, photos",
+    "ar": "معرض، صور"
+  },
+  "path": "galeri",
+  "icon": "photo_library",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "dy9rj6"
+    ],
+    "footer": []
+  },
+  "index": 5,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Ürün",
+    "en": "Product",
+    "ar": "المنتج"
+  },
+  "date": "2026-11-05T23:18:14.401Z",
+  "update": "2026-11-05T23:18:14.409Z"
+}

@@ -1,0 +1,47 @@
+{
+  "name": {
+    "tr": "Hakkımızda",
+    "en": "About",
+    "ar": "من نحن"
+  },
+  "status": "play",
+  "category": "",
+  "id": "hakkimizda",
+  "url": "",
+  "path": "hakkimizda",
+  "index": 6,
+  "icon": "info",
+  "desing": {
+    "header": [],
+    "body": [
+      "tg2by6",
+      "9dgz1b"
+    ],
+    "footer": []
+  },
+  "pathnext": "",
+  "description": {
+    "tr": "Düzkanban, ekiplerin işini sade bir panoda toplayan kurgusal bir demo yazılım şirketidir. Ürün, fiyat ve veri bilgileri kurgusaldır; gerçek bir kayıt ya da ödeme alınmaz.",
+    "en": "Duzkanban is a fictional demo software company that gathers teams’ work on a plain board. Product, price and data details are fictional; no real sign-up or payment is taken.",
+    "ar": "دوزكانبان شركة برمجيات تجريبية افتراضية تجمع عمل الفرق على لوحة بسيطة. معلومات المنتج والسعر والبيانات افتراضية؛ ولا يُقبل تسجيل أو دفع فعلي."
+  },
+  "spot": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "desc": {},
+  "title": {
+    "tr": "Hakkımızda",
+    "en": "About",
+    "ar": "من نحن"
+  },
+  "keyword": {
+    "tr": "hakkımızda",
+    "en": "about",
+    "ar": "من نحن"
+  },
+  "text": {},
+  "update": "2026-11-05T23:18:14.415Z",
+  "date": "2026-10-30"
+}

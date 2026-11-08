@@ -1,0 +1,43 @@
+{
+  "id": "d7kqljag1n",
+  "name": {
+    "tr": "Veri Güvenliği",
+    "en": "Data Security",
+    "ar": "أمن البيانات"
+  },
+  "description": {
+    "tr": "KVKK veri işleyen sıfatı, yurt dışı aktarım (md. 9) ve otomatik yenileme bilgisi.",
+    "en": "KVKK data-processor role, cross-border transfer (art. 9) and auto-renewal information.",
+    "ar": "صفة معالج البيانات وفق KVKK والنقل إلى الخارج (المادة 9) ومعلومات التجديد التلقائي."
+  },
+  "keyword": {
+    "tr": "KVKK, veri güvenliği",
+    "en": "KVKK, data security",
+    "ar": "KVKK، أمن البيانات"
+  },
+  "path": "veri-guvenligi",
+  "icon": "policy",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "srxigs"
+    ],
+    "footer": []
+  },
+  "index": 3,
+  "url": "",
+  "text": {
+    "tr": "<h2>Veri güvenliği ve KVKK</h2><p>Düzkanban, müşterisinin proje verisini işlerken <strong>veri işleyen</strong> sıfatıyla hareket eder; müşteri <strong>veri sorumlusu</strong>dur. İşleme şartları Veri İşleme Sözleşmesi ile belirlenir.</p><p><strong>Yurt dışı aktarım (KVKK md. 9):</strong> Bu demo sitede veri sunucuya gönderilmez. Gerçek bir hizmette veriler yurt içi veri merkezinde saklanır; yurt dışına aktarım gerekiyorsa açık rıza veya kanunda sayılan güvenceler ve aktarılan ülke listesi ayrıca duyurulur.</p><p>Abonelikler seçilen dönem sonunda otomatik yenilenir; yenilemeden en az 7 gün önce e-posta ile bildirim gönderilir ve hesap ayarlarından iptal edilebilir.</p><p><em>Demo sitedir; metin örnektir ve hukuki danışmanlık değildir.</em></p>",
+    "en": "<h2>Data security and KVKK</h2><p>When Düzkanban processes a customer’s project data it acts as the <strong>data processor</strong>; the customer is the <strong>data controller</strong>. Processing terms are set out in a Data Processing Agreement.</p><p><strong>Cross-border transfer (KVKK art. 9):</strong> On this demo site no data is sent to a server. In a real service data is stored in a domestic data centre; if a transfer abroad is needed, explicit consent or the safeguards listed in the law, together with the list of destination countries, are announced separately.</p><p>Subscriptions renew automatically at the end of the chosen term; a notice is sent by e-mail at least 7 days before renewal and you can cancel from account settings.</p><p><em>This is a demo site; the text is a sample and not legal advice.</em></p>",
+    "ar": "<h2>أمن البيانات وقانون حماية البيانات الشخصية</h2><p>عندما تعالج «دوزكانبان» بيانات مشاريع العميل فإنها تعمل بصفة <strong>معالِج البيانات</strong>، والعميل هو <strong>المسؤول عن البيانات</strong>. تُحدَّد شروط المعالجة في اتفاقية معالجة البيانات.</p><p><strong>النقل إلى الخارج (المادة 9 من قانون KVKK):</strong> لا تُرسَل بيانات إلى أي خادم في هذا الموقع التجريبي. وفي الخدمة الفعلية تُخزَّن البيانات في مركز بيانات محلي؛ وإذا لزم النقل إلى الخارج فيُعلَن بشكل منفصل عن الموافقة الصريحة أو الضمانات المنصوص عليها في القانون وقائمة الدول المنقول إليها.</p><p>تتجدد الاشتراكات تلقائيًا في نهاية المدة المختارة؛ ويُرسَل إشعار بالبريد الإلكتروني قبل التجديد بسبعة أيام على الأقل ويمكن الإلغاء من إعدادات الحساب.</p><p><em>هذا موقع تجريبي والنص مثال وليس استشارة قانونية.</em></p>"
+  },
+  "title": {
+    "tr": "Veri Güvenliği",
+    "en": "Data Security",
+    "ar": "أمن البيانات"
+  },
+  "date": "2026-11-05T23:18:14.382Z",
+  "update": "2026-11-05T23:18:14.386Z"
+}
