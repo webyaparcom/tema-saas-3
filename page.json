@@ -1,0 +1,214 @@
+{
+  "data": [
+    {
+      "id": "un9ndz7bvd",
+      "name": {
+        "tr": "Özellikler",
+        "en": "Features",
+        "ar": "الميزات"
+      },
+      "description": {
+        "tr": "Küçük ekipten kuruma, ölçeğe uygun özellikler.",
+        "en": "Features that scale from small teams to organisations.",
+        "ar": "ميزات تناسب من الفرق الصغيرة إلى المؤسسات."
+      },
+      "path": "ozellikler",
+      "icon": "dashboard",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "5p341x",
+          "68v20p",
+          "5cinvn"
+        ],
+        "footer": []
+      },
+      "index": 0
+    },
+    {
+      "id": "ak4bwzk41j",
+      "name": {
+        "tr": "Fiyatlar",
+        "en": "Pricing",
+        "ar": "الأسعار"
+      },
+      "description": {
+        "tr": "Abonelikler seçilen dönem sonunda otomatik yenilenir; yenilemeden en az 7 gün önce e-posta ile bildirim gönderilir ve hesap ayarlarından iptal edilebilir.",
+        "en": "Subscriptions renew automatically at the end of the chosen term; a notice is sent by e-mail at least 7 days before renewal and you can cancel from account settings.",
+        "ar": "تتجدد الاشتراكات تلقائيًا في نهاية المدة المختارة؛ ويُرسَل إشعار بالبريد الإلكتروني قبل التجديد بسبعة أيام على الأقل ويمكن الإلغاء من إعدادات الحساب."
+      },
+      "path": "fiyatlar",
+      "icon": "sell",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "lz428v"
+        ],
+        "footer": []
+      },
+      "index": 1
+    },
+    {
+      "id": "smg1fk9v4h",
+      "name": {
+        "tr": "Demo Talebi",
+        "en": "Request a Demo",
+        "ar": "طلب عرض تجريبي"
+      },
+      "description": {
+        "tr": "Konuyu ve uygun günü seçin; talebiniz bu demo sitede yalnızca tarayıcınızda oluşturulur. Hesap açılmaz.",
+        "en": "Choose a topic and a convenient day; on this demo site your request is created only in your browser. No account is created.",
+        "ar": "اختر الموضوع واليوم المناسب؛ يُنشأ طلبك في متصفحك فقط. لا يُنشأ حساب."
+      },
+      "path": "demo-talebi",
+      "icon": "smart_display",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "wxfiwe"
+        ],
+        "footer": []
+      },
+      "index": 2
+    },
+    {
+      "id": "d7kqljag1n",
+      "name": {
+        "tr": "Veri Güvenliği",
+        "en": "Data Security",
+        "ar": "أمن البيانات"
+      },
+      "description": {
+        "tr": "KVKK veri işleyen sıfatı, yurt dışı aktarım (md. 9) ve otomatik yenileme bilgisi.",
+        "en": "KVKK data-processor role, cross-border transfer (art. 9) and auto-renewal information.",
+        "ar": "صفة معالج البيانات وفق KVKK والنقل إلى الخارج (المادة 9) ومعلومات التجديد التلقائي."
+      },
+      "path": "veri-guvenligi",
+      "icon": "policy",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "srxigs"
+        ],
+        "footer": []
+      },
+      "index": 3
+    },
+    {
+      "id": "tzb51h6e9p",
+      "name": {
+        "tr": "Sıkça Sorulan Sorular",
+        "en": "FAQ",
+        "ar": "الأسئلة الشائعة"
+      },
+      "description": {
+        "tr": "Sıkça sorulan sorular ve yanıtları.",
+        "en": "Frequently asked questions and answers.",
+        "ar": "الأسئلة الشائعة وإجاباتها."
+      },
+      "path": "sss",
+      "icon": "help",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "40jdu5",
+          "rn68p8"
+        ],
+        "footer": []
+      },
+      "index": 4
+    },
+    {
+      "id": "6pgrwm5nvd",
+      "name": {
+        "tr": "Ürün",
+        "en": "Product",
+        "ar": "المنتج"
+      },
+      "description": {
+        "tr": "Soyut ürün ekranları ve çalışma alanı görüntüleri; metin içermez.",
+        "en": "Abstract product screens and workspace images; no text.",
+        "ar": "شاشات منتج تجريدية وصور مساحة العمل؛ بدون نصوص."
+      },
+      "path": "galeri",
+      "icon": "photo_library",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "dy9rj6"
+        ],
+        "footer": []
+      },
+      "index": 5
+    },
+    {
+      "name": {
+        "tr": "Hakkımızda",
+        "en": "About",
+        "ar": "من نحن"
+      },
+      "status": "play",
+      "id": "hakkimizda",
+      "path": "hakkimizda",
+      "category": "",
+      "url": "",
+      "index": 6,
+      "icon": "info",
+      "desing": {
+        "header": [],
+        "body": [
+          "tg2by6",
+          "9dgz1b"
+        ],
+        "footer": []
+      },
+      "pathnext": "",
+      "description": {
+        "tr": "Düzkanban, ekiplerin işini sade bir panoda toplayan kurgusal bir demo yazılım şirketidir. Ürün, fiyat ve veri bilgileri kurgusaldır; gerçek bir kayıt ya da ödeme alınmaz.",
+        "en": "Duzkanban is a fictional demo software company that gathers teams’ work on a plain board. Product, price and data details are fictional; no real sign-up or payment is taken.",
+        "ar": "دوزكانبان شركة برمجيات تجريبية افتراضية تجمع عمل الفرق على لوحة بسيطة. معلومات المنتج والسعر والبيانات افتراضية؛ ولا يُقبل تسجيل أو دفع فعلي."
+      }
+    },
+    {
+      "name": {
+        "tr": "İletişim",
+        "en": "Contact",
+        "ar": "اتصل بنا"
+      },
+      "status": "play",
+      "id": "iletisim",
+      "path": "iletisim",
+      "category": "",
+      "url": "",
+      "index": 7,
+      "icon": "call",
+      "desing": {
+        "header": [],
+        "body": [
+          "59xyor",
+          "wpe70x"
+        ],
+        "footer": []
+      },
+      "pathnext": "",
+      "description": {
+        "tr": "Adres, telefon, e-posta ve çalışma saatleri.",
+        "en": "Address, phone, e-mail and opening hours.",
+        "ar": "العنوان والهاتف والبريد الإلكتروني وساعات العمل."
+      }
+    }
+  ],
+  "desc": []
+}

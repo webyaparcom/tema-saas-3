@@ -1,0 +1,39 @@
+{
+  "id": "ak4bwzk41j",
+  "name": {
+    "tr": "Fiyatlar",
+    "en": "Pricing",
+    "ar": "الأسعار"
+  },
+  "description": {
+    "tr": "Abonelikler seçilen dönem sonunda otomatik yenilenir; yenilemeden en az 7 gün önce e-posta ile bildirim gönderilir ve hesap ayarlarından iptal edilebilir.",
+    "en": "Subscriptions renew automatically at the end of the chosen term; a notice is sent by e-mail at least 7 days before renewal and you can cancel from account settings.",
+    "ar": "تتجدد الاشتراكات تلقائيًا في نهاية المدة المختارة؛ ويُرسَل إشعار بالبريد الإلكتروني قبل التجديد بسبعة أيام على الأقل ويمكن الإلغاء من إعدادات الحساب."
+  },
+  "keyword": {
+    "tr": "fiyatlar, paketler",
+    "en": "pricing, plans",
+    "ar": "أسعار، باقات"
+  },
+  "path": "fiyatlar",
+  "icon": "sell",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "lz428v"
+    ],
+    "footer": []
+  },
+  "index": 1,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Fiyatlar",
+    "en": "Pricing",
+    "ar": "الأسعار"
+  },
+  "date": "2026-11-05T23:18:14.377Z",
+  "update": "2026-11-05T23:18:14.381Z"
+}

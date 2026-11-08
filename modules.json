@@ -1,0 +1,4251 @@
+{
+  "data": [
+    {
+      "name": "Demo Bandı",
+      "path": "demo-bandi",
+      "local": "header",
+      "category": "demo",
+      "id": "g3db01",
+      "desing": {
+        "tone": "info",
+        "bandBg": "",
+        "bandFg": "",
+        "ctaHref": "https://webyapar.com/temalar#saas-3",
+        "ariaLabel": {
+          "tr": "Demo site uyarısı",
+          "en": "Demo site notice",
+          "ar": "تنبيه الموقع التجريبي"
+        },
+        "text": {
+          "tr": "Bu bir demo sitedir — içerik kurgusaldır, ödeme alınmaz",
+          "en": "This is a demo site — the content is fictional and no payment is taken",
+          "ar": "هذا موقع تجريبي — المحتوى افتراضي ولا يتم تحصيل أي مدفوعات"
+        },
+        "ctaText": {
+          "tr": "Bu temayı iste",
+          "en": "Get this theme",
+          "ar": "اطلب هذا القالب"
+        },
+        "newTabText": {
+          "tr": "(yeni sekmede açılır)",
+          "en": "(opens in a new tab)",
+          "ar": "(يفتح في علامة تبويب جديدة)"
+        }
+      },
+      "version": "1.0.0",
+      "icon": "info",
+      "index": 0
+    },
+    {
+      "name": "Menü 4",
+      "path": "menu-4",
+      "local": "header",
+      "category": "menu",
+      "id": "g3mn01",
+      "desing": {
+        "logo": "logo.png",
+        "color": "var(--mx-site-text, #1b1b1b)",
+        "height": "72px",
+        "background-color": "var(--mx-site-bg, #ffffff)",
+        "menubg": "",
+        "menutext": "#fff",
+        "menuhoverbg": "rgba(255,255,255,.18)"
+      },
+      "version": "1.0.0",
+      "icon": "menu",
+      "index": 1
+    },
+    {
+      "name": "Galeri Masonry (Filtre + Lightbox)",
+      "path": "galeri-masonry",
+      "local": "body",
+      "category": "galeri",
+      "id": "g3gm01",
+      "desing": {
+        "max": "1280px",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "textcolor": "var(--mx-site-text, #1b1b1b)",
+        "mutedcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #fff))",
+        "surface": "var(--mx-site-surface, #ffffff)",
+        "surface2": "var(--mx-site-surface-2, #ececea)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "gap": "0px",
+        "radius": "8px",
+        "columns": {
+          "d": 4,
+          "t": 3,
+          "m": 2
+        },
+        "ratio": "auto",
+        "captions": "hover",
+        "filter": true,
+        "lightbox": true,
+        "lazy": true,
+        "urlPrefix": "",
+        "title": {
+          "tr": "Galeri",
+          "en": "Gallery",
+          "ar": "المعرض"
+        },
+        "description": {
+          "tr": "Çalışmalarımızdan seçilmiş kareler. Kategoriye göre süzün, büyütmek için dokunun.",
+          "en": "A selection of frames from our work. Filter by category and tap to enlarge.",
+          "ar": "مختارات من أعمالنا. صفِّ حسب الفئة، وانقر على الصورة لتكبيرها."
+        },
+        "allLabel": {
+          "tr": "Tümü",
+          "en": "All",
+          "ar": "الكل"
+        },
+        "filterLabel": {
+          "tr": "Kategoriye göre filtrele",
+          "en": "Filter by category",
+          "ar": "التصفية حسب الفئة"
+        },
+        "countText": {
+          "zero": {
+            "ar": "لا توجد صور"
+          },
+          "one": {
+            "tr": "{n} fotoğraf",
+            "en": "{n} photo",
+            "ar": "صورة واحدة"
+          },
+          "two": {
+            "ar": "صورتان"
+          },
+          "few": {
+            "ar": "{n} صور"
+          },
+          "many": {
+            "ar": "{n} صورة"
+          },
+          "other": {
+            "tr": "{n} fotoğraf",
+            "en": "{n} photos",
+            "ar": "{n} صورة"
+          }
+        },
+        "emptyText": {
+          "tr": "Henüz gösterilecek görsel yok.",
+          "en": "There are no images to show yet.",
+          "ar": "لا توجد صور لعرضها بعد."
+        },
+        "lightboxLabels": {
+          "dialog": {
+            "tr": "Görsel görüntüleyici",
+            "en": "Image viewer",
+            "ar": "عارض الصور"
+          },
+          "close": {
+            "tr": "Kapat",
+            "en": "Close",
+            "ar": "إغلاق"
+          },
+          "prev": {
+            "tr": "Önceki görsel",
+            "en": "Previous image",
+            "ar": "الصورة السابقة"
+          },
+          "next": {
+            "tr": "Sonraki görsel",
+            "en": "Next image",
+            "ar": "الصورة التالية"
+          },
+          "counter": {
+            "tr": "{i} / {n}",
+            "en": "{i} / {n}",
+            "ar": "{i} من {n}"
+          }
+        },
+        "cats": [
+          {
+            "id": "mekan",
+            "name": {
+              "tr": "Mekan",
+              "en": "Spaces",
+              "ar": "المساحات"
+            }
+          },
+          {
+            "id": "detay",
+            "name": {
+              "tr": "Detay",
+              "en": "Details",
+              "ar": "التفاصيل"
+            }
+          },
+          {
+            "id": "surec",
+            "name": {
+              "tr": "Süreç",
+              "en": "Process",
+              "ar": "سير العمل"
+            }
+          }
+        ]
+      },
+      "version": "1.0.0",
+      "icon": "photo_library",
+      "data": [
+        {
+          "img": "",
+          "title": {
+            "tr": "Giriş alanı",
+            "en": "Entrance area",
+            "ar": "منطقة المدخل"
+          },
+          "cat": "mekan",
+          "w": 800,
+          "h": 1000,
+          "alt": {
+            "tr": "Aydınlık giriş alanı",
+            "en": "Bright entrance area",
+            "ar": "منطقة مدخل مضيئة"
+          }
+        },
+        {
+          "img": "",
+          "title": {
+            "tr": "Ana salon",
+            "en": "Main hall",
+            "ar": "القاعة الرئيسية"
+          },
+          "cat": "mekan",
+          "w": 1200,
+          "h": 800,
+          "alt": {
+            "tr": "Geniş ana salon",
+            "en": "Spacious main hall",
+            "ar": "قاعة رئيسية واسعة"
+          }
+        },
+        {
+          "img": "",
+          "title": {
+            "tr": "Malzeme seçimi",
+            "en": "Material selection",
+            "ar": "اختيار المواد"
+          },
+          "cat": "detay",
+          "w": 1000,
+          "h": 1000,
+          "alt": {
+            "tr": "Yakın çekim doku",
+            "en": "Close-up texture",
+            "ar": "نسيج بلقطة مقرّبة"
+          }
+        },
+        {
+          "img": "",
+          "title": {
+            "tr": "Aydınlatma",
+            "en": "Lighting",
+            "ar": "الإضاءة"
+          },
+          "cat": "detay",
+          "w": 800,
+          "h": 1000,
+          "alt": {
+            "tr": "Sıcak ışıklı detay",
+            "en": "Warm-lit detail",
+            "ar": "تفصيل بإضاءة دافئة"
+          }
+        },
+        {
+          "img": "",
+          "title": {
+            "tr": "Çizim masası",
+            "en": "Drafting table",
+            "ar": "طاولة الرسم"
+          },
+          "cat": "surec",
+          "w": 1200,
+          "h": 800,
+          "alt": {
+            "tr": "Çalışma masasında planlar",
+            "en": "Plans on the work table",
+            "ar": "مخططات على طاولة العمل"
+          }
+        },
+        {
+          "img": "",
+          "title": {
+            "tr": "Uygulama",
+            "en": "On site",
+            "ar": "التنفيذ"
+          },
+          "cat": "surec",
+          "w": 1000,
+          "h": 1000,
+          "alt": {
+            "tr": "Uygulama aşaması",
+            "en": "Installation stage",
+            "ar": "مرحلة التنفيذ"
+          }
+        },
+        {
+          "img": "",
+          "title": {
+            "tr": "Teslim",
+            "en": "Handover",
+            "ar": "التسليم"
+          },
+          "cat": "mekan",
+          "w": 800,
+          "h": 1000,
+          "alt": {
+            "tr": "Teslim edilen mekan",
+            "en": "Finished space",
+            "ar": "المساحة بعد التسليم"
+          }
+        },
+        {
+          "img": "",
+          "title": {
+            "tr": "Son dokunuşlar",
+            "en": "Finishing touches",
+            "ar": "اللمسات الأخيرة"
+          },
+          "cat": "detay",
+          "w": 1200,
+          "h": 800,
+          "alt": {
+            "tr": "Son dokunuş detayı",
+            "en": "Finishing detail",
+            "ar": "تفصيل اللمسات الأخيرة"
+          }
+        }
+      ],
+      "index": 2
+    },
+    {
+      "name": "Fiyatlandırma 1",
+      "path": "pricing-1",
+      "local": "body",
+      "category": "pricing",
+      "id": "g3pr01",
+      "desing": {
+        "max": "1200px",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "cardbg": "var(--mx-site-surface, #ffffff)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "titlecolor": "var(--mx-site-text, #1b1b1b)",
+        "textcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "badge": {
+          "tr": "Paketler",
+          "en": "Packages",
+          "ar": "الباقات"
+        },
+        "title": {
+          "tr": "Çekim paketleri",
+          "en": "Shooting packages",
+          "ar": "باقات التصوير"
+        },
+        "description": {
+          "tr": "İhtiyacınıza göre esnek paket seçenekleri. Dilediğiniz zaman yükseltebilirsiniz.",
+          "en": "Flexible plans for your needs. Upgrade anytime.",
+          "ar": "خيارات باقات مرنة حسب احتياجك، ويمكنك الترقية في أي وقت."
+        },
+        "accentText": "#ffffff"
+      },
+      "version": "1.0.0",
+      "icon": "payments",
+      "data": [
+        {
+          "plan": {
+            "tr": "Başlangıç",
+            "en": "Starter",
+            "ar": "البداية"
+          },
+          "price": "₺4.900",
+          "period": {
+            "tr": "/ proje",
+            "en": "/ project",
+            "ar": "/ مشروع"
+          },
+          "note": {
+            "tr": "Küçük işletmeler için",
+            "en": "For small businesses",
+            "ar": "للأعمال الصغيرة"
+          },
+          "features": {
+            "tr": "5 sayfa web sitesi|Mobil uyumlu tasarım|Temel SEO|1 ay destek",
+            "en": "5-page website|Responsive design|Basic SEO|1 month support",
+            "ar": "موقع من 5 صفحات|تصميم متجاوب|تحسين أساسي لمحركات البحث|دعم لمدة شهر"
+          },
+          "ctaText": {
+            "tr": "Hemen Başla",
+            "en": "Get Started",
+            "ar": "ابدأ الآن"
+          },
+          "ctaUrl": "#",
+          "featured": false
+        },
+        {
+          "plan": {
+            "tr": "Profesyonel",
+            "en": "Professional",
+            "ar": "احترافي"
+          },
+          "price": "₺9.900",
+          "period": {
+            "tr": "/ proje",
+            "en": "/ project",
+            "ar": "/ مشروع"
+          },
+          "note": {
+            "tr": "Büyüyen markalar için",
+            "en": "For growing brands",
+            "ar": "للعلامات المتنامية"
+          },
+          "features": {
+            "tr": "15 sayfa web sitesi|Çok dilli altyapı|Gelişmiş SEO|E-ticaret hazır|3 ay destek",
+            "en": "15-page website|Multi-language|Advanced SEO|E-commerce ready|3 months support",
+            "ar": "موقع من 15 صفحة|بنية متعددة اللغات|تحسين متقدم لمحركات البحث|جاهز للتجارة الإلكترونية|دعم لمدة 3 أشهر"
+          },
+          "ctaText": {
+            "tr": "Hemen Başla",
+            "en": "Get Started",
+            "ar": "ابدأ الآن"
+          },
+          "ctaUrl": "#",
+          "featured": true,
+          "flag": {
+            "tr": "En Popüler",
+            "en": "Most Popular",
+            "ar": "الأكثر شيوعًا"
+          }
+        },
+        {
+          "plan": {
+            "tr": "Kurumsal",
+            "en": "Enterprise",
+            "ar": "المؤسسة"
+          },
+          "price": "₺19.900",
+          "period": {
+            "tr": "/ proje",
+            "en": "/ project",
+            "ar": "/ مشروع"
+          },
+          "note": {
+            "tr": "Kurumsal çözümler",
+            "en": "Enterprise solutions",
+            "ar": "حلول المؤسسات"
+          },
+          "features": {
+            "tr": "Sınırsız sayfa|Özel entegrasyonlar|Öncelikli destek|Performans optimizasyonu|12 ay destek",
+            "en": "Unlimited pages|Custom integrations|Priority support|Performance tuning|12 months support",
+            "ar": "صفحات غير محدودة|تكاملات مخصصة|دعم ذو أولوية|تحسين الأداء|دعم لمدة 12 شهرًا"
+          },
+          "ctaText": {
+            "tr": "Teklif Al",
+            "en": "Get a Quote",
+            "ar": "اطلب عرضًا"
+          },
+          "ctaUrl": "#",
+          "featured": false
+        }
+      ],
+      "index": 3
+    },
+    {
+      "name": "CTA Şerit 1",
+      "path": "cta-1",
+      "local": "body",
+      "category": "cta",
+      "id": "g3ca01",
+      "desing": {
+        "max": "1200px",
+        "gradient": "linear-gradient(135deg, color-mix(in srgb, var(--mx-site-primary, #2563eb) 42%, #000), color-mix(in srgb, var(--mx-site-primary, #2563eb) 24%, #000))",
+        "btnbg": "var(--mx-site-surface, #ffffff)",
+        "btncolor": "var(--mx-site-text, #1b1b1b)",
+        "title": {
+          "tr": "Birlikte çalışalım",
+          "en": "Let's work together",
+          "ar": "لنعمل معًا"
+        },
+        "description": {
+          "tr": "Çekim tarihiniz için müsaitlik sorun.",
+          "en": "Ask about availability for your shoot date.",
+          "ar": "اسأل عن التوفر لموعد جلستك."
+        },
+        "btn1Text": {
+          "tr": "Randevu al",
+          "en": "Book a session",
+          "ar": "احجز جلسة"
+        },
+        "btn1Url": "iletisim",
+        "btn2Text": {
+          "tr": "Hakkımda",
+          "en": "About me",
+          "ar": "نبذة عني"
+        },
+        "btn2Url": "hakkimizda",
+        "stil": ""
+      },
+      "version": "1.1.0",
+      "icon": "campaign",
+      "index": 4
+    },
+    {
+      "name": "Footer 3",
+      "path": "footer-3",
+      "local": "footer",
+      "category": "footer",
+      "id": "g3ft01",
+      "desing": {
+        "showlang": true,
+        "bgcolor": "var(--mx-site-surface-2, #f1f1ee)",
+        "color": "var(--mx-site-text, #1b1b1b)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "minimal_design": true,
+        "social_media": false,
+        "logo_maxh": "60px",
+        "logo_plate": false,
+        "contact_line": "auto"
+      },
+      "version": "1.0.0",
+      "icon": "widgets",
+      "data": [],
+      "index": 5
+    },
+    {
+      "name": "İletişim",
+      "path": "contact-3",
+      "local": "body",
+      "category": "contact",
+      "id": "g3ct01",
+      "desing": {
+        "color": "var(--mx-site-text, #1b1b1b)",
+        "name": {
+          "tr": "Bize Ulaşın",
+          "en": "Contact Us",
+          "ar": "تواصل معنا"
+        },
+        "margin": "30px 0px 30px 0px",
+        "linkcolor": "var(--mx-site-primary, #2563eb)",
+        "stil": ""
+      },
+      "version": "1.0.0",
+      "icon": "contact_mail",
+      "data": [
+        {
+          "icon": "phone",
+          "text": "+90",
+          "url": ""
+        },
+        {
+          "icon": "email",
+          "text": ""
+        },
+        {
+          "icon": "map",
+          "text": ""
+        }
+      ],
+      "index": 6
+    },
+    {
+      "name": "Maps",
+      "path": "map-2",
+      "local": "body",
+      "category": "map",
+      "id": "g3mp01",
+      "desing": {
+        "height": "200px",
+        "opacity": "0.5",
+        "backgroundcolor": "#ffffff",
+        "color": "var(--mx-site-text, #1b1b1b)",
+        "img": "map.png",
+        "externalUrl": "",
+        "margin": "0px 0px 0px 0px"
+      },
+      "version": "1.0.0",
+      "icon": "widgets",
+      "index": 7
+    },
+    {
+      "name": "Tanıtım Modülü",
+      "path": "module-1",
+      "local": "body",
+      "category": "module",
+      "id": "g3in01",
+      "desing": {
+        "name": {
+          "tr": "Hakkımızda",
+          "en": "About us",
+          "ar": "من نحن"
+        },
+        "description": {
+          "tr": "Bu sayfa bir tema örneğidir; içerik demo üretiminde doldurulur.",
+          "en": "This page is a theme sample; its content is filled in during demo production.",
+          "ar": "هذه الصفحة نموذج للقالب؛ يُملأ محتواها عند إنتاج العرض التجريبي."
+        },
+        "name2": {
+          "tr": "Vizyonumuz",
+          "en": "Our Vision",
+          "ar": "رؤيتنا"
+        },
+        "spot2": {
+          "tr": "Sektörümüzde yenilikçi yaklaşımlarla öncü olmak.",
+          "en": "To lead our industry with innovative approaches.",
+          "ar": "أن نكون روّادًا في قطاعنا بأساليب مبتكرة."
+        },
+        "icon2": "visibility",
+        "name3": {
+          "tr": "Misyonumuz",
+          "en": "Our Mission",
+          "ar": "مهمتنا"
+        },
+        "spot3": {
+          "tr": "İhtiyaç duyulan çözümleri hızlı ve şeffaf sunmak.",
+          "en": "Deliver needed solutions quickly and transparently.",
+          "ar": "تقديم الحلول المطلوبة بسرعة وشفافية."
+        },
+        "icon3": "flag",
+        "img": "index.jpg",
+        "bgcolor": "var(--mx-site-surface, #ffffff)",
+        "fontcolor": "var(--mx-site-text, #1b1b1b)",
+        "margintop": "20",
+        "marginbotton": "20",
+        "title": {
+          "tr": "Kurumsal",
+          "en": "Corporate",
+          "ar": "المؤسسة"
+        },
+        "stil": ""
+      },
+      "version": "1.1.0",
+      "icon": "business",
+      "index": 8
+    },
+    {
+      "name": "Galeri Masonry (Filtre + Lightbox)",
+      "path": "galeri-masonry",
+      "local": "body",
+      "category": "galeri",
+      "id": "g3gm02",
+      "desing": {
+        "max": "1280px",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "textcolor": "var(--mx-site-text, #1b1b1b)",
+        "mutedcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #fff))",
+        "surface": "var(--mx-site-surface, #ffffff)",
+        "surface2": "var(--mx-site-surface-2, #ececea)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "gap": "0px",
+        "radius": "8px",
+        "columns": {
+          "d": 4,
+          "t": 3,
+          "m": 2
+        },
+        "ratio": "auto",
+        "captions": "hover",
+        "filter": true,
+        "lightbox": true,
+        "lazy": true,
+        "urlPrefix": "",
+        "title": {
+          "tr": "Galeri",
+          "en": "Gallery",
+          "ar": "المعرض"
+        },
+        "description": {
+          "tr": "Çalışmalarımızdan seçilmiş kareler. Kategoriye göre süzün, büyütmek için dokunun.",
+          "en": "A selection of frames from our work. Filter by category and tap to enlarge.",
+          "ar": "مختارات من أعمالنا. صفِّ حسب الفئة، وانقر على الصورة لتكبيرها."
+        },
+        "allLabel": {
+          "tr": "Tümü",
+          "en": "All",
+          "ar": "الكل"
+        },
+        "filterLabel": {
+          "tr": "Kategoriye göre filtrele",
+          "en": "Filter by category",
+          "ar": "التصفية حسب الفئة"
+        },
+        "countText": {
+          "zero": {
+            "ar": "لا توجد صور"
+          },
+          "one": {
+            "tr": "{n} fotoğraf",
+            "en": "{n} photo",
+            "ar": "صورة واحدة"
+          },
+          "two": {
+            "ar": "صورتان"
+          },
+          "few": {
+            "ar": "{n} صور"
+          },
+          "many": {
+            "ar": "{n} صورة"
+          },
+          "other": {
+            "tr": "{n} fotoğraf",
+            "en": "{n} photos",
+            "ar": "{n} صورة"
+          }
+        },
+        "emptyText": {
+          "tr": "Henüz gösterilecek görsel yok.",
+          "en": "There are no images to show yet.",
+          "ar": "لا توجد صور لعرضها بعد."
+        },
+        "lightboxLabels": {
+          "dialog": {
+            "tr": "Görsel görüntüleyici",
+            "en": "Image viewer",
+            "ar": "عارض الصور"
+          },
+          "close": {
+            "tr": "Kapat",
+            "en": "Close",
+            "ar": "إغلاق"
+          },
+          "prev": {
+            "tr": "Önceki görsel",
+            "en": "Previous image",
+            "ar": "الصورة السابقة"
+          },
+          "next": {
+            "tr": "Sonraki görsel",
+            "en": "Next image",
+            "ar": "الصورة التالية"
+          },
+          "counter": {
+            "tr": "{i} / {n}",
+            "en": "{i} / {n}",
+            "ar": "{i} من {n}"
+          }
+        },
+        "cats": [
+          {
+            "id": "mekan",
+            "name": {
+              "tr": "Mekan",
+              "en": "Spaces",
+              "ar": "المساحات"
+            }
+          },
+          {
+            "id": "detay",
+            "name": {
+              "tr": "Detay",
+              "en": "Details",
+              "ar": "التفاصيل"
+            }
+          },
+          {
+            "id": "surec",
+            "name": {
+              "tr": "Süreç",
+              "en": "Process",
+              "ar": "سير العمل"
+            }
+          }
+        ]
+      },
+      "version": "1.0.0",
+      "icon": "photo_library",
+      "data": [
+        {
+          "img": "",
+          "title": {
+            "tr": "Giriş alanı",
+            "en": "Entrance area",
+            "ar": "منطقة المدخل"
+          },
+          "cat": "mekan",
+          "w": 800,
+          "h": 1000,
+          "alt": {
+            "tr": "Aydınlık giriş alanı",
+            "en": "Bright entrance area",
+            "ar": "منطقة مدخل مضيئة"
+          }
+        },
+        {
+          "img": "",
+          "title": {
+            "tr": "Ana salon",
+            "en": "Main hall",
+            "ar": "القاعة الرئيسية"
+          },
+          "cat": "mekan",
+          "w": 1200,
+          "h": 800,
+          "alt": {
+            "tr": "Geniş ana salon",
+            "en": "Spacious main hall",
+            "ar": "قاعة رئيسية واسعة"
+          }
+        },
+        {
+          "img": "",
+          "title": {
+            "tr": "Malzeme seçimi",
+            "en": "Material selection",
+            "ar": "اختيار المواد"
+          },
+          "cat": "detay",
+          "w": 1000,
+          "h": 1000,
+          "alt": {
+            "tr": "Yakın çekim doku",
+            "en": "Close-up texture",
+            "ar": "نسيج بلقطة مقرّبة"
+          }
+        },
+        {
+          "img": "",
+          "title": {
+            "tr": "Aydınlatma",
+            "en": "Lighting",
+            "ar": "الإضاءة"
+          },
+          "cat": "detay",
+          "w": 800,
+          "h": 1000,
+          "alt": {
+            "tr": "Sıcak ışıklı detay",
+            "en": "Warm-lit detail",
+            "ar": "تفصيل بإضاءة دافئة"
+          }
+        },
+        {
+          "img": "",
+          "title": {
+            "tr": "Çizim masası",
+            "en": "Drafting table",
+            "ar": "طاولة الرسم"
+          },
+          "cat": "surec",
+          "w": 1200,
+          "h": 800,
+          "alt": {
+            "tr": "Çalışma masasında planlar",
+            "en": "Plans on the work table",
+            "ar": "مخططات على طاولة العمل"
+          }
+        },
+        {
+          "img": "",
+          "title": {
+            "tr": "Uygulama",
+            "en": "On site",
+            "ar": "التنفيذ"
+          },
+          "cat": "surec",
+          "w": 1000,
+          "h": 1000,
+          "alt": {
+            "tr": "Uygulama aşaması",
+            "en": "Installation stage",
+            "ar": "مرحلة التنفيذ"
+          }
+        },
+        {
+          "img": "",
+          "title": {
+            "tr": "Teslim",
+            "en": "Handover",
+            "ar": "التسليم"
+          },
+          "cat": "mekan",
+          "w": 800,
+          "h": 1000,
+          "alt": {
+            "tr": "Teslim edilen mekan",
+            "en": "Finished space",
+            "ar": "المساحة بعد التسليم"
+          }
+        },
+        {
+          "img": "",
+          "title": {
+            "tr": "Son dokunuşlar",
+            "en": "Finishing touches",
+            "ar": "اللمسات الأخيرة"
+          },
+          "cat": "detay",
+          "w": 1200,
+          "h": 800,
+          "alt": {
+            "tr": "Son dokunuş detayı",
+            "en": "Finishing detail",
+            "ar": "تفصيل اللمسات الأخيرة"
+          }
+        }
+      ],
+      "index": 9
+    },
+    {
+      "name": "Demo Kredi Şeridi",
+      "description": "Demo sitelerin alt bilgisinde duran kredi şeridi: «Bu demo Webyapar tarafından hazırlanmıştır — Bu temayı iste». Marka adı çevrilmez (Latin, dir=ltr izole), bağlantı demo adına göre webyapar.com/temalar#<slug>. Üç dil (TR/EN/AR), mantıksal CSS (RTL), mobilde sarar, reduced-motion'a saygılı.",
+      "version": "1.0.0",
+      "icon": "campaign",
+      "category": "demo",
+      "tags": [
+        "demo",
+        "footer",
+        "kredi",
+        "rtl"
+      ],
+      "desing": {
+        "href": "https://webyapar.com/temalar#saas-3",
+        "brand": "Webyapar",
+        "text": {
+          "tr": "Bu demo {brand} tarafından hazırlanmıştır —",
+          "en": "This demo was prepared by {brand} —",
+          "ar": "تم إعداد هذا العرض التجريبي بواسطة {brand} —"
+        },
+        "ctaText": {
+          "tr": "Bu temayı iste",
+          "en": "Get this theme",
+          "ar": "اطلب هذا القالب"
+        },
+        "newTabText": {
+          "tr": "(yeni sekmede açılır)",
+          "en": "(opens in a new tab)",
+          "ar": "(يفتح في علامة تبويب جديدة)"
+        },
+        "ariaLabel": {
+          "tr": "Demo bilgisi",
+          "en": "Demo credit",
+          "ar": "معلومات العرض التجريبي"
+        }
+      },
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing/data"
+      },
+      "id": "pzkmln",
+      "path": "demo-kredi",
+      "local": "footer",
+      "data": [],
+      "index": 10
+    },
+    {
+      "name": "Menu 2",
+      "desing": {
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "color": "var(--mx-site-text, #1b1b1b)",
+        "activebgcolor": "var(--mx-site-primary, #2563eb)",
+        "activecolor": "var(--mx-site-primary-contrast, #ffffff)",
+        "height": "84px",
+        "ariaToggle": {
+          "tr": "Menüyü aç/kapat",
+          "en": "Toggle menu",
+          "ar": "فتح/إغلاق القائمة"
+        },
+        "ariaClose": {
+          "tr": "Menüyü kapat",
+          "en": "Close menu",
+          "ar": "إغلاق القائمة"
+        },
+        "logobg": "transparent",
+        "logoborder": "none",
+        "logoradius": "0",
+        "logopad": "0",
+        "logopadmobil": "0",
+        "logomaxh": "60px",
+        "logoimg": "",
+        "tekSatir": "",
+        "langcolor": "currentColor",
+        "langbg": "transparent"
+      },
+      "category": "menu",
+      "description": "Sticky header navigasyon menüsü. Logo, sayfa linkleri ve mobil hamburger menü içerir. 16 farklı projede kullanılır: üretim, e-ticaret, kurumsal, eğitim, ajans ve hizmet sektörü firmalarında. Scroll animasyonu, aktif sayfa vurgulama ve responsive menü geçişi özellikleri vardır.",
+      "version": "1.0.3",
+      "icon": "menu",
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing/data"
+      },
+      "id": "cmbomo",
+      "path": "menu-2",
+      "local": "header",
+      "data": [],
+      "index": 11
+    },
+    {
+      "name": {
+        "tr": "Hero 4 — Bölünmüş",
+        "en": "Hero 4 — Split",
+        "ar": "هيرو 4 — مقسّم"
+      },
+      "description": {
+        "tr": "İki sütunlu hero: solda üst etiket, h1, paragraf, iki CTA (dolgu + çerçeve) ve güven satırı (data[]: ikon + metin); sağda görsel, arkasında token renkli organik şekil ve yüzen istatistik rozeti. desing.stil: blob | kare-kesit | cerceveli. Mobilde görsel üstte. Renkler yalnız desing anahtarı + var(--mx-site-*) — koyu mod otomatik. Üç dil + RTL.",
+        "en": "Two-column hero: eyebrow, h1, paragraph, two CTAs (filled + outline) and a trust row (data[]: icon + text) on the start side; image with a token-coloured organic shape and a floating stat badge on the end side. desing.stil: blob | kare-kesit | cerceveli. Image stacks on top on mobile. Colours come only from desing keys + var(--mx-site-*) — dark mode automatic. Three languages + RTL.",
+        "ar": "هيرو بعمودين: تسمية علوية وعنوان h1 وفقرة وزرّان (ممتلئ + إطار) وسطر الثقة (data[]: أيقونة + نص) في جهة البداية؛ صورة خلفها شكل عضوي بلون الرمز وشارة إحصائية عائمة في جهة النهاية. desing.stil: blob | kare-kesit | cerceveli. على الجوال تظهر الصورة أولًا. الألوان من مفاتيح desing و var(--mx-site-*) فقط — الوضع الداكن تلقائي. ثلاث لغات + RTL."
+      },
+      "version": "1.0.0",
+      "icon": "view_sidebar",
+      "category": "hero",
+      "tags": [
+        "hero",
+        "split",
+        "bolunmus",
+        "cta",
+        "guven",
+        "blob",
+        "ar"
+      ],
+      "desing": {
+        "stil": "kare-kesit",
+        "max": "1200px",
+        "bg": "var(--mx-site-bg, #ffffff)",
+        "surface": "var(--mx-site-surface, #f6f6f4)",
+        "text": "var(--mx-site-text, #1b1b1b)",
+        "muted": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "border": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 14%, transparent)",
+        "radius": "20px",
+        "eyebrow": {
+          "tr": "Görev yönetimi · sade",
+          "en": "Task management · simple",
+          "ar": "إدارة المهام · بسيطة"
+        },
+        "title": {
+          "tr": "Daha az düğme, daha çok biten iş",
+          "en": "Fewer buttons, more finished work",
+          "ar": "أزرار أقل وأعمال منجزة أكثر"
+        },
+        "metin": {
+          "tr": "Düzkanban, görev panosu ve ekip raporunu en az tıkla sunan kurgusal bir demo yazılımdır. Paket fiyatları, otomatik yenileme bildirimi ve veri işleyen koşulları tek sayfada okunur; gerçek kayıt alınmaz.",
+          "en": "Duzkanban is a fictional demo software that offers a task board and team report with as few clicks as possible. Plan prices, auto-renewal notices and data-processor terms can be read on one page; no real sign-up is taken.",
+          "ar": "دوزكانبان برنامج تجريبي افتراضي يقدّم لوحة مهام وتقرير فريق بأقل عدد من النقرات. تُقرأ أسعار الباقات وإشعار التجديد التلقائي وشروط معالج البيانات في صفحة واحدة؛ ولا يُقبل تسجيل فعلي."
+        },
+        "cta1": {
+          "tr": "Demo talep et",
+          "en": "Request a demo",
+          "ar": "اطلب عرضًا تجريبيًا"
+        },
+        "cta1_url": "demo-talebi",
+        "cta2": {
+          "tr": "Fiyatlar",
+          "en": "Pricing",
+          "ar": "الأسعار"
+        },
+        "cta2_url": "fiyatlar",
+        "img": "saas-rapor.webp",
+        "alt": {
+          "tr": "Soyut grafik ve göstergeler",
+          "en": "Abstract charts and indicators",
+          "ar": "مخططات ومؤشرات تجريدية"
+        },
+        "badge_icon": "dashboard",
+        "badge_value": "6",
+        "badge_label": {
+          "tr": "Özellik alanı",
+          "en": "Feature areas",
+          "ar": "مجالات ميزات"
+        }
+      },
+      "data": [
+        {
+          "icon": "view_kanban",
+          "text": {
+            "tr": "Görev panoları",
+            "en": "Task boards",
+            "ar": "لوحات المهام"
+          }
+        },
+        {
+          "icon": "timeline",
+          "text": {
+            "tr": "Zaman çizelgesi",
+            "en": "Timeline",
+            "ar": "الجدول الزمني"
+          }
+        },
+        {
+          "icon": "bar_chart",
+          "text": {
+            "tr": "Ekip raporları",
+            "en": "Team reports",
+            "ar": "تقارير الفريق"
+          }
+        }
+      ],
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing/data"
+      },
+      "id": "5t95rl",
+      "path": "hero-4",
+      "local": "body",
+      "index": 12
+    },
+    {
+      "name": "Kurumsal Değerler 1",
+      "desing": {
+        "max": "1200px",
+        "bgcolor": "var(--mx-site-surface-2, #ececea)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "titlecolor": "var(--mx-site-text, #1b1b1b)",
+        "textcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
+        "cardbg": "var(--mx-site-surface, #ffffff)",
+        "badgebg": "#2E6BFF",
+        "badgecolor": "#ffffff",
+        "badge": {
+          "tr": "Özellikler",
+          "en": "Features",
+          "ar": "الميزات"
+        },
+        "title": {
+          "tr": "İşi görünür kılan araçlar",
+          "en": "Tools that make work visible",
+          "ar": "أدوات تجعل العمل مرئيًا"
+        },
+        "description": {
+          "tr": "Küçük ekipten kuruma, ölçeğe uygun özellikler.",
+          "en": "Features that scale from small teams to organisations.",
+          "ar": "ميزات تناسب من الفرق الصغيرة إلى المؤسسات."
+        }
+      },
+      "data": [
+        {
+          "icon": "view_kanban",
+          "name": {
+            "tr": "Görev panoları",
+            "en": "Task boards",
+            "ar": "لوحات المهام"
+          },
+          "description": {
+            "tr": "Sürükle-bırak kartlar, durum sütunları ve filtreler.",
+            "en": "Drag-and-drop cards, status columns and filters.",
+            "ar": "بطاقات بالسحب والإفلات وأعمدة حالة ومرشحات."
+          }
+        },
+        {
+          "icon": "timeline",
+          "name": {
+            "tr": "Zaman çizelgesi",
+            "en": "Timeline",
+            "ar": "الجدول الزمني"
+          },
+          "description": {
+            "tr": "Bağımlılıklar ve teslim tarihleri tek görünümde.",
+            "en": "Dependencies and due dates in one view.",
+            "ar": "الاعتماديات ومواعيد التسليم في عرض واحد."
+          }
+        },
+        {
+          "icon": "bar_chart",
+          "name": {
+            "tr": "Ekip raporları",
+            "en": "Team reports",
+            "ar": "تقارير الفريق"
+          },
+          "description": {
+            "tr": "Tamamlanan iş ve iş yükü dağılımı grafikleri.",
+            "en": "Charts of completed work and workload distribution.",
+            "ar": "مخططات الأعمال المنجزة وتوزيع عبء العمل."
+          }
+        },
+        {
+          "icon": "extension",
+          "name": {
+            "tr": "Entegrasyonlar",
+            "en": "Integrations",
+            "ar": "التكاملات"
+          },
+          "description": {
+            "tr": "Takvim, e-posta ve dosya depolama bağlantıları.",
+            "en": "Calendar, e-mail and file-storage connections.",
+            "ar": "روابط التقويم والبريد وتخزين الملفات."
+          }
+        }
+      ],
+      "category": "values",
+      "description": "Kurumsal değer kartları (MLA tarzı dört sütun). Rakam yok; ikon, başlık ve kısa açıklama. Animasyon, mobil tek sütun ve prefers-reduced-motion destekler.",
+      "version": "1.0.0",
+      "icon": "diamond",
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing/data"
+      },
+      "id": "hl2rzl",
+      "path": "values-1",
+      "local": "body",
+      "index": 13
+    },
+    {
+      "name": "Kurumsal Değerler 1",
+      "desing": {
+        "max": "1200px",
+        "bgcolor": "var(--mx-site-surface-2, #ececea)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "titlecolor": "var(--mx-site-text, #1b1b1b)",
+        "textcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
+        "cardbg": "var(--mx-site-surface, #ffffff)",
+        "badgebg": "#2E6BFF",
+        "badgecolor": "#ffffff",
+        "badge": {
+          "tr": "Özellikler",
+          "en": "Features",
+          "ar": "الميزات"
+        },
+        "title": {
+          "tr": "İşi görünür kılan araçlar",
+          "en": "Tools that make work visible",
+          "ar": "أدوات تجعل العمل مرئيًا"
+        },
+        "description": {
+          "tr": "Küçük ekipten kuruma, ölçeğe uygun özellikler.",
+          "en": "Features that scale from small teams to organisations.",
+          "ar": "ميزات تناسب من الفرق الصغيرة إلى المؤسسات."
+        }
+      },
+      "data": [
+        {
+          "icon": "view_kanban",
+          "name": {
+            "tr": "Görev panoları",
+            "en": "Task boards",
+            "ar": "لوحات المهام"
+          },
+          "description": {
+            "tr": "Sürükle-bırak kartlar, durum sütunları ve filtreler.",
+            "en": "Drag-and-drop cards, status columns and filters.",
+            "ar": "بطاقات بالسحب والإفلات وأعمدة حالة ومرشحات."
+          }
+        },
+        {
+          "icon": "timeline",
+          "name": {
+            "tr": "Zaman çizelgesi",
+            "en": "Timeline",
+            "ar": "الجدول الزمني"
+          },
+          "description": {
+            "tr": "Bağımlılıklar ve teslim tarihleri tek görünümde.",
+            "en": "Dependencies and due dates in one view.",
+            "ar": "الاعتماديات ومواعيد التسليم في عرض واحد."
+          }
+        },
+        {
+          "icon": "bar_chart",
+          "name": {
+            "tr": "Ekip raporları",
+            "en": "Team reports",
+            "ar": "تقارير الفريق"
+          },
+          "description": {
+            "tr": "Tamamlanan iş ve iş yükü dağılımı grafikleri.",
+            "en": "Charts of completed work and workload distribution.",
+            "ar": "مخططات الأعمال المنجزة وتوزيع عبء العمل."
+          }
+        },
+        {
+          "icon": "extension",
+          "name": {
+            "tr": "Entegrasyonlar",
+            "en": "Integrations",
+            "ar": "التكاملات"
+          },
+          "description": {
+            "tr": "Takvim, e-posta ve dosya depolama bağlantıları.",
+            "en": "Calendar, e-mail and file-storage connections.",
+            "ar": "روابط التقويم والبريد وتخزين الملفات."
+          }
+        },
+        {
+          "icon": "admin_panel_settings",
+          "name": {
+            "tr": "Yetki ve roller",
+            "en": "Permissions and roles",
+            "ar": "الصلاحيات والأدوار"
+          },
+          "description": {
+            "tr": "Proje bazlı rol ve erişim kontrolü.",
+            "en": "Project-level roles and access control.",
+            "ar": "أدوار وتحكم بالوصول على مستوى المشروع."
+          }
+        },
+        {
+          "icon": "api",
+          "name": {
+            "tr": "Geliştirici API’si",
+            "en": "Developer API",
+            "ar": "واجهة المطورين"
+          },
+          "description": {
+            "tr": "Webhook ve REST API ile özel akışlar.",
+            "en": "Custom flows with webhooks and a REST API.",
+            "ar": "تدفقات مخصصة عبر webhook وREST API."
+          }
+        }
+      ],
+      "category": "values",
+      "description": "Kurumsal değer kartları (MLA tarzı dört sütun). Rakam yok; ikon, başlık ve kısa açıklama. Animasyon, mobil tek sütun ve prefers-reduced-motion destekler.",
+      "version": "1.0.0",
+      "icon": "diamond",
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing/data"
+      },
+      "id": "oy1tve",
+      "path": "values-1",
+      "local": "body",
+      "index": 14
+    },
+    {
+      "name": "Sekmeli Hizmetler",
+      "description": "Hizmet anlatımı sekmelerle: sol/üst sekme listesi (ikon + ad), seçili hizmetin görseli + açıklama + madde listesi + CTA. Mobilde akordeon. ARIA tabs kalıbı (ok tuşları, Home/End, RTL'de yön ters). desing.stil: dikey | yatay-ust | kart-gecis. Veri: data[] = [{ikon, ad{tr,en,ar}, ozet{}, maddeler[{}], img, alt{}, url}]. Renkler yalnız token (var(--mx-site-*)); koyu mod otomatik. Üç dil + RTL.",
+      "version": "1.0.0",
+      "icon": "view_sidebar",
+      "category": "hizmet",
+      "tags": [
+        "hizmet",
+        "sekme",
+        "tabs",
+        "akordeon",
+        "services",
+        "ar"
+      ],
+      "desing": {
+        "stil": "yatay-ust",
+        "max": "1200px",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "textcolor": "var(--mx-site-text, #1b1b1b)",
+        "mutedcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
+        "surface": "var(--mx-site-surface, #f6f6f4)",
+        "surface2": "var(--mx-site-surface-2, #ececea)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 16%, transparent)",
+        "radius": "16px",
+        "eyebrow": {
+          "tr": "Özellikler",
+          "en": "Features",
+          "ar": "الميزات"
+        },
+        "title": {
+          "tr": "İşi görünür kılan araçlar",
+          "en": "Tools that make work visible",
+          "ar": "أدوات تجعل العمل مرئيًا"
+        },
+        "description": {
+          "tr": "Küçük ekipten kuruma, ölçeğe uygun özellikler.",
+          "en": "Features that scale from small teams to organisations.",
+          "ar": "ميزات تناسب من الفرق الصغيرة إلى المؤسسات."
+        },
+        "ctaLabel": {
+          "tr": "Detaylı bilgi",
+          "en": "Learn more",
+          "ar": "مزيد من التفاصيل"
+        },
+        "tabsLabel": {
+          "tr": "Hizmet sekmeleri",
+          "en": "Service tabs",
+          "ar": "تبويبات الخدمات"
+        },
+        "featuresLabel": {
+          "tr": "Neler dahil?",
+          "en": "What's included?",
+          "ar": "ماذا يشمل؟"
+        }
+      },
+      "data": [
+        {
+          "ikon": "view_kanban",
+          "ad": {
+            "tr": "Görev panoları",
+            "en": "Task boards",
+            "ar": "لوحات المهام"
+          },
+          "ozet": {
+            "tr": "Sürükle-bırak kartlar, durum sütunları ve filtreler.",
+            "en": "Drag-and-drop cards, status columns and filters.",
+            "ar": "بطاقات بالسحب والإفلات وأعمدة حالة ومرشحات."
+          },
+          "maddeler": [
+            {
+              "tr": "Klavye kısayolları",
+              "en": "Keyboard shortcuts",
+              "ar": "اختصارات لوحة المفاتيح"
+            },
+            {
+              "tr": "Üç dilde arayüz",
+              "en": "Interface in three languages",
+              "ar": "واجهة بثلاث لغات"
+            },
+            {
+              "tr": "Sözleşme sonunda veri dışa aktarma",
+              "en": "Data export at the end of the contract",
+              "ar": "تصدير البيانات في نهاية العقد"
+            }
+          ],
+          "img": "saas-zaman.webp",
+          "alt": {
+            "tr": "Renkli çubuklu soyut zaman çizelgesi",
+            "en": "An abstract timeline with colourful bars",
+            "ar": "جدول زمني تجريدي بأشرطة ملونة"
+          },
+          "url": "ozellikler"
+        },
+        {
+          "ikon": "timeline",
+          "ad": {
+            "tr": "Zaman çizelgesi",
+            "en": "Timeline",
+            "ar": "الجدول الزمني"
+          },
+          "ozet": {
+            "tr": "Bağımlılıklar ve teslim tarihleri tek görünümde.",
+            "en": "Dependencies and due dates in one view.",
+            "ar": "الاعتماديات ومواعيد التسليم في عرض واحد."
+          },
+          "maddeler": [
+            {
+              "tr": "Klavye kısayolları",
+              "en": "Keyboard shortcuts",
+              "ar": "اختصارات لوحة المفاتيح"
+            },
+            {
+              "tr": "Üç dilde arayüz",
+              "en": "Interface in three languages",
+              "ar": "واجهة بثلاث لغات"
+            },
+            {
+              "tr": "Sözleşme sonunda veri dışa aktarma",
+              "en": "Data export at the end of the contract",
+              "ar": "تصدير البيانات في نهاية العقد"
+            }
+          ],
+          "img": "saas-rapor.webp",
+          "alt": {
+            "tr": "Soyut grafik ve göstergeler",
+            "en": "Abstract charts and indicators",
+            "ar": "مخططات ومؤشرات تجريدية"
+          },
+          "url": "ozellikler"
+        },
+        {
+          "ikon": "bar_chart",
+          "ad": {
+            "tr": "Ekip raporları",
+            "en": "Team reports",
+            "ar": "تقارير الفريق"
+          },
+          "ozet": {
+            "tr": "Tamamlanan iş ve iş yükü dağılımı grafikleri.",
+            "en": "Charts of completed work and workload distribution.",
+            "ar": "مخططات الأعمال المنجزة وتوزيع عبء العمل."
+          },
+          "maddeler": [
+            {
+              "tr": "Klavye kısayolları",
+              "en": "Keyboard shortcuts",
+              "ar": "اختصارات لوحة المفاتيح"
+            },
+            {
+              "tr": "Üç dilde arayüz",
+              "en": "Interface in three languages",
+              "ar": "واجهة بثلاث لغات"
+            },
+            {
+              "tr": "Sözleşme sonunda veri dışa aktarma",
+              "en": "Data export at the end of the contract",
+              "ar": "تصدير البيانات في نهاية العقد"
+            }
+          ],
+          "img": "saas-ekip-alani.webp",
+          "alt": {
+            "tr": "Boş bir modern çalışma alanı",
+            "en": "An empty modern workspace",
+            "ar": "مساحة عمل حديثة خالية"
+          },
+          "url": "ozellikler"
+        },
+        {
+          "ikon": "extension",
+          "ad": {
+            "tr": "Entegrasyonlar",
+            "en": "Integrations",
+            "ar": "التكاملات"
+          },
+          "ozet": {
+            "tr": "Takvim, e-posta ve dosya depolama bağlantıları.",
+            "en": "Calendar, e-mail and file-storage connections.",
+            "ar": "روابط التقويم والبريد وتخزين الملفات."
+          },
+          "maddeler": [
+            {
+              "tr": "Klavye kısayolları",
+              "en": "Keyboard shortcuts",
+              "ar": "اختصارات لوحة المفاتيح"
+            },
+            {
+              "tr": "Üç dilde arayüz",
+              "en": "Interface in three languages",
+              "ar": "واجهة بثلاث لغات"
+            },
+            {
+              "tr": "Sözleşme sonunda veri dışa aktarma",
+              "en": "Data export at the end of the contract",
+              "ar": "تصدير البيانات في نهاية العقد"
+            }
+          ],
+          "img": "saas-dizustu.webp",
+          "alt": {
+            "tr": "Dizüstü ve defter yan yana",
+            "en": "A laptop beside a notebook",
+            "ar": "حاسوب محمول بجانب دفتر"
+          },
+          "url": "ozellikler"
+        },
+        {
+          "ikon": "admin_panel_settings",
+          "ad": {
+            "tr": "Yetki ve roller",
+            "en": "Permissions and roles",
+            "ar": "الصلاحيات والأدوار"
+          },
+          "ozet": {
+            "tr": "Proje bazlı rol ve erişim kontrolü.",
+            "en": "Project-level roles and access control.",
+            "ar": "أدوار وتحكم بالوصول على مستوى المشروع."
+          },
+          "maddeler": [
+            {
+              "tr": "Klavye kısayolları",
+              "en": "Keyboard shortcuts",
+              "ar": "اختصارات لوحة المفاتيح"
+            },
+            {
+              "tr": "Üç dilde arayüz",
+              "en": "Interface in three languages",
+              "ar": "واجهة بثلاث لغات"
+            },
+            {
+              "tr": "Sözleşme sonunda veri dışa aktarma",
+              "en": "Data export at the end of the contract",
+              "ar": "تصدير البيانات في نهاية العقد"
+            }
+          ],
+          "img": "saas-hero-pano.webp",
+          "alt": {
+            "tr": "Renkli kartlı soyut görev panosu",
+            "en": "An abstract task board with colourful cards",
+            "ar": "لوحة مهام تجريدية ببطاقات ملونة"
+          },
+          "url": "ozellikler"
+        },
+        {
+          "ikon": "api",
+          "ad": {
+            "tr": "Geliştirici API’si",
+            "en": "Developer API",
+            "ar": "واجهة المطورين"
+          },
+          "ozet": {
+            "tr": "Webhook ve REST API ile özel akışlar.",
+            "en": "Custom flows with webhooks and a REST API.",
+            "ar": "تدفقات مخصصة عبر webhook وREST API."
+          },
+          "maddeler": [
+            {
+              "tr": "Klavye kısayolları",
+              "en": "Keyboard shortcuts",
+              "ar": "اختصارات لوحة المفاتيح"
+            },
+            {
+              "tr": "Üç dilde arayüz",
+              "en": "Interface in three languages",
+              "ar": "واجهة بثلاث لغات"
+            },
+            {
+              "tr": "Sözleşme sonunda veri dışa aktarma",
+              "en": "Data export at the end of the contract",
+              "ar": "تصدير البيانات في نهاية العقد"
+            }
+          ],
+          "img": "saas-zaman.webp",
+          "alt": {
+            "tr": "Renkli çubuklu soyut zaman çizelgesi",
+            "en": "An abstract timeline with colourful bars",
+            "ar": "جدول زمني تجريدي بأشرطة ملونة"
+          },
+          "url": "ozellikler"
+        }
+      ],
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing/data"
+      },
+      "id": "w920gv",
+      "path": "hizmet-sekmeli",
+      "local": "body",
+      "index": 15
+    },
+    {
+      "name": "Zigzag Özellik",
+      "description": "Görsel-metin sırası satır satır değişen (sol/sağ) özellik anlatımı: numara rozeti, h3, paragraf, mini CTA; görsel kenarında dekoratif çerçeve/gölge. Kaydırmada satırlar sırayla belirir (IntersectionObserver; reduced-motion ya da JS yoksa hep görünür). desing.stil: cerceve | yuzen | sade. RTL'de sıra kendiliğinden aynalanır. Veri: data[] = [{baslik{tr,en,ar}, metin{}, img, alt{}, url, ctaLabel{}?}]. Renkler yalnız token; koyu mod otomatik.",
+      "version": "1.0.0",
+      "icon": "view_agenda",
+      "category": "ozellik",
+      "tags": [
+        "özellik",
+        "zigzag",
+        "features",
+        "görsel-metin",
+        "ar"
+      ],
+      "desing": {
+        "stil": "sade",
+        "max": "1200px",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "textcolor": "var(--mx-site-text, #1b1b1b)",
+        "mutedcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
+        "surface": "var(--mx-site-surface, #f6f6f4)",
+        "surface2": "var(--mx-site-surface-2, #ececea)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 16%, transparent)",
+        "radius": "20px",
+        "numara": true,
+        "eyebrow": {
+          "tr": "Özellikler",
+          "en": "Features",
+          "ar": "الميزات"
+        },
+        "title": {
+          "tr": "Üç ekran, üç iş",
+          "en": "Three screens, three jobs",
+          "ar": "ثلاث شاشات وثلاث مهام"
+        },
+        "description": {
+          "tr": "Pano, zaman çizelgesi ve rapor; başka ekran yok.",
+          "en": "Board, timeline and report; no other screens.",
+          "ar": "اللوحة والجدول الزمني والتقرير؛ لا شاشات أخرى."
+        },
+        "ctaLabel": {
+          "tr": "Daha fazla",
+          "en": "Read more",
+          "ar": "اقرأ المزيد"
+        }
+      },
+      "data": [
+        {
+          "baslik": {
+            "tr": "Görev panoları",
+            "en": "Task boards",
+            "ar": "لوحات المهام"
+          },
+          "metin": {
+            "tr": "Sürükle-bırak kartlar, durum sütunları ve filtreler.",
+            "en": "Drag-and-drop cards, status columns and filters.",
+            "ar": "بطاقات بالسحب والإفلات وأعمدة حالة ومرشحات."
+          },
+          "img": "saas-zaman.webp",
+          "alt": {
+            "tr": "Renkli çubuklu soyut zaman çizelgesi",
+            "en": "An abstract timeline with colourful bars",
+            "ar": "جدول زمني تجريدي بأشرطة ملونة"
+          },
+          "url": "ozellikler"
+        },
+        {
+          "baslik": {
+            "tr": "Zaman çizelgesi",
+            "en": "Timeline",
+            "ar": "الجدول الزمني"
+          },
+          "metin": {
+            "tr": "Bağımlılıklar ve teslim tarihleri tek görünümde.",
+            "en": "Dependencies and due dates in one view.",
+            "ar": "الاعتماديات ومواعيد التسليم في عرض واحد."
+          },
+          "img": "saas-rapor.webp",
+          "alt": {
+            "tr": "Soyut grafik ve göstergeler",
+            "en": "Abstract charts and indicators",
+            "ar": "مخططات ومؤشرات تجريدية"
+          },
+          "url": "ozellikler"
+        },
+        {
+          "baslik": {
+            "tr": "Ekip raporları",
+            "en": "Team reports",
+            "ar": "تقارير الفريق"
+          },
+          "metin": {
+            "tr": "Tamamlanan iş ve iş yükü dağılımı grafikleri.",
+            "en": "Charts of completed work and workload distribution.",
+            "ar": "مخططات الأعمال المنجزة وتوزيع عبء العمل."
+          },
+          "img": "saas-ekip-alani.webp",
+          "alt": {
+            "tr": "Boş bir modern çalışma alanı",
+            "en": "An empty modern workspace",
+            "ar": "مساحة عمل حديثة خالية"
+          },
+          "url": "ozellikler"
+        }
+      ],
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing/data"
+      },
+      "id": "5p341x",
+      "path": "ozellik-zigzag",
+      "local": "body",
+      "index": 16
+    },
+    {
+      "name": "Süreç Adımları",
+      "description": "3–6 adımlık süreç anlatımı: çizgi/ok ile bağlı daire numaralar, altında başlık + metin. Aktif adım vurgusu kaydırmayla ilerler (IntersectionObserver; JS yoksa tüm adımlar düz görünür). desing.stil: yatay (çizgiyle bağlı sıra; mobilde dikey zaman çizgisi) | dikey (iki yanlı zaman çizgisi) | kartli (kart + ok ayraç). Veri: data[] = [{no?, baslik{tr,en,ar}, metin{}, ikon?}]. Renkler yalnız token; koyu mod otomatik; RTL'de ok/çizgi yönü aynalanır.",
+      "version": "1.0.0",
+      "icon": "timeline",
+      "category": "surec",
+      "tags": [
+        "süreç",
+        "adım",
+        "zaman çizgisi",
+        "process",
+        "steps",
+        "ar"
+      ],
+      "desing": {
+        "stil": "dikey",
+        "max": "1200px",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "textcolor": "var(--mx-site-text, #1b1b1b)",
+        "mutedcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
+        "surface": "var(--mx-site-surface, #f6f6f4)",
+        "surface2": "var(--mx-site-surface-2, #ececea)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 16%, transparent)",
+        "radius": "16px",
+        "eyebrow": {
+          "tr": "Başlangıç",
+          "en": "Getting started",
+          "ar": "البداية"
+        },
+        "title": {
+          "tr": "Kurulumdan ilk pano’ya",
+          "en": "From set-up to your first board",
+          "ar": "من الإعداد إلى أول لوحة"
+        },
+        "description": {
+          "tr": "Dört adımda ekibinizi taşıyın.",
+          "en": "Move your team over in four steps.",
+          "ar": "انقل فريقك بأربع خطوات."
+        },
+        "stepLabel": {
+          "tr": "Adım {n}",
+          "en": "Step {n}",
+          "ar": "الخطوة {n}"
+        },
+        "listLabel": {
+          "tr": "Süreç adımları",
+          "en": "Process steps",
+          "ar": "خطوات العملية"
+        }
+      },
+      "data": [
+        {
+          "baslik": {
+            "tr": "Demo görüşmesi",
+            "en": "Demo call",
+            "ar": "مكالمة العرض"
+          },
+          "metin": {
+            "tr": "İhtiyaçlarınızı dinler, ürünü gösteririz.",
+            "en": "We listen to your needs and show the product.",
+            "ar": "نصغي لاحتياجاتك ونعرض المنتج."
+          },
+          "ikon": "forum"
+        },
+        {
+          "baslik": {
+            "tr": "Çalışma alanı",
+            "en": "Workspace",
+            "ar": "مساحة العمل"
+          },
+          "metin": {
+            "tr": "Çalışma alanı ve roller birlikte kurulur.",
+            "en": "The workspace and roles are set up together.",
+            "ar": "تُعدّ مساحة العمل والأدوار معًا."
+          },
+          "ikon": "draw"
+        },
+        {
+          "baslik": {
+            "tr": "Veri aktarımı",
+            "en": "Data import",
+            "ar": "استيراد البيانات"
+          },
+          "metin": {
+            "tr": "Mevcut görevleriniz dosyadan içe aktarılır.",
+            "en": "Your existing tasks are imported from a file.",
+            "ar": "تُستورد مهامك الحالية من ملف."
+          },
+          "ikon": "construction"
+        },
+        {
+          "baslik": {
+            "tr": "Ekip eğitimi",
+            "en": "Team onboarding",
+            "ar": "تأهيل الفريق"
+          },
+          "metin": {
+            "tr": "Kısa bir eğitimle ekip kullanıma başlar.",
+            "en": "The team starts after a short session.",
+            "ar": "يبدأ الفريق بعد جلسة قصيرة."
+          },
+          "ikon": "task_alt"
+        }
+      ],
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing/data"
+      },
+      "id": "v89fmi",
+      "path": "surec-adimlar",
+      "local": "body",
+      "index": 17
+    },
+    {
+      "name": "Süreç Adımları",
+      "description": "3–6 adımlık süreç anlatımı: çizgi/ok ile bağlı daire numaralar, altında başlık + metin. Aktif adım vurgusu kaydırmayla ilerler (IntersectionObserver; JS yoksa tüm adımlar düz görünür). desing.stil: yatay (çizgiyle bağlı sıra; mobilde dikey zaman çizgisi) | dikey (iki yanlı zaman çizgisi) | kartli (kart + ok ayraç). Veri: data[] = [{no?, baslik{tr,en,ar}, metin{}, ikon?}]. Renkler yalnız token; koyu mod otomatik; RTL'de ok/çizgi yönü aynalanır.",
+      "version": "1.0.0",
+      "icon": "timeline",
+      "category": "surec",
+      "tags": [
+        "süreç",
+        "adım",
+        "zaman çizgisi",
+        "process",
+        "steps",
+        "ar"
+      ],
+      "desing": {
+        "stil": "yatay",
+        "max": "1200px",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "textcolor": "var(--mx-site-text, #1b1b1b)",
+        "mutedcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
+        "surface": "var(--mx-site-surface, #f6f6f4)",
+        "surface2": "var(--mx-site-surface-2, #ececea)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 16%, transparent)",
+        "radius": "16px",
+        "eyebrow": {
+          "tr": "Başlangıç",
+          "en": "Getting started",
+          "ar": "البداية"
+        },
+        "title": {
+          "tr": "Kurulumdan ilk pano’ya",
+          "en": "From set-up to your first board",
+          "ar": "من الإعداد إلى أول لوحة"
+        },
+        "description": {
+          "tr": "Dört adımda ekibinizi taşıyın.",
+          "en": "Move your team over in four steps.",
+          "ar": "انقل فريقك بأربع خطوات."
+        },
+        "stepLabel": {
+          "tr": "Adım {n}",
+          "en": "Step {n}",
+          "ar": "الخطوة {n}"
+        },
+        "listLabel": {
+          "tr": "Süreç adımları",
+          "en": "Process steps",
+          "ar": "خطوات العملية"
+        }
+      },
+      "data": [
+        {
+          "baslik": {
+            "tr": "Demo görüşmesi",
+            "en": "Demo call",
+            "ar": "مكالمة العرض"
+          },
+          "metin": {
+            "tr": "İhtiyaçlarınızı dinler, ürünü gösteririz.",
+            "en": "We listen to your needs and show the product.",
+            "ar": "نصغي لاحتياجاتك ونعرض المنتج."
+          },
+          "ikon": "forum"
+        },
+        {
+          "baslik": {
+            "tr": "Çalışma alanı",
+            "en": "Workspace",
+            "ar": "مساحة العمل"
+          },
+          "metin": {
+            "tr": "Çalışma alanı ve roller birlikte kurulur.",
+            "en": "The workspace and roles are set up together.",
+            "ar": "تُعدّ مساحة العمل والأدوار معًا."
+          },
+          "ikon": "draw"
+        },
+        {
+          "baslik": {
+            "tr": "Veri aktarımı",
+            "en": "Data import",
+            "ar": "استيراد البيانات"
+          },
+          "metin": {
+            "tr": "Mevcut görevleriniz dosyadan içe aktarılır.",
+            "en": "Your existing tasks are imported from a file.",
+            "ar": "تُستورد مهامك الحالية من ملف."
+          },
+          "ikon": "construction"
+        },
+        {
+          "baslik": {
+            "tr": "Ekip eğitimi",
+            "en": "Team onboarding",
+            "ar": "تأهيل الفريق"
+          },
+          "metin": {
+            "tr": "Kısa bir eğitimle ekip kullanıma başlar.",
+            "en": "The team starts after a short session.",
+            "ar": "يبدأ الفريق بعد جلسة قصيرة."
+          },
+          "ikon": "task_alt"
+        }
+      ],
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing/data"
+      },
+      "id": "68v20p",
+      "path": "surec-adimlar",
+      "local": "body",
+      "index": 18
+    },
+    {
+      "name": "İstatistik Bandı 1",
+      "desing": {
+        "stil": "serit-renkli",
+        "max": "1200px",
+        "gradient": "linear-gradient(135deg, color-mix(in srgb, var(--mx-site-primary, #2563eb) 42%, #000), color-mix(in srgb, var(--mx-site-primary, #2563eb) 24%, #000))",
+        "numbercolor": "#ffffff",
+        "labelcolor": "rgba(255,255,255,.88)",
+        "iconsize": "56px",
+        "iconbox": "88px"
+      },
+      "data": [
+        {
+          "number": 6,
+          "suffix": "",
+          "label": {
+            "tr": "Özellik alanı",
+            "en": "Feature areas",
+            "ar": "مجالات ميزات"
+          },
+          "icon": "dashboard"
+        },
+        {
+          "number": 3,
+          "suffix": "",
+          "label": {
+            "tr": "Paket",
+            "en": "Plans",
+            "ar": "باقات"
+          },
+          "icon": "sell"
+        },
+        {
+          "number": 7,
+          "suffix": "",
+          "label": {
+            "tr": "Gün yenileme bildirimi",
+            "en": "Days of renewal notice",
+            "ar": "أيام إشعار التجديد"
+          },
+          "icon": "notifications"
+        },
+        {
+          "number": 3,
+          "suffix": "",
+          "label": {
+            "tr": "Arayüz dili",
+            "en": "Interface languages",
+            "ar": "لغات الواجهة"
+          },
+          "icon": "translate"
+        }
+      ],
+      "category": "stats",
+      "description": "İstatistik / sayaç bandı modülü. Rakamlar görünür olduğunda 0'dan hedefe animasyonlu sayar (IntersectionObserver + easeOutCubic; prefers-reduced-motion'da animasyonsuz). İkon, sonek (+, /7) ve çok dilli etiket destekler. Görsel varyant desing.stil (31 Eki 2026): \"\" klasik (gradient bant, numbercolor/labelcolor, bugünkü görünüm) · \"kartli\" (sayfa zemininde yüzey kartları, üstte primary çizgi, hover'da yükselir) · \"serit-renkli\" (tek renk primary/primary-contrast şeridi, ikon solda rakam+etiket yanında, dikey ayraçlar). Varyant renkleri yalnız var(--mx-site-*) token çiftleri.",
+      "version": "1.1.0",
+      "icon": "monitoring",
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing/data"
+      },
+      "id": "9dgz1b",
+      "path": "stats-1",
+      "local": "body",
+      "index": 19
+    },
+    {
+      "name": "Sayaç Şeridi (Stats 2)",
+      "description": "Tam genişlik renkli şerit (bgcolor/textcolor ÇİFT token), 3–5 sayaç: sayılar görünürken yukarı sayar (IntersectionObserver; reduced-motion ya da JS yoksa son değer doğrudan), önek/sonek (+, %, ₺), kısa açıklama, isteğe bağlı CSS desen (noktalar | cizgiler | yok). Sayı biçimi dile göre (Arapçada Latin hane). desing.stil: serit | kartli | ayrik-cizgili. Veri: data[] = [{deger, onek, sonek, ondalik?, etiket{tr,en,ar}, aciklama{}, ikon?}]. Koyu mod paletten; RTL mantıksal CSS.",
+      "version": "1.0.0",
+      "icon": "insights",
+      "category": "stats",
+      "tags": [
+        "istatistik",
+        "sayaç",
+        "stats",
+        "counter",
+        "şerit",
+        "ar"
+      ],
+      "desing": {
+        "stil": "ayrik-cizgili",
+        "desen": "noktalar",
+        "max": "1200px",
+        "bgcolor": "var(--mx-site-primary, #2563eb)",
+        "textcolor": "var(--mx-site-primary-contrast, #ffffff)",
+        "mutedcolor": "color-mix(in srgb, var(--mx-site-primary-contrast, #ffffff) 90%, var(--mx-site-primary, #2563eb))",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-primary-contrast, #ffffff) 26%, transparent)",
+        "radius": "16px",
+        "sure": 1000,
+        "title": {
+          "tr": "Rakamlarla",
+          "en": "By the numbers",
+          "ar": "بالأرقام"
+        },
+        "description": {
+          "tr": "",
+          "en": "",
+          "ar": ""
+        }
+      },
+      "data": [
+        {
+          "deger": 6,
+          "onek": "",
+          "sonek": "",
+          "etiket": {
+            "tr": "Özellik alanı",
+            "en": "Feature areas",
+            "ar": "مجالات ميزات"
+          },
+          "aciklama": {
+            "tr": "",
+            "en": "",
+            "ar": ""
+          },
+          "ikon": "dashboard"
+        },
+        {
+          "deger": 3,
+          "onek": "",
+          "sonek": "",
+          "etiket": {
+            "tr": "Paket",
+            "en": "Plans",
+            "ar": "باقات"
+          },
+          "aciklama": {
+            "tr": "",
+            "en": "",
+            "ar": ""
+          },
+          "ikon": "sell"
+        },
+        {
+          "deger": 7,
+          "onek": "",
+          "sonek": "",
+          "etiket": {
+            "tr": "Gün yenileme bildirimi",
+            "en": "Days of renewal notice",
+            "ar": "أيام إشعار التجديد"
+          },
+          "aciklama": {
+            "tr": "",
+            "en": "",
+            "ar": ""
+          },
+          "ikon": "notifications"
+        },
+        {
+          "deger": 3,
+          "onek": "",
+          "sonek": "",
+          "etiket": {
+            "tr": "Arayüz dili",
+            "en": "Interface languages",
+            "ar": "لغات الواجهة"
+          },
+          "aciklama": {
+            "tr": "",
+            "en": "",
+            "ar": ""
+          },
+          "ikon": "translate"
+        }
+      ],
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing/data"
+      },
+      "id": "omh78s",
+      "path": "stats-2",
+      "local": "body",
+      "index": 20
+    },
+    {
+      "name": "CTA Şerit 1",
+      "desing": {
+        "stil": "kart-yuzen",
+        "max": "1200px",
+        "gradient": "linear-gradient(135deg, color-mix(in srgb, var(--mx-site-primary, #2563eb) 42%, #000), color-mix(in srgb, var(--mx-site-primary, #2563eb) 24%, #000))",
+        "btnbg": "#ffffff",
+        "btncolor": "#10203A",
+        "title": {
+          "tr": "Ekibiniz için demo isteyin",
+          "en": "Ask for a demo for your team",
+          "ar": "اطلب عرضًا تجريبيًا لفريقك"
+        },
+        "description": {
+          "tr": "Abonelikler seçilen dönem sonunda otomatik yenilenir; yenilemeden en az 7 gün önce e-posta ile bildirim gönderilir ve hesap ayarlarından iptal edilebilir.",
+          "en": "Subscriptions renew automatically at the end of the chosen term; a notice is sent by e-mail at least 7 days before renewal and you can cancel from account settings.",
+          "ar": "تتجدد الاشتراكات تلقائيًا في نهاية المدة المختارة؛ ويُرسَل إشعار بالبريد الإلكتروني قبل التجديد بسبعة أيام على الأقل ويمكن الإلغاء من إعدادات الحساب."
+        },
+        "btn1Text": {
+          "tr": "Demo talep et",
+          "en": "Request a demo",
+          "ar": "اطلب عرضًا تجريبيًا"
+        },
+        "btn1Url": "demo-talebi",
+        "btn2Text": {
+          "tr": "Veri güvenliği",
+          "en": "Data security",
+          "ar": "أمن البيانات"
+        },
+        "btn2Url": "veri-guvenligi"
+      },
+      "category": "cta",
+      "description": "Harekete geçirici çağrı (CTA) şerit modülü. Gradient arka plan üzerinde başlık, açıklama ve iki buton gösterir. Buton URL'leri dil öneki olmadan pathnext (iletisim, urunler) — site routing ekler. Çok dilli metin ve animasyonlu giriş içerir. Görsel varyant desing.stil (31 Eki 2026): \"\" klasik (gradient anahtarı tam genişlik bant, bugünkü görünüm) · \"gradient\" (token gradient primary→koyu, yuvarlak köşeli iç bant, ortalı yığın, ışık daireleri, hap düğmeler) · \"kart-yuzen\" (sayfa zemininde yüzen yüzey kartı, dekoratif primary daireler, sol vurgu çizgisi). Varyant renkleri yalnız var(--mx-site-*) token çiftleri.",
+      "version": "1.2.0",
+      "icon": "campaign",
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing/data"
+      },
+      "id": "rn68p8",
+      "path": "cta-1",
+      "local": "body",
+      "data": [],
+      "index": 21
+    },
+    {
+      "name": "Bant CTA (zengin) — CTA 3",
+      "description": "Tam genişlik iki sütunlu çağrı bandı: sol h2 + metin + 2 buton; sağ görsel/illüstrasyon ya da telefon-WhatsApp kartı (numara, saat). Arka plan: token zemin + hafif gradient katmanı + dekoratif daireler (CSS). desing.stil: gradient | gorselli (sağ sütun tam yükseklik görsel) | cerceveli-kart (içerik sayfa zemini üstünde yüzen kart). desing.sag: whatsapp | gorsel | yok. Zemin + yazı ÇİFT token (bgcolor = birincil, textcolor = birincil kontrast); WhatsApp kartı opak yüzey (cardbg/cardtext). Üç dil + RTL; koyu mod paletten.",
+      "version": "1.0.0",
+      "icon": "campaign",
+      "category": "cta",
+      "tags": [
+        "cta",
+        "çağrı",
+        "whatsapp",
+        "bant",
+        "banner",
+        "ar"
+      ],
+      "desing": {
+        "stil": "cerceveli-kart",
+        "sag": "whatsapp",
+        "max": "1200px",
+        "bgcolor": "var(--mx-site-primary, #2563eb)",
+        "textcolor": "var(--mx-site-primary-contrast, #ffffff)",
+        "mutedcolor": "color-mix(in srgb, var(--mx-site-primary-contrast, #ffffff) 90%, var(--mx-site-primary, #2563eb))",
+        "pagebg": "var(--mx-site-bg, #ffffff)",
+        "cardbg": "var(--mx-site-surface, #ffffff)",
+        "cardtext": "var(--mx-site-text, #1b1b1b)",
+        "cardmuted": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-surface, #ffffff))",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 14%, transparent)",
+        "radius": "24px",
+        "title": {
+          "tr": "Ekibiniz için demo isteyin",
+          "en": "Ask for a demo for your team",
+          "ar": "اطلب عرضًا تجريبيًا لفريقك"
+        },
+        "text": {
+          "tr": "Abonelikler seçilen dönem sonunda otomatik yenilenir; yenilemeden en az 7 gün önce e-posta ile bildirim gönderilir ve hesap ayarlarından iptal edilebilir.",
+          "en": "Subscriptions renew automatically at the end of the chosen term; a notice is sent by e-mail at least 7 days before renewal and you can cancel from account settings.",
+          "ar": "تتجدد الاشتراكات تلقائيًا في نهاية المدة المختارة؛ ويُرسَل إشعار بالبريد الإلكتروني قبل التجديد بسبعة أيام على الأقل ويمكن الإلغاء من إعدادات الحساب."
+        },
+        "btn1Label": {
+          "tr": "Demo talep et",
+          "en": "Request a demo",
+          "ar": "اطلب عرضًا تجريبيًا"
+        },
+        "btn1Url": "demo-talebi",
+        "btn2Label": {
+          "tr": "Veri güvenliği",
+          "en": "Data security",
+          "ar": "أمن البيانات"
+        },
+        "btn2Url": "veri-guvenligi",
+        "number": "903420000000",
+        "numberText": "+90 342 000 00 00",
+        "waLabel": {
+          "tr": "WhatsApp'tan yazın",
+          "en": "Message us on WhatsApp",
+          "ar": "راسلنا عبر واتساب"
+        },
+        "waTitle": {
+          "tr": "Hemen ulaşın",
+          "en": "Reach us now",
+          "ar": "تواصل معنا الآن"
+        },
+        "hours": {
+          "tr": "Destek hafta içi 09:00 – 18:00 · Yanıt süresi 4 iş saati",
+          "en": "Support weekdays 09:00 – 18:00 · Reply within 4 business hours",
+          "ar": "الدعم أيام الأسبوع 09:00 – 18:00 · الرد خلال 4 ساعات عمل"
+        },
+        "hoursLabel": {
+          "tr": "Çalışma saatleri",
+          "en": "Opening hours",
+          "ar": "ساعات العمل"
+        },
+        "waMessage": {
+          "tr": "Merhaba, demo siteniz üzerinden ulaşıyorum.",
+          "en": "Hello, I am reaching out via your demo site.",
+          "ar": "مرحبًا، أتواصل معكم عبر موقعكم التجريبي."
+        },
+        "img": "saas-ekip-alani.webp",
+        "alt": {
+          "tr": "Soyut grafik ve göstergeler",
+          "en": "Abstract charts and indicators",
+          "ar": "مخططات ومؤشرات تجريدية"
+        }
+      },
+      "data": [],
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing/data"
+      },
+      "id": "5cinvn",
+      "path": "cta-3",
+      "local": "body",
+      "index": 22
+    },
+    {
+      "name": "Karşılaştırma / Paket Tablosu",
+      "description": "Sütun = paket (2–4), satır = özellik; hücre ✓ / ✗ / metin; «önerilen» sütun vurgusu (token); mobilde sütunlar yatay kaydırılır, ilk sütun sabit (position: sticky); altta CTA satırı. desing.stil: cizgili (zebra + çizgi) | kartli-sutun (her sütun ayrı kart) | sade. Veri: desing.paketler[] = [{id, ad{tr,en,ar}, fiyat, fiyatNot{}, onerilen, ctaLabel{}?, url}], data[] = satırlar [{ad{}, degerler[]}] (deger: true/false/sayı/metin/{tr,en,ar}). Renkler yalnız token; koyu mod otomatik; RTL mantıksal CSS.",
+      "version": "1.0.0",
+      "icon": "table_chart",
+      "category": "fiyat",
+      "tags": [
+        "karşılaştırma",
+        "paket",
+        "fiyat",
+        "tablo",
+        "pricing",
+        "compare",
+        "ar"
+      ],
+      "desing": {
+        "stil": "sade",
+        "max": "1200px",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "textcolor": "var(--mx-site-text, #1b1b1b)",
+        "mutedcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
+        "surface": "var(--mx-site-surface, #f6f6f4)",
+        "surface2": "var(--mx-site-surface-2, #ececea)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 16%, transparent)",
+        "radius": "16px",
+        "eyebrow": {
+          "tr": "Fiyatlar",
+          "en": "Pricing",
+          "ar": "الأسعار"
+        },
+        "title": {
+          "tr": "Üç paket, tek sayfa",
+          "en": "Three plans, one page",
+          "ar": "ثلاث باقات في صفحة واحدة"
+        },
+        "description": {
+          "tr": "Abonelikler dönem sonunda otomatik yenilenir; yenilemeden en az 7 gün önce e-posta ile bildirim gönderilir, hesap ayarlarından iptal edilebilir. Fiyatlar kurgusaldır.",
+          "en": "Subscriptions renew automatically at the end of the term; a notice is sent by e-mail at least 7 days before renewal and you can cancel from account settings. Prices are fictional.",
+          "ar": "تتجدد الاشتراكات تلقائيًا في نهاية المدة؛ ويُرسَل إشعار بالبريد قبل التجديد بسبعة أيام على الأقل ويمكن الإلغاء من إعدادات الحساب. الأسعار افتراضية."
+        },
+        "featureHeader": {
+          "tr": "Özellik",
+          "en": "Feature",
+          "ar": "الميزة"
+        },
+        "recommendedLabel": {
+          "tr": "Önerilen",
+          "en": "Recommended",
+          "ar": "موصى بها"
+        },
+        "yesLabel": {
+          "tr": "Dahil",
+          "en": "Included",
+          "ar": "مشمول"
+        },
+        "noLabel": {
+          "tr": "Dahil değil",
+          "en": "Not included",
+          "ar": "غير مشمول"
+        },
+        "ctaLabel": {
+          "tr": "Demo talep et",
+          "en": "Request a demo",
+          "ar": "اطلب عرضًا تجريبيًا"
+        },
+        "tableLabel": {
+          "tr": "Paket karşılaştırma tablosu",
+          "en": "Plan comparison table",
+          "ar": "جدول مقارنة الباقات"
+        },
+        "scrollHint": {
+          "tr": "Tabloyu yana kaydırın",
+          "en": "Swipe the table sideways",
+          "ar": "اسحب الجدول جانبيًا"
+        },
+        "paketler": [
+          {
+            "id": "baslangic",
+            "ad": {
+              "tr": "Başlangıç",
+              "en": "Starter",
+              "ar": "البداية"
+            },
+            "fiyat": "₺149",
+            "fiyatNot": {
+              "tr": "/ kullanıcı / ay",
+              "en": "/ user / month",
+              "ar": "/ مستخدم / شهريًا"
+            },
+            "onerilen": false,
+            "url": "demo-talebi"
+          },
+          {
+            "id": "ekip",
+            "ad": {
+              "tr": "Ekip",
+              "en": "Team",
+              "ar": "الفريق"
+            },
+            "fiyat": "₺299",
+            "fiyatNot": {
+              "tr": "/ kullanıcı / ay",
+              "en": "/ user / month",
+              "ar": "/ مستخدم / شهريًا"
+            },
+            "onerilen": true,
+            "url": "demo-talebi"
+          },
+          {
+            "id": "kurumsal",
+            "ad": {
+              "tr": "Kurumsal",
+              "en": "Enterprise",
+              "ar": "المؤسسات"
+            },
+            "fiyat": {
+              "tr": "Teklif",
+              "en": "Quote",
+              "ar": "عرض"
+            },
+            "fiyatNot": {
+              "tr": "yıllık sözleşme",
+              "en": "annual contract",
+              "ar": "عقد سنوي"
+            },
+            "onerilen": false,
+            "url": "demo-talebi"
+          }
+        ]
+      },
+      "data": [
+        {
+          "ad": {
+            "tr": "Sınırsız pano",
+            "en": "Unlimited boards",
+            "ar": "لوحات غير محدودة"
+          },
+          "degerler": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "ad": {
+            "tr": "Zaman çizelgesi",
+            "en": "Timeline",
+            "ar": "الجدول الزمني"
+          },
+          "degerler": [
+            false,
+            true,
+            true
+          ]
+        },
+        {
+          "ad": {
+            "tr": "Gelişmiş raporlar",
+            "en": "Advanced reports",
+            "ar": "تقارير متقدمة"
+          },
+          "degerler": [
+            false,
+            true,
+            true
+          ]
+        },
+        {
+          "ad": {
+            "tr": "Roller ve yetkiler",
+            "en": "Roles and permissions",
+            "ar": "أدوار وصلاحيات"
+          },
+          "degerler": [
+            false,
+            true,
+            true
+          ]
+        },
+        {
+          "ad": {
+            "tr": "API ve webhook",
+            "en": "API and webhooks",
+            "ar": "API وwebhook"
+          },
+          "degerler": [
+            false,
+            false,
+            true
+          ]
+        },
+        {
+          "ad": {
+            "tr": "Veri İşleme Sözleşmesi",
+            "en": "Data Processing Agreement",
+            "ar": "اتفاقية معالجة البيانات"
+          },
+          "degerler": [
+            {
+              "tr": "Standart",
+              "en": "Standard",
+              "ar": "قياسية"
+            },
+            {
+              "tr": "Standart",
+              "en": "Standard",
+              "ar": "قياسية"
+            },
+            {
+              "tr": "Özel",
+              "en": "Custom",
+              "ar": "مخصصة"
+            }
+          ]
+        },
+        {
+          "ad": {
+            "tr": "Otomatik yenileme bildirimi",
+            "en": "Auto-renewal notice",
+            "ar": "إشعار التجديد التلقائي"
+          },
+          "degerler": [
+            {
+              "tr": "7 gün önce",
+              "en": "7 days before",
+              "ar": "قبل 7 أيام"
+            },
+            {
+              "tr": "7 gün önce",
+              "en": "7 days before",
+              "ar": "قبل 7 أيام"
+            },
+            {
+              "tr": "30 gün önce",
+              "en": "30 days before",
+              "ar": "قبل 30 يومًا"
+            }
+          ]
+        }
+      ],
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing/data"
+      },
+      "id": "wuuh76",
+      "path": "karsilastirma-tablo",
+      "local": "body",
+      "index": 23
+    },
+    {
+      "name": "Tanıtım Modülü",
+      "local": "body",
+      "desing": {
+        "stil": "cerceve-ofset",
+        "name": {
+          "tr": "Düzkanban",
+          "en": "Düzkanban",
+          "ar": "دوزكانبان"
+        },
+        "description": {
+          "tr": "Düzkanban, ekiplerin işini sade bir panoda toplayan kurgusal bir demo yazılım şirketidir. Ürün, fiyat ve veri bilgileri kurgusaldır; gerçek bir kayıt ya da ödeme alınmaz.",
+          "en": "Duzkanban is a fictional demo software company that gathers teams’ work on a plain board. Product, price and data details are fictional; no real sign-up or payment is taken.",
+          "ar": "دوزكانبان شركة برمجيات تجريبية افتراضية تجمع عمل الفرق على لوحة بسيطة. معلومات المنتج والسعر والبيانات افتراضية؛ ولا يُقبل تسجيل أو دفع فعلي."
+        },
+        "name2": {
+          "tr": "Açık fiyat",
+          "en": "Clear pricing",
+          "ar": "تسعير واضح"
+        },
+        "spot2": {
+          "tr": "Fiyatlar ve yenileme koşulları sayfada yazılıdır.",
+          "en": "Prices and renewal terms are written on the page.",
+          "ar": "الأسعار وشروط التجديد مذكورة في الصفحة."
+        },
+        "icon2": "sell",
+        "name3": {
+          "tr": "Veri işleyen",
+          "en": "Data processor",
+          "ar": "معالج البيانات"
+        },
+        "spot3": {
+          "tr": "Veri İşleme Sözleşmesi ve yurt dışı aktarım bilgisi yayımlanır.",
+          "en": "A Data Processing Agreement and cross-border transfer information are published.",
+          "ar": "تُنشر اتفاقية معالجة البيانات ومعلومات النقل إلى الخارج."
+        },
+        "icon3": "policy",
+        "img": "saas-ekip-alani.webp",
+        "bgcolor": "var(--mx-site-surface-2, #ececea)",
+        "fontcolor": "var(--mx-site-text, #1b1b1b)",
+        "margintop": "20",
+        "marginbotton": "20",
+        "title": {
+          "tr": "Hakkımızda",
+          "en": "About us",
+          "ar": "من نحن"
+        }
+      },
+      "category": "module",
+      "description": "Kurumsal tanıtım ve hakkımızda modülü. Firma tanıtımı, vizyon, misyon metinlerini görsel ile birlikte sunar. Ana sayfa şeridi ve temalar için varsayılan cok dilli metinler. İki kolonlu responsive tasarım, W2 animasyon ve icon desteği içerir. Görsel varyant desing.stil (31 Eki 2026): \"\" klasik (beyaz çerçeveli yuvarlak görsel, bugünkü görünüm) · \"yuzen-gorsel\" (dik kart görsel bandın dışına taşar, gölgeli, hafif eğik) · \"cerceve-ofset\" (kare görsel, arkasında kaymış primary renk çerçeve) · \"ikon-liste\" (yatay görsel + vizyon/misyon ikonlu madde listesi; ikon icon2/icon3). Bant zemini/yazısı bgcolor/fontcolor çifti kalır; eklenen renkler yalnız var(--mx-site-*) token.",
+      "version": "1.2.0",
+      "icon": "business",
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing/data"
+      },
+      "id": "tg2by6",
+      "path": "module-1",
+      "data": [],
+      "index": 24
+    },
+    {
+      "name": "Galeri Masonry (Filtre + Lightbox)",
+      "description": "Masonry (sütun) ya da sabit oranlı ızgara galeri: kategori çipleriyle filtre (?cat= URL durumu, aria-pressed), lightbox (klavye, filtrelenmişte yalnız görünenler gezilir), lazy yükleme (width/height ile CLS yok), görselsiz öğede nötr yer tutucu. gap:0 ile kenarsız ızgara, hover başlık. Öğeler data[] içinde {img, thumb?, title{tr,en,ar}, cat, w, h, alt{tr,en,ar}}; kategoriler desing.cats[]. Üç dil + RTL.",
+      "version": "1.0.0",
+      "icon": "photo_library",
+      "category": "galeri",
+      "tags": [
+        "galeri",
+        "masonry",
+        "filtre",
+        "lightbox",
+        "portfolyo",
+        "gallery",
+        "ar"
+      ],
+      "desing": {
+        "max": "1280px",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "textcolor": "var(--mx-site-text, #1b1b1b)",
+        "mutedcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #fff))",
+        "surface": "var(--mx-site-surface, #f6f6f4)",
+        "surface2": "var(--mx-site-surface-2, #ececea)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "gap": "12px",
+        "radius": "0px",
+        "columns": {
+          "d": 3,
+          "t": 3,
+          "m": 2
+        },
+        "ratio": "auto",
+        "captions": "hover",
+        "filter": true,
+        "lightbox": true,
+        "lazy": true,
+        "urlPrefix": "",
+        "title": {
+          "tr": "Ürün görünümleri",
+          "en": "Product views",
+          "ar": "واجهات المنتج"
+        },
+        "description": {
+          "tr": "Soyut ürün ekranları ve çalışma alanı görüntüleri; metin içermez.",
+          "en": "Abstract product screens and workspace images; no text.",
+          "ar": "شاشات منتج تجريدية وصور مساحة العمل؛ بدون نصوص."
+        },
+        "allLabel": {
+          "tr": "Tümü",
+          "en": "All",
+          "ar": "الكل"
+        },
+        "filterLabel": {
+          "tr": "Kategoriye göre filtrele",
+          "en": "Filter by category",
+          "ar": "التصفية حسب الفئة"
+        },
+        "countText": {
+          "zero": {
+            "ar": "لا توجد صور"
+          },
+          "one": {
+            "tr": "{n} fotoğraf",
+            "en": "{n} photo",
+            "ar": "صورة واحدة"
+          },
+          "two": {
+            "ar": "صورتان"
+          },
+          "few": {
+            "ar": "{n} صور"
+          },
+          "many": {
+            "ar": "{n} صورة"
+          },
+          "other": {
+            "tr": "{n} fotoğraf",
+            "en": "{n} photos",
+            "ar": "{n} صورة"
+          }
+        },
+        "emptyText": {
+          "tr": "Henüz gösterilecek görsel yok.",
+          "en": "There are no images to show yet.",
+          "ar": "لا توجد صور لعرضها بعد."
+        },
+        "lightboxLabels": {
+          "dialog": {
+            "tr": "Görsel görüntüleyici",
+            "en": "Image viewer",
+            "ar": "عارض الصور"
+          },
+          "close": {
+            "tr": "Kapat",
+            "en": "Close",
+            "ar": "إغلاق"
+          },
+          "prev": {
+            "tr": "Önceki görsel",
+            "en": "Previous image",
+            "ar": "الصورة السابقة"
+          },
+          "next": {
+            "tr": "Sonraki görsel",
+            "en": "Next image",
+            "ar": "الصورة التالية"
+          },
+          "counter": {
+            "tr": "{i} / {n}",
+            "en": "{i} / {n}",
+            "ar": "{i} من {n}"
+          }
+        },
+        "cats": [
+          {
+            "id": "pano",
+            "name": {
+              "tr": "Ekranlar",
+              "en": "Screens",
+              "ar": "الشاشات"
+            }
+          },
+          {
+            "id": "alan",
+            "name": {
+              "tr": "Çalışma alanı",
+              "en": "Workspace",
+              "ar": "مساحة العمل"
+            }
+          }
+        ]
+      },
+      "data": [
+        {
+          "img": "saas-hero-pano.webp",
+          "cat": "pano",
+          "w": 800,
+          "h": 600,
+          "title": {
+            "tr": "Görev panosu",
+            "en": "Task board",
+            "ar": "لوحة المهام"
+          },
+          "alt": {
+            "tr": "Renkli kartlı soyut görev panosu",
+            "en": "An abstract task board with colourful cards",
+            "ar": "لوحة مهام تجريدية ببطاقات ملونة"
+          }
+        },
+        {
+          "img": "saas-zaman.webp",
+          "cat": "pano",
+          "w": 800,
+          "h": 600,
+          "title": {
+            "tr": "Zaman çizelgesi",
+            "en": "Timeline",
+            "ar": "الجدول الزمني"
+          },
+          "alt": {
+            "tr": "Renkli çubuklu soyut zaman çizelgesi",
+            "en": "An abstract timeline with colourful bars",
+            "ar": "جدول زمني تجريدي بأشرطة ملونة"
+          }
+        },
+        {
+          "img": "saas-rapor.webp",
+          "cat": "pano",
+          "w": 800,
+          "h": 600,
+          "title": {
+            "tr": "Rapor ekranı",
+            "en": "Report screen",
+            "ar": "شاشة التقرير"
+          },
+          "alt": {
+            "tr": "Soyut grafik ve göstergeler",
+            "en": "Abstract charts and indicators",
+            "ar": "مخططات ومؤشرات تجريدية"
+          }
+        },
+        {
+          "img": "saas-ekip-alani.webp",
+          "cat": "alan",
+          "w": 800,
+          "h": 600,
+          "title": {
+            "tr": "Ekip alanı",
+            "en": "Team area",
+            "ar": "منطقة الفريق"
+          },
+          "alt": {
+            "tr": "Boş bir modern çalışma alanı",
+            "en": "An empty modern workspace",
+            "ar": "مساحة عمل حديثة خالية"
+          }
+        },
+        {
+          "img": "saas-dizustu.webp",
+          "cat": "alan",
+          "w": 600,
+          "h": 800,
+          "title": {
+            "tr": "Dizüstü ve not defteri",
+            "en": "Laptop and notebook",
+            "ar": "حاسوب ودفتر"
+          },
+          "alt": {
+            "tr": "Dizüstü ve defter yan yana",
+            "en": "A laptop beside a notebook",
+            "ar": "حاسوب محمول بجانب دفتر"
+          }
+        }
+      ],
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing/data"
+      },
+      "id": "dy9rj6",
+      "path": "galeri-masonry",
+      "local": "body",
+      "index": 25
+    },
+    {
+      "name": "SSS Akordeon 1",
+      "desing": {
+        "max": "900px",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "cardbg": "var(--mx-site-surface, #ffffff)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "titlecolor": "var(--mx-site-text, #1b1b1b)",
+        "textcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "badge": {
+          "tr": "SSS",
+          "en": "FAQ",
+          "ar": "الأسئلة الشائعة"
+        },
+        "title": {
+          "tr": "Sıkça sorulan sorular",
+          "en": "Frequently asked questions",
+          "ar": "الأسئلة الشائعة"
+        },
+        "description": {
+          "tr": "Merak edilenler ve kısa yanıtlar.",
+          "en": "Common questions and short answers.",
+          "ar": "أسئلة متكررة وإجابات موجزة."
+        },
+        "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)"
+      },
+      "data": [
+        {
+          "question": {
+            "tr": "Abonelik otomatik yenilenir mi?",
+            "en": "Does the subscription renew automatically?",
+            "ar": "هل يتجدد الاشتراك تلقائيًا؟"
+          },
+          "answer": {
+            "tr": "Abonelikler seçilen dönem sonunda otomatik yenilenir; yenilemeden en az 7 gün önce e-posta ile bildirim gönderilir ve hesap ayarlarından iptal edilebilir.",
+            "en": "Subscriptions renew automatically at the end of the chosen term; a notice is sent by e-mail at least 7 days before renewal and you can cancel from account settings.",
+            "ar": "تتجدد الاشتراكات تلقائيًا في نهاية المدة المختارة؛ ويُرسَل إشعار بالبريد الإلكتروني قبل التجديد بسبعة أيام على الأقل ويمكن الإلغاء من إعدادات الحساب."
+          }
+        },
+        {
+          "question": {
+            "tr": "Verilerim yurt dışına aktarılır mı?",
+            "en": "Is my data transferred abroad?",
+            "ar": "هل تُنقل بياناتي إلى الخارج؟"
+          },
+          "answer": {
+            "tr": "Bu demoda veri sunucuya gönderilmez. Gerçek hizmette yurt içi veri merkezi kullanılır; yurt dışı aktarım gerekirse KVKK md. 9 çerçevesinde ayrıca duyurulur.",
+            "en": "In this demo no data is sent to a server. A real service uses a domestic data centre; if a transfer abroad is needed it is announced separately under KVKK art. 9.",
+            "ar": "لا تُرسَل بيانات إلى خادم في هذا العرض. وتستخدم الخدمة الفعلية مركز بيانات محليًا؛ وإذا لزم النقل إلى الخارج يُعلَن عنه بشكل منفصل وفق المادة 9 من قانون KVKK."
+          }
+        },
+        {
+          "question": {
+            "tr": "Deneme hesabı var mı?",
+            "en": "Is there a trial account?",
+            "ar": "هل يوجد حساب تجريبي؟"
+          },
+          "answer": {
+            "tr": "Bu demo sitede gerçek hesap açılmaz; demo talebi formu yalnızca tarayıcıda çalışır.",
+            "en": "No real account is created on this demo site; the demo request form works only in the browser.",
+            "ar": "لا يُنشأ حساب فعلي في هذا الموقع التجريبي؛ ويعمل نموذج طلب العرض في المتصفح فقط."
+          }
+        },
+        {
+          "question": {
+            "tr": "Verilerimi dışa aktarabilir miyim?",
+            "en": "Can I export my data?",
+            "ar": "هل يمكنني تصدير بياناتي؟"
+          },
+          "answer": {
+            "tr": "Evet; sözleşme sonunda verileriniz standart dosya biçiminde teslim edilir ve silinir.",
+            "en": "Yes; at the end of the contract your data is handed over in a standard file format and deleted.",
+            "ar": "نعم؛ في نهاية العقد تُسلَّم بياناتك بصيغة ملف قياسية ثم تُحذف."
+          }
+        }
+      ],
+      "category": "faq",
+      "description": "SSS akordeon modülü. Soru-cevap listesini tek seferde bir açık olacak şekilde akordeon düzende gösterir. Çok dilli veri, animasyonlu açılış, mobil uyum ve erişilebilirlik (aria-expanded) desteği içerir.",
+      "version": "1.0.0",
+      "icon": "quiz",
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing/data"
+      },
+      "id": "40jdu5",
+      "path": "faq-1",
+      "local": "body",
+      "index": 26
+    },
+    {
+      "name": "Randevu / Rezervasyon Formu",
+      "description": "Statik randevu ve rezervasyon sihirbazı (30 Eki 2026): hizmet → uzman → tarih → saat → bilgi → onay; masa kipi (kişi sayısı + bölüm) ve gösterim kipi. Sunucusuz: gönderim WhatsApp hazır mesaj, mailto veya .ics dosyası. Kendi takvimi (Pazartesi/Cumartesi hafta başı, kapalı günler, mola, bekleme günü), üç dil (tr/en/ar, RTL), KVKK onayı, demo kipinde tarayıcıda 'randevularım' listesi.",
+      "version": "1.0.0",
+      "icon": "event_available",
+      "category": "randevu",
+      "tags": [
+        "randevu",
+        "rezervasyon",
+        "takvim",
+        "form",
+        "whatsapp",
+        "ics"
+      ],
+      "desing": {
+        "max": "960px",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "textcolor": "var(--mx-site-text, #1b1b1b)",
+        "surface": "var(--mx-site-surface, #f6f6f4)",
+        "surface2": "var(--mx-site-surface-2, #ececea)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "muted": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #fff))",
+        "errcolor": "color-mix(in srgb, #c81e1e 72%, var(--mx-site-text, #1b1b1b))",
+        "mode": "randevu",
+        "submit": "whatsapp",
+        "demo": true,
+        "weekStart": "auto",
+        "leadDays": 1,
+        "maxDays": 45,
+        "maxPartySize": 8,
+        "masaDuration": 90,
+        "requireEmail": false,
+        "phone": "+90 342 000 00 00",
+        "email": "merhaba@duzkanban.example",
+        "location": {
+          "tr": "Teknokent Bina 3 No: 21, Şehitkamil, Gaziantep (kurgusal adres)",
+          "en": "21 Building 3, Technopark, Sehitkamil, Gaziantep (fictional address)",
+          "ar": "المنطقة التقنية، مبنى 3 رقم 21، شهيد كامل، غازي عنتاب (عنوان افتراضي)"
+        },
+        "badge": {
+          "tr": "Demo",
+          "en": "Demo",
+          "ar": "عرض"
+        },
+        "title": {
+          "tr": "Demo görüşmesi planlayın",
+          "en": "Plan a demo call",
+          "ar": "خطط لمكالمة عرض"
+        },
+        "description": {
+          "tr": "Konuyu ve uygun günü seçin; talebiniz bu demo sitede yalnızca tarayıcınızda oluşturulur. Hesap açılmaz.",
+          "en": "Choose a topic and a convenient day; on this demo site your request is created only in your browser. No account is created.",
+          "ar": "اختر الموضوع واليوم المناسب؛ يُنشأ طلبك في متصفحك فقط. لا يُنشأ حساب."
+        },
+        "noscript": {
+          "tr": "Randevu formunu kullanmak için tarayıcınızda JavaScript açık olmalıdır. Bunun yerine bizi arayabilirsiniz.",
+          "en": "JavaScript must be enabled in your browser to use the booking form. You can call us instead.",
+          "ar": "يجب تفعيل JavaScript في المتصفح لاستخدام نموذج الحجز. يمكنك الاتصال بنا بدلًا من ذلك."
+        },
+        "services": [
+          {
+            "id": "s1",
+            "name": {
+              "tr": "Ürün tanıtımı",
+              "en": "Product walkthrough",
+              "ar": "جولة في المنتج"
+            },
+            "duration": 30
+          },
+          {
+            "id": "s2",
+            "name": {
+              "tr": "Fiyat ve paket görüşmesi",
+              "en": "Pricing and plans call",
+              "ar": "مكالمة الأسعار والباقات"
+            },
+            "duration": 30
+          },
+          {
+            "id": "s3",
+            "name": {
+              "tr": "Veri güvenliği görüşmesi",
+              "en": "Data-security call",
+              "ar": "مكالمة أمن البيانات"
+            },
+            "duration": 45
+          }
+        ],
+        "staff": [
+          {
+            "id": "p1",
+            "name": {
+              "tr": "Elif Yıldız",
+              "en": "Elif Yildiz",
+              "ar": "إليف يلدز"
+            },
+            "role": {
+              "tr": "Kıdemli danışman",
+              "en": "Senior advisor",
+              "ar": "مستشارة أولى"
+            },
+            "services": [
+              "s1",
+              "s2",
+              "s3"
+            ]
+          },
+          {
+            "id": "p2",
+            "name": {
+              "tr": "Murat Kaya",
+              "en": "Murat Kaya",
+              "ar": "مراد قايا"
+            },
+            "role": {
+              "tr": "Danışman",
+              "en": "Advisor",
+              "ar": "مستشار"
+            },
+            "services": [
+              "s1",
+              "s2"
+            ]
+          }
+        ],
+        "sections": [
+          {
+            "id": "ic",
+            "name": {
+              "tr": "İç salon",
+              "en": "Indoor",
+              "ar": "الصالة الداخلية"
+            }
+          },
+          {
+            "id": "bahce",
+            "name": {
+              "tr": "Bahçe",
+              "en": "Garden",
+              "ar": "الحديقة"
+            }
+          }
+        ],
+        "hours": {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "09:30",
+          "end": "17:30",
+          "slot": 30,
+          "breaks": [
+            {
+              "start": "12:30",
+              "end": "13:30"
+            }
+          ]
+        },
+        "closed": [
+          "2026-12-31",
+          "2027-01-01"
+        ],
+        "kvkk": {
+          "text": {
+            "tr": "Kişisel verilerimin bu talebin oluşturulması amacıyla işlenmesine ilişkin aydınlatma metnini okudum, anladım.",
+            "en": "I have read and understood the privacy notice on how my personal data is processed to create this request.",
+            "ar": "لقد قرأت إشعار الخصوصية المتعلق بمعالجة بياناتي الشخصية لإنشاء هذا الطلب وفهمته."
+          },
+          "href": "kisiselveriler"
+        },
+        "successText": {
+          "tr": "Talebiniz alındı. Satış ekibimiz sizinle iletişime geçecektir.",
+          "en": "Your request has been received. Our sales team will contact you.",
+          "ar": "تم استلام طلبك، وسيتواصل معك فريق المبيعات."
+        },
+        "ui": {
+          "stepsLabel": {
+            "tr": "Adımlar",
+            "en": "Steps",
+            "ar": "الخطوات"
+          },
+          "stepOf": {
+            "tr": "Adım {n} / {m}",
+            "en": "Step {n} of {m}",
+            "ar": "الخطوة {n} من {m}"
+          },
+          "s_service": {
+            "tr": "Hizmet",
+            "en": "Service",
+            "ar": "الخدمة"
+          },
+          "s_staff": {
+            "tr": "Uzman",
+            "en": "Specialist",
+            "ar": "المختص"
+          },
+          "s_party": {
+            "tr": "Kişi",
+            "en": "Guests",
+            "ar": "الضيوف"
+          },
+          "s_date": {
+            "tr": "Tarih",
+            "en": "Date",
+            "ar": "التاريخ"
+          },
+          "s_time": {
+            "tr": "Saat",
+            "en": "Time",
+            "ar": "الوقت"
+          },
+          "s_info": {
+            "tr": "Bilgiler",
+            "en": "Details",
+            "ar": "البيانات"
+          },
+          "s_confirm": {
+            "tr": "Onay",
+            "en": "Confirm",
+            "ar": "التأكيد"
+          },
+          "back": {
+            "tr": "Geri",
+            "en": "Back",
+            "ar": "رجوع"
+          },
+          "next": {
+            "tr": "Devam",
+            "en": "Continue",
+            "ar": "متابعة"
+          },
+          "reqNote": {
+            "tr": "* ile işaretli alanlar zorunludur.",
+            "en": "Fields marked * are required.",
+            "ar": "الحقول المميزة بعلامة * إلزامية."
+          },
+          "t_service": {
+            "tr": "Hizmet seçin",
+            "en": "Choose a service",
+            "ar": "اختر الخدمة"
+          },
+          "minUnit": {
+            "tr": "{n} dk",
+            "en": "{n} min",
+            "ar": "{n} دقيقة"
+          },
+          "t_staff": {
+            "tr": "Uzman seçin",
+            "en": "Choose a specialist",
+            "ar": "اختر المختص"
+          },
+          "anyStaff": {
+            "tr": "Fark etmez",
+            "en": "No preference",
+            "ar": "لا تفضيل"
+          },
+          "anyStaffHint": {
+            "tr": "Uygun olan uzman atanır.",
+            "en": "The first available specialist is assigned.",
+            "ar": "يُسنَد الموعد إلى أول مختص متاح."
+          },
+          "t_party": {
+            "tr": "Kaç kişisiniz?",
+            "en": "How many guests?",
+            "ar": "كم عدد الضيوف؟"
+          },
+          "partyMinus": {
+            "tr": "Kişi sayısını azalt",
+            "en": "Decrease guests",
+            "ar": "تقليل عدد الضيوف"
+          },
+          "partyPlus": {
+            "tr": "Kişi sayısını artır",
+            "en": "Increase guests",
+            "ar": "زيادة عدد الضيوف"
+          },
+          "partyCount": {
+            "tr": {
+              "one": "{n} kişi",
+              "other": "{n} kişi"
+            },
+            "en": {
+              "one": "{n} guest",
+              "other": "{n} guests"
+            },
+            "ar": {
+              "zero": "{n} ضيف",
+              "one": "ضيف واحد",
+              "two": "ضيفان",
+              "few": "{n} ضيوف",
+              "many": "{n} ضيفًا",
+              "other": "{n} ضيف"
+            }
+          },
+          "groupHint": {
+            "tr": "{n} kişiden büyük gruplar için lütfen bizi arayın.",
+            "en": "For groups larger than {n}, please call us.",
+            "ar": "للمجموعات التي يزيد عددها عن {n}، يُرجى الاتصال بنا."
+          },
+          "t_section": {
+            "tr": "Bölüm tercihi",
+            "en": "Seating preference",
+            "ar": "تفضيل الجلسة"
+          },
+          "anySection": {
+            "tr": "Fark etmez",
+            "en": "No preference",
+            "ar": "لا تفضيل"
+          },
+          "t_date": {
+            "tr": "Tarih seçin",
+            "en": "Choose a date",
+            "ar": "اختر التاريخ"
+          },
+          "prevMonth": {
+            "tr": "Önceki ay",
+            "en": "Previous month",
+            "ar": "الشهر السابق"
+          },
+          "nextMonth": {
+            "tr": "Sonraki ay",
+            "en": "Next month",
+            "ar": "الشهر التالي"
+          },
+          "calHint": {
+            "tr": "Gezinmek için ok tuşlarını, seçmek için Enter tuşunu kullanın. Kapalı günler seçilemez.",
+            "en": "Use the arrow keys to move and Enter to select. Unavailable days cannot be chosen.",
+            "ar": "استخدم مفاتيح الأسهم للتنقل ومفتاح Enter للاختيار. لا يمكن اختيار الأيام غير المتاحة."
+          },
+          "dayUnavailable": {
+            "tr": "uygun değil",
+            "en": "unavailable",
+            "ar": "غير متاح"
+          },
+          "selectedDate": {
+            "tr": "Seçilen tarih: {d}",
+            "en": "Selected date: {d}",
+            "ar": "التاريخ المختار: {d}"
+          },
+          "t_time": {
+            "tr": "Saat seçin",
+            "en": "Choose a time",
+            "ar": "اختر الوقت"
+          },
+          "timesFor": {
+            "tr": "{d} için uygun saatler",
+            "en": "Available times for {d}",
+            "ar": "الأوقات المتاحة ليوم {d}"
+          },
+          "p_morning": {
+            "tr": "Sabah",
+            "en": "Morning",
+            "ar": "الصباح"
+          },
+          "p_afternoon": {
+            "tr": "Öğleden sonra",
+            "en": "Afternoon",
+            "ar": "بعد الظهر"
+          },
+          "p_evening": {
+            "tr": "Akşam",
+            "en": "Evening",
+            "ar": "المساء"
+          },
+          "slotTaken": {
+            "tr": "dolu",
+            "en": "booked",
+            "ar": "محجوز"
+          },
+          "noSlots": {
+            "tr": "Bu tarihte uygun saat kalmadı. Lütfen başka bir gün seçin.",
+            "en": "No times are left on this date. Please choose another day.",
+            "ar": "لا توجد أوقات متاحة في هذا اليوم. يُرجى اختيار يوم آخر."
+          },
+          "t_info": {
+            "tr": "İletişim bilgileriniz",
+            "en": "Your contact details",
+            "ar": "بيانات التواصل"
+          },
+          "fName": {
+            "tr": "Ad soyad",
+            "en": "Full name",
+            "ar": "الاسم الكامل"
+          },
+          "fPhone": {
+            "tr": "Telefon",
+            "en": "Phone",
+            "ar": "رقم الهاتف"
+          },
+          "fEmail": {
+            "tr": "E-posta",
+            "en": "E-mail",
+            "ar": "البريد الإلكتروني"
+          },
+          "fEmailOpt": {
+            "tr": "E-posta (isteğe bağlı)",
+            "en": "E-mail (optional)",
+            "ar": "البريد الإلكتروني (اختياري)"
+          },
+          "fNote": {
+            "tr": "Not (isteğe bağlı)",
+            "en": "Note (optional)",
+            "ar": "ملاحظة (اختياري)"
+          },
+          "eService": {
+            "tr": "Lütfen bir hizmet seçin.",
+            "en": "Please choose a service.",
+            "ar": "يُرجى اختيار خدمة."
+          },
+          "eDate": {
+            "tr": "Lütfen uygun bir tarih seçin.",
+            "en": "Please choose an available date.",
+            "ar": "يُرجى اختيار تاريخ متاح."
+          },
+          "eTime": {
+            "tr": "Lütfen bir saat seçin.",
+            "en": "Please choose a time.",
+            "ar": "يُرجى اختيار وقت."
+          },
+          "eName": {
+            "tr": "Lütfen adınızı ve soyadınızı yazın.",
+            "en": "Please enter your full name.",
+            "ar": "يُرجى كتابة اسمك الكامل."
+          },
+          "ePhone": {
+            "tr": "Geçerli bir telefon numarası yazın.",
+            "en": "Please enter a valid phone number.",
+            "ar": "يُرجى كتابة رقم هاتف صحيح."
+          },
+          "eEmail": {
+            "tr": "Geçerli bir e-posta adresi yazın.",
+            "en": "Please enter a valid e-mail address.",
+            "ar": "يُرجى كتابة بريد إلكتروني صحيح."
+          },
+          "eKvkk": {
+            "tr": "Devam etmek için aydınlatma metnini onaylamanız gerekir.",
+            "en": "You need to accept the privacy notice to continue.",
+            "ar": "يجب الموافقة على إشعار الخصوصية للمتابعة."
+          },
+          "t_confirm": {
+            "tr": "Özet ve onay",
+            "en": "Review and confirm",
+            "ar": "المراجعة والتأكيد"
+          },
+          "sum_service": {
+            "tr": "Hizmet",
+            "en": "Service",
+            "ar": "الخدمة"
+          },
+          "sum_staff": {
+            "tr": "Uzman",
+            "en": "Specialist",
+            "ar": "المختص"
+          },
+          "sum_party": {
+            "tr": "Kişi sayısı",
+            "en": "Guests",
+            "ar": "عدد الضيوف"
+          },
+          "sum_section": {
+            "tr": "Bölüm",
+            "en": "Seating",
+            "ar": "الجلسة"
+          },
+          "sum_date": {
+            "tr": "Tarih",
+            "en": "Date",
+            "ar": "التاريخ"
+          },
+          "sum_time": {
+            "tr": "Saat",
+            "en": "Time",
+            "ar": "الوقت"
+          },
+          "sum_name": {
+            "tr": "Ad soyad",
+            "en": "Name",
+            "ar": "الاسم"
+          },
+          "sum_phone": {
+            "tr": "Telefon",
+            "en": "Phone",
+            "ar": "الهاتف"
+          },
+          "sum_email": {
+            "tr": "E-posta",
+            "en": "E-mail",
+            "ar": "البريد الإلكتروني"
+          },
+          "sum_note": {
+            "tr": "Not",
+            "en": "Note",
+            "ar": "ملاحظة"
+          },
+          "kvkkLink": {
+            "tr": "Aydınlatma metni",
+            "en": "Privacy notice",
+            "ar": "إشعار الخصوصية"
+          },
+          "submit_whatsapp": {
+            "tr": "WhatsApp ile gönder",
+            "en": "Send via WhatsApp",
+            "ar": "إرسال عبر واتساب"
+          },
+          "submit_mailto": {
+            "tr": "E-posta ile gönder",
+            "en": "Send by e-mail",
+            "ar": "إرسال بالبريد الإلكتروني"
+          },
+          "submit_ics": {
+            "tr": "Takvim dosyasını indir",
+            "en": "Download calendar file",
+            "ar": "تنزيل ملف التقويم"
+          },
+          "showcaseNote": {
+            "tr": "Bu bölüm bir gösterimdir: girdiğiniz bilgiler hiçbir yere gönderilmez. Gerçek talep için bizi arayabilirsiniz.",
+            "en": "This is a showcase: nothing you enter is sent anywhere. To make a real request, please call us.",
+            "ar": "هذا القسم للعرض فقط: لا تُرسَل أي بيانات تدخلها. لتقديم طلب فعلي يُرجى الاتصال بنا."
+          },
+          "callUs": {
+            "tr": "Bizi arayın",
+            "en": "Call us",
+            "ar": "اتصل بنا"
+          },
+          "restart": {
+            "tr": "Başa dön",
+            "en": "Start over",
+            "ar": "العودة إلى البداية"
+          },
+          "doneTitle_randevu": {
+            "tr": "Randevu talebiniz hazır",
+            "en": "Your appointment request is ready",
+            "ar": "طلب موعدك جاهز"
+          },
+          "doneTitle_masa": {
+            "tr": "Rezervasyon talebiniz hazır",
+            "en": "Your reservation request is ready",
+            "ar": "طلب حجزك جاهز"
+          },
+          "doneHint_whatsapp": {
+            "tr": "Mesaj WhatsApp'ta hazır olarak açıldı. Talebin bize ulaşması için mesajı göndermeyi unutmayın.",
+            "en": "The message opened in WhatsApp, ready to send. Remember to send it so your request reaches us.",
+            "ar": "فُتحت الرسالة جاهزة في واتساب. لا تنسَ إرسالها كي يصلنا طلبك."
+          },
+          "doneHint_mailto": {
+            "tr": "E-posta uygulamanızda hazır bir taslak açıldı. Göndermeyi unutmayın.",
+            "en": "A draft e-mail opened in your mail app. Remember to send it.",
+            "ar": "فُتحت مسودة رسالة في تطبيق البريد. لا تنسَ إرسالها."
+          },
+          "doneHint_ics": {
+            "tr": "Takvim dosyası indirildi. Kaydı takvim uygulamanıza ekleyebilirsiniz.",
+            "en": "The calendar file was downloaded. You can add the booking to your calendar app.",
+            "ar": "تم تنزيل ملف التقويم. يمكنك إضافة الحجز إلى تطبيق التقويم."
+          },
+          "reopen": {
+            "tr": "Mesajı yeniden aç",
+            "en": "Open the message again",
+            "ar": "فتح الرسالة مرة أخرى"
+          },
+          "reopen_ics": {
+            "tr": "Dosyayı yeniden indir",
+            "en": "Download again",
+            "ar": "إعادة التنزيل"
+          },
+          "addCal": {
+            "tr": "Takvime ekle",
+            "en": "Add to calendar",
+            "ar": "إضافة إلى التقويم"
+          },
+          "newBooking_randevu": {
+            "tr": "Yeni randevu",
+            "en": "New appointment",
+            "ar": "موعد جديد"
+          },
+          "newBooking_masa": {
+            "tr": "Yeni rezervasyon",
+            "en": "New reservation",
+            "ar": "حجز جديد"
+          },
+          "demoNote": {
+            "tr": "Demo: bilgileriniz yalnızca bu tarayıcıda saklanır, hiçbir sunucuya gönderilmez.",
+            "en": "Demo: your details stay in this browser only and are never sent to a server.",
+            "ar": "عرض تجريبي: تبقى بياناتك في هذا المتصفح فقط ولا تُرسَل إلى أي خادم."
+          },
+          "myTitle_randevu": {
+            "tr": "Randevularım",
+            "en": "My appointments",
+            "ar": "مواعيدي"
+          },
+          "myTitle_masa": {
+            "tr": "Rezervasyonlarım",
+            "en": "My reservations",
+            "ar": "حجوزاتي"
+          },
+          "cancel": {
+            "tr": "İptal et",
+            "en": "Cancel",
+            "ar": "إلغاء"
+          },
+          "cancelAria": {
+            "tr": "{d} saat {t} kaydını iptal et",
+            "en": "Cancel the booking on {d} at {t}",
+            "ar": "إلغاء الحجز بتاريخ {d} الساعة {t}"
+          },
+          "cancelled": {
+            "tr": "Kayıt iptal edildi.",
+            "en": "Booking cancelled.",
+            "ar": "تم إلغاء الحجز."
+          },
+          "svcFallback_randevu": {
+            "tr": "Randevu",
+            "en": "Appointment",
+            "ar": "موعد"
+          },
+          "msg_randevu_head": {
+            "tr": "Merhaba, {name} adına {date} saat {time} için {service} randevusu almak istiyorum.",
+            "en": "Hello, I would like to book {service} on {date} at {time} under the name {name}.",
+            "ar": "مرحبًا، أود حجز موعد ({service}) بتاريخ {date} الساعة {time} باسم {name}."
+          },
+          "msg_randevu_head_nosvc": {
+            "tr": "Merhaba, {name} adına {date} saat {time} için randevu almak istiyorum.",
+            "en": "Hello, I would like to book an appointment on {date} at {time} under the name {name}.",
+            "ar": "مرحبًا، أود حجز موعد بتاريخ {date} الساعة {time} باسم {name}."
+          },
+          "msg_masa_head": {
+            "tr": "Merhaba, {name} adına {date} saat {time} için {party} masa rezervasyonu yapmak istiyorum.",
+            "en": "Hello, I would like to reserve a table for {party} on {date} at {time} under the name {name}.",
+            "ar": "مرحبًا، أود حجز طاولة لـ {party} بتاريخ {date} الساعة {time} باسم {name}."
+          },
+          "msg_staff": {
+            "tr": "Tercih edilen uzman: {staff}",
+            "en": "Preferred specialist: {staff}",
+            "ar": "المختص المفضل: {staff}"
+          },
+          "msg_section": {
+            "tr": "Bölüm: {section}",
+            "en": "Seating: {section}",
+            "ar": "الجلسة: {section}"
+          },
+          "msg_phone": {
+            "tr": "Telefon: {phone}",
+            "en": "Phone: {phone}",
+            "ar": "الهاتف: {phone}"
+          },
+          "msg_email": {
+            "tr": "E-posta: {email}",
+            "en": "E-mail: {email}",
+            "ar": "البريد الإلكتروني: {email}"
+          },
+          "msg_note": {
+            "tr": "Not: {note}",
+            "en": "Note: {note}",
+            "ar": "ملاحظة: {note}"
+          },
+          "mailSubject_randevu": {
+            "tr": "Randevu talebi – {name}",
+            "en": "Appointment request – {name}",
+            "ar": "طلب موعد – {name}"
+          },
+          "mailSubject_masa": {
+            "tr": "Rezervasyon talebi – {name}",
+            "en": "Reservation request – {name}",
+            "ar": "طلب حجز – {name}"
+          },
+          "icsSummary_randevu": {
+            "tr": "Randevu: {service}",
+            "en": "Appointment: {service}",
+            "ar": "موعد: {service}"
+          },
+          "icsSummary_masa": {
+            "tr": "Masa rezervasyonu – {party}",
+            "en": "Table reservation – {party}",
+            "ar": "حجز طاولة – {party}"
+          }
+        }
+      },
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing/data"
+      },
+      "id": "wxfiwe",
+      "path": "randevu-formu",
+      "local": "body",
+      "data": [],
+      "index": 27
+    },
+    {
+      "name": "Page Desing 5",
+      "desing": {
+        "stil": "yatay-kart",
+        "height": "200",
+        "opacity": "0.5",
+        "font-size": "32",
+        "backgroundcolor": "#000",
+        "menu-active": "var(--mx-site-primary, #2563eb)",
+        "activetext": "var(--mx-site-primary-contrast, #ffffff)",
+        "textcolor": "#fff",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "border_radius": "0px",
+        "card_shadow": "none",
+        "color": "var(--mx-site-text, #1b1b1b)",
+        "colortitle": "var(--mx-site-text, #1b1b1b)",
+        "coloractive": "var(--mx-site-primary, #2563eb)",
+        "ui": {
+          "tr": {
+            "home": "Anasayfa",
+            "products": "Sayfalar",
+            "dimensions": "Ölçüler",
+            "dimNote": "Standart üretim referansıdır; proje bazında özelleştirilebilir.",
+            "quote": "İletişim",
+            "whatsapp": "WhatsApp",
+            "prev": "Önceki",
+            "next": "Sonraki"
+          },
+          "en": {
+            "home": "Home",
+            "products": "Pages",
+            "dimensions": "Dimensions",
+            "dimNote": "Standard production reference; customizable per project.",
+            "quote": "Contact",
+            "whatsapp": "WhatsApp",
+            "prev": "Previous",
+            "next": "Next"
+          },
+          "ar": {
+            "home": "الرئيسية",
+            "products": "الصفحات",
+            "dimensions": "الأبعاد",
+            "dimNote": "مرجع إنتاج قياسي؛ قابل للتخصيص حسب المشروع.",
+            "quote": "اتصل بنا",
+            "whatsapp": "واتساب",
+            "prev": "السابق",
+            "next": "التالي"
+          }
+        },
+        "noTitle": {
+          "tr": "Başlık Yok",
+          "en": "No title",
+          "ar": "بدون عنوان"
+        },
+        "productNavAria": {
+          "tr": "Ürün navigasyonu",
+          "en": "Product navigation",
+          "ar": "تنقل المنتج"
+        }
+      },
+      "category": "page",
+      "description": "Sayfa basligi, yan menu ve icerik alani. Urun detayinda breadcrumb, olcu kartlari, teklif/WhatsApp CTA, onceki/sonraki urun navigasyonu. Kategori menusu ve responsive slide-in menu. Görsel varyant desing.stil (31 Eki 2026, yan menü bağlantıları): \"\" klasik (kutulu liste, bugünkü görünüm) · \"ikon-ustte-yuvarlak\" (ortalı karo, üstte daire ikon) · \"yatay-kart\" (ikon solda/RTL sağda, metin yanında, ayrı kartlar) · \"kenar-cizgili\" (kutu yok, başta ince çizgi; hover/aktifte primary çizgi ve içe kayma). Kart zemini bgcolor (31 Eki) korunur; eklenen renkler var(--mx-site-primary) türevi.",
+      "version": "1.4.0",
+      "icon": "web",
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing/data"
+      },
+      "id": "srxigs",
+      "path": "page-desing-5",
+      "local": "body",
+      "data": [],
+      "index": 28
+    },
+    {
+      "name": {
+        "tr": "İletişim 7 — Bölünmüş panel",
+        "en": "Contact 7 — Split panel",
+        "ar": "اتصال 7 — لوحة مقسّمة"
+      },
+      "description": {
+        "tr": "Bölünmüş iletişim: koyu bilgi paneli (adres · telefon · e-posta · saat · sosyal · harita bağlantısı) + form (ad, e-posta, telefon, konu, mesaj, zorunlu KVKK onayı). Gönderim mailto: ya da WhatsApp hazır mesaj (desing.gonderim). Üç görsel varyant (desing.stil): bolunmus · kart-ustte · harita-arka (iframe arka plan, yüzen form). Üç dil, RTL, koyu mod token'larla.",
+        "en": "Split contact section: dark info panel (address · phone · e-mail · hours · social · map link) + form (name, e-mail, phone, subject, message, required privacy consent). Submission via mailto: or WhatsApp prefilled message (desing.gonderim). Three visual variants (desing.stil): bolunmus · kart-ustte · harita-arka (iframe background, floating form). Three languages, RTL, dark mode via tokens.",
+        "ar": "قسم اتصال مقسّم: لوحة معلومات داكنة (العنوان · الهاتف · البريد · ساعات العمل · التواصل الاجتماعي · رابط الخريطة) + نموذج (الاسم، البريد، الهاتف، الموضوع، الرسالة، موافقة خصوصية إلزامية). الإرسال عبر mailto: أو رسالة واتساب جاهزة. ثلاثة أنماط مرئية، ثلاث لغات، RTL، وضع داكن."
+      },
+      "version": "1.0.0",
+      "icon": "contact_mail",
+      "category": "contact",
+      "tags": [
+        "iletisim",
+        "contact",
+        "form",
+        "whatsapp",
+        "mailto",
+        "kvkk",
+        "ar"
+      ],
+      "desing": {
+        "max": "1200px",
+        "stil": "kart-ustte",
+        "gonderim": "mailto",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "textcolor": "var(--mx-site-text, #1b1b1b)",
+        "mutedcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
+        "surface": "var(--mx-site-surface, #f6f6f4)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "panelbg": "color-mix(in srgb, #0f172a 82%, var(--mx-site-primary, #2563eb))",
+        "paneltext": "#f1f5f9",
+        "panelmuted": "color-mix(in srgb, #f1f5f9 74%, transparent)",
+        "errcolor": "var(--mx-color-danger, #b42318)",
+        "radius": "2px",
+        "title": {
+          "tr": "Bize Ulaşın",
+          "en": "Get in Touch",
+          "ar": "تواصل معنا"
+        },
+        "description": {
+          "tr": "Sorularınız, teklif talepleriniz ve iş birlikleri için formu doldurun; en kısa sürede dönüş yapalım.",
+          "en": "Fill in the form for questions, quote requests and partnerships; we will get back to you shortly.",
+          "ar": "املأ النموذج لأسئلتك وطلبات عروض الأسعار والشراكات؛ سنعود إليك في أقرب وقت."
+        },
+        "panelTitle": {
+          "tr": "İletişim Bilgileri",
+          "en": "Contact Details",
+          "ar": "بيانات الاتصال"
+        },
+        "panelText": {
+          "tr": "Ofisimize uğrayın, arayın ya da yazın — size yardımcı olmaktan mutluluk duyarız.",
+          "en": "Drop by our office, call or write — we are happy to help.",
+          "ar": "تفضّل بزيارة مكتبنا أو اتصل بنا أو اكتب لنا — يسعدنا مساعدتك."
+        },
+        "address": {
+          "tr": "Teknokent Bina 3 No: 21, Şehitkamil, Gaziantep (kurgusal adres)",
+          "en": "21 Building 3, Technopark, Sehitkamil, Gaziantep (fictional address)",
+          "ar": "المنطقة التقنية، مبنى 3 رقم 21، شهيد كامل، غازي عنتاب (عنوان افتراضي)"
+        },
+        "phone": "+90 342 000 00 00",
+        "whatsapp": "",
+        "email": "merhaba@duzkanban.example",
+        "hours": {
+          "tr": "Destek hafta içi 09:00 – 18:00 · Yanıt süresi 4 iş saati",
+          "en": "Support weekdays 09:00 – 18:00 · Reply within 4 business hours",
+          "ar": "الدعم أيام الأسبوع 09:00 – 18:00 · الرد خلال 4 ساعات عمل"
+        },
+        "mapUrl": "",
+        "mapEmbed": "",
+        "addressTitle": {
+          "tr": "Adres",
+          "en": "Address",
+          "ar": "العنوان"
+        },
+        "phoneTitle": {
+          "tr": "Telefon",
+          "en": "Phone",
+          "ar": "الهاتف"
+        },
+        "emailTitle": {
+          "tr": "E-posta",
+          "en": "E-mail",
+          "ar": "البريد الإلكتروني"
+        },
+        "hoursTitle": {
+          "tr": "Çalışma Saatleri",
+          "en": "Working Hours",
+          "ar": "ساعات العمل"
+        },
+        "mapLink": {
+          "tr": "Haritada gör",
+          "en": "View on map",
+          "ar": "عرض على الخريطة"
+        },
+        "mapTitle": {
+          "tr": "Konum haritası",
+          "en": "Location map",
+          "ar": "خريطة الموقع"
+        },
+        "socialTitle": {
+          "tr": "Bizi takip edin",
+          "en": "Follow us",
+          "ar": "تابعنا"
+        },
+        "social": [
+          {
+            "ad": "Instagram",
+            "url": "https://instagram.com/",
+            "icon": "photo_camera"
+          },
+          {
+            "ad": "LinkedIn",
+            "url": "https://linkedin.com/",
+            "icon": "work"
+          },
+          {
+            "ad": "YouTube",
+            "url": "https://youtube.com/",
+            "icon": "play_circle"
+          }
+        ],
+        "formTitle": {
+          "tr": "Mesaj Gönderin",
+          "en": "Send a Message",
+          "ar": "أرسل رسالة"
+        },
+        "nameLabel": {
+          "tr": "Ad Soyad",
+          "en": "Full name",
+          "ar": "الاسم الكامل"
+        },
+        "emailLabel": {
+          "tr": "E-posta",
+          "en": "E-mail",
+          "ar": "البريد الإلكتروني"
+        },
+        "phoneLabel": {
+          "tr": "Telefon",
+          "en": "Phone",
+          "ar": "الهاتف"
+        },
+        "subjectLabel": {
+          "tr": "Konu",
+          "en": "Subject",
+          "ar": "الموضوع"
+        },
+        "subjectPlaceholder": {
+          "tr": "Konu seçin",
+          "en": "Choose a subject",
+          "ar": "اختر الموضوع"
+        },
+        "subjects": [
+          {
+            "id": "teklif",
+            "name": {
+              "tr": "Teklif talebi",
+              "en": "Quote request",
+              "ar": "طلب عرض سعر"
+            }
+          },
+          {
+            "id": "bilgi",
+            "name": {
+              "tr": "Bilgi almak istiyorum",
+              "en": "I would like information",
+              "ar": "أرغب في الحصول على معلومات"
+            }
+          },
+          {
+            "id": "destek",
+            "name": {
+              "tr": "Destek",
+              "en": "Support",
+              "ar": "الدعم"
+            }
+          },
+          {
+            "id": "diger",
+            "name": {
+              "tr": "Diğer",
+              "en": "Other",
+              "ar": "أخرى"
+            }
+          }
+        ],
+        "messageLabel": {
+          "tr": "Mesajınız",
+          "en": "Your message",
+          "ar": "رسالتك"
+        },
+        "kvkkText": {
+          "tr": "Kişisel verilerimin iletişim amacıyla işlenmesine ilişkin aydınlatma metnini okudum, onaylıyorum.",
+          "en": "I have read and accept the privacy notice on processing my personal data for contact purposes.",
+          "ar": "قرأتُ إشعار الخصوصية بشأن معالجة بياناتي الشخصية لأغراض التواصل وأوافق عليه."
+        },
+        "kvkkLinkText": {
+          "tr": "Aydınlatma metni",
+          "en": "Privacy notice",
+          "ar": "إشعار الخصوصية"
+        },
+        "kvkkHref": "kisiselveriler",
+        "submitText": {
+          "tr": "Gönder",
+          "en": "Send",
+          "ar": "إرسال"
+        },
+        "submitWhatsappText": {
+          "tr": "WhatsApp ile gönder",
+          "en": "Send via WhatsApp",
+          "ar": "إرسال عبر واتساب"
+        },
+        "mailSubject": {
+          "tr": "Web sitesi iletişim formu",
+          "en": "Website contact form",
+          "ar": "نموذج الاتصال بالموقع"
+        },
+        "optionalText": {
+          "tr": "isteğe bağlı",
+          "en": "optional",
+          "ar": "اختياري"
+        },
+        "errRequired": {
+          "tr": "Bu alan zorunludur.",
+          "en": "This field is required.",
+          "ar": "هذا الحقل إلزامي."
+        },
+        "errEmail": {
+          "tr": "Geçerli bir e-posta adresi girin.",
+          "en": "Enter a valid e-mail address.",
+          "ar": "أدخل بريدًا إلكترونيًا صالحًا."
+        },
+        "errPhone": {
+          "tr": "Geçerli bir telefon numarası girin.",
+          "en": "Enter a valid phone number.",
+          "ar": "أدخل رقم هاتف صالحًا."
+        },
+        "errKvkk": {
+          "tr": "Devam etmek için onay kutusunu işaretleyin.",
+          "en": "Tick the consent box to continue.",
+          "ar": "حدّد خانة الموافقة للمتابعة."
+        },
+        "errSummary": {
+          "tr": "Lütfen işaretli alanları düzeltin.",
+          "en": "Please fix the highlighted fields.",
+          "ar": "يرجى تصحيح الحقول المحددة."
+        },
+        "okText": {
+          "tr": "E-posta uygulamanız açılıyor; mesajı oradan gönderebilirsiniz.",
+          "en": "Your e-mail app is opening; you can send the message from there.",
+          "ar": "يتم فتح تطبيق البريد الإلكتروني؛ يمكنك إرسال الرسالة من هناك."
+        },
+        "okWhatsappText": {
+          "tr": "WhatsApp açılıyor; hazır mesajı gönderebilirsiniz.",
+          "en": "WhatsApp is opening; you can send the prepared message.",
+          "ar": "يتم فتح واتساب؛ يمكنك إرسال الرسالة الجاهزة."
+        },
+        "waIntro": {
+          "tr": "Merhaba, web sitenizden yazıyorum.",
+          "en": "Hello, I am writing from your website.",
+          "ar": "مرحبًا، أكتب إليكم من موقعكم الإلكتروني."
+        }
+      },
+      "data": [],
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing/data"
+      },
+      "id": "59xyor",
+      "path": "contact-7",
+      "local": "body",
+      "index": 29
+    },
+    {
+      "name": "Maps",
+      "desing": {
+        "stil": "yan-bilgi",
+        "height": "200",
+        "opacity": "0.5",
+        "backgroundcolor": "#ffffff",
+        "color": "#1e3046",
+        "img": "map.png",
+        "externalUrl": "",
+        "address": {
+          "tr": "Teknokent Bina 3 No: 21, Şehitkamil, Gaziantep (kurgusal adres)",
+          "en": "21 Building 3, Technopark, Sehitkamil, Gaziantep (fictional address)",
+          "ar": "المنطقة التقنية، مبنى 3 رقم 21، شهيد كامل، غازي عنتاب (عنوان افتراضي)"
+        },
+        "phone": "+90 342 000 00 00",
+        "email": "merhaba@duzkanban.example",
+        "badgeText": {
+          "tr": "Konumumuz",
+          "en": "Our Location",
+          "ar": "موقعنا"
+        },
+        "infoTitle": {
+          "tr": "Bize Ulaşın",
+          "en": "Contact Us",
+          "ar": "اتصل بنا"
+        },
+        "directions": {
+          "tr": "Yol tarifi al",
+          "en": "Get directions",
+          "ar": "احصل على الاتجاهات"
+        }
+      },
+      "category": "map",
+      "description": "Google Maps konum gösterim modülü. Firmanın fiziksel konumunu interaktif harita ile sergiler. 20 farklı projede kullanılır: kurumsal şirketler, restoranlar, sağlık kuruluşları, üretim firmaları ve hizmet sektöründe. Yol tarifi ve harita üzerinde zoom özellikleri vardır. Görsel varyant desing.stil (31 Eki 2026): \"\" klasik (dalgalı kenar, tam genişlik, bugünkü görünüm) · \"cerceveli\" (yuvarlak köşe + gölge + yüzey çerçeve, üstte adres rozeti: address ya da badgeText) · \"yan-bilgi\" (harita 2/3, yanda bilgi kartı: infoTitle, address/phone/email — boşsa setting'den — ve directions düğmesi). Kök eleman <a> olduğundan kartta ikinci bağlantı yok. Renkler var(--mx-site-*) token; backgroundcolor #ffffff kuralı değişmedi.",
+      "version": "1.1.0",
+      "icon": "map",
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing/data"
+      },
+      "id": "wpe70x",
+      "path": "map",
+      "local": "body",
+      "data": [],
+      "index": 30
+    },
+    {
+      "name": "Footer 9 — Kurumsal",
+      "desing": {
+        "showlang": true,
+        "maxpages": 8,
+        "bgcolor": "var(--mx-site-surface-2, #1f2937)",
+        "color": "var(--mx-site-text, #f3f4f6)",
+        "mutedcolor": "color-mix(in srgb, var(--mx-site-text, #f3f4f6) 72%, transparent)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #f3f4f6) 18%, transparent)",
+        "logo_maxh": "56px",
+        "logo_plate": false,
+        "about": {
+          "tr": "Düzkanban: ekipler için proje ve görev yönetimi yazılımı; özellikler, fiyatlar, veri güvenliği ve demo talebi. (Demo site — gerçek kayıt yoktur)",
+          "en": "Düzkanban: project and task management software for teams; features, pricing, data security and demo requests. (Demo site — no real sign-up)",
+          "ar": "دوزكانبان: برنامج إدارة المشاريع والمهام للفرق مع الميزات والأسعار وأمن البيانات وطلب عرض تجريبي. (موقع تجريبي — لا يوجد تسجيل فعلي)"
+        },
+        "title_pages": {
+          "tr": "Sayfalar",
+          "en": "Pages",
+          "ar": "الصفحات"
+        },
+        "title_contact": {
+          "tr": "İletişim",
+          "en": "Contact",
+          "ar": "اتصل بنا"
+        },
+        "title_social": {
+          "tr": "Bizi Takip Edin",
+          "en": "Follow Us",
+          "ar": "تابعنا"
+        },
+        "address": {
+          "tr": "Teknokent Bina 3 No: 21, Şehitkamil, Gaziantep (kurgusal adres)",
+          "en": "21 Building 3, Technopark, Sehitkamil, Gaziantep (fictional address)",
+          "ar": "المنطقة التقنية، مبنى 3 رقم 21، شهيد كامل، غازي عنتاب (عنوان افتراضي)"
+        },
+        "phone": "+90 342 000 00 00",
+        "email": "merhaba@duzkanban.example",
+        "social": [],
+        "legal": [
+          {
+            "text": {
+              "tr": "Gizlilik Politikası",
+              "en": "Privacy Policy",
+              "ar": "سياسة الخصوصية"
+            },
+            "name": {
+              "tr": "Gizlilik Politikası",
+              "en": "Privacy Policy",
+              "ar": "سياسة الخصوصية"
+            },
+            "href": "gizlilikpolitikasi"
+          },
+          {
+            "text": {
+              "tr": "Kişisel Veriler",
+              "en": "Personal Data",
+              "ar": "البيانات الشخصية"
+            },
+            "name": {
+              "tr": "Kişisel Veriler",
+              "en": "Personal Data",
+              "ar": "البيانات الشخصية"
+            },
+            "href": "kisiselveriler"
+          },
+          {
+            "text": {
+              "tr": "Kullanıcı Hakları",
+              "en": "User Rights",
+              "ar": "حقوق المستخدم"
+            },
+            "name": {
+              "tr": "Kullanıcı Hakları",
+              "en": "User Rights",
+              "ar": "حقوق المستخدم"
+            },
+            "href": "kullanicahaklari"
+          },
+          {
+            "text": {
+              "tr": "Yasal Uyarı",
+              "en": "Legal Notice",
+              "ar": "إشعار قانوني"
+            },
+            "name": {
+              "tr": "Yasal Uyarı",
+              "en": "Legal Notice",
+              "ar": "إشعار قانوني"
+            },
+            "href": "yasaluyari"
+          }
+        ],
+        "rightsText": {
+          "tr": "Tüm hakları saklıdır.",
+          "en": "All rights reserved.",
+          "ar": "جميع الحقوق محفوظة."
+        }
+      },
+      "category": "footer",
+      "data": [],
+      "description": "Kurumsal alt bilgi (footer): 4 sütun — marka (logo + kısa metin), sayfalar, iletişim (address/phone/email; boşsa setting.phone/email, hiçbiri yoksa sütun gizli), sosyal (social: [{ad,url}]; boşsa gizli). Alt şerit: telif (yıl otomatik), yasal bağlantılar (legal: [{text,href}], dil önekli), dil seçici. Renkler yalnız desing anahtarı + var(--mx-site-*, fallback): token'sız sitede fallback, colorScheme:auto sitede koyu mod uyumlu. logo_maxh / logo_plate footer-3 ile aynı.",
+      "version": "1.0.0",
+      "icon": "footer",
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing/data"
+      },
+      "id": "945ozw",
+      "path": "footer-9",
+      "local": "footer",
+      "index": 31
+    },
+    {
+      "name": "Fiyatlandırma 1",
+      "desing": {
+        "max": "1200px",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "cardbg": "var(--mx-site-surface, #ffffff)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "titlecolor": "var(--mx-site-text, #1b1b1b)",
+        "textcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentText": "#ffffff",
+        "badge": {
+          "tr": "Fiyatlar",
+          "en": "Pricing",
+          "ar": "الأسعار"
+        },
+        "title": {
+          "tr": "Ekibinize uygun paket",
+          "en": "A plan for your team",
+          "ar": "باقة تناسب فريقك"
+        },
+        "description": {
+          "tr": "Abonelikler seçilen dönem sonunda otomatik yenilenir; yenilemeden en az 7 gün önce e-posta ile bildirim gönderilir ve hesap ayarlarından iptal edilebilir.",
+          "en": "Subscriptions renew automatically at the end of the chosen term; a notice is sent by e-mail at least 7 days before renewal and you can cancel from account settings.",
+          "ar": "تتجدد الاشتراكات تلقائيًا في نهاية المدة المختارة؛ ويُرسَل إشعار بالبريد الإلكتروني قبل التجديد بسبعة أيام على الأقل ويمكن الإلغاء من إعدادات الحساب."
+        },
+        "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)"
+      },
+      "data": [
+        {
+          "plan": {
+            "tr": "Başlangıç",
+            "en": "Starter",
+            "ar": "البداية"
+          },
+          "price": "₺149",
+          "period": {
+            "tr": "/ kullanıcı / ay",
+            "en": "/ user / month",
+            "ar": "/ مستخدم / شهريًا"
+          },
+          "note": {
+            "tr": "5 kişiye kadar ekipler",
+            "en": "Teams of up to 5",
+            "ar": "فرق حتى 5 أشخاص"
+          },
+          "features": {
+            "tr": "Sınırsız pano|Temel raporlar|Takvim bağlantısı|E-posta desteği",
+            "en": "Unlimited boards|Basic reports|Calendar connection|E-mail support",
+            "ar": "لوحات غير محدودة|تقارير أساسية|ربط التقويم|دعم بريدي"
+          },
+          "ctaText": {
+            "tr": "Demo talep et",
+            "en": "Request a demo",
+            "ar": "اطلب عرضًا تجريبيًا"
+          },
+          "ctaUrl": "../demo-talebi/",
+          "featured": false
+        },
+        {
+          "plan": {
+            "tr": "Ekip",
+            "en": "Team",
+            "ar": "الفريق"
+          },
+          "price": "₺299",
+          "period": {
+            "tr": "/ kullanıcı / ay",
+            "en": "/ user / month",
+            "ar": "/ مستخدم / شهريًا"
+          },
+          "note": {
+            "tr": "En çok tercih edilen",
+            "en": "Most popular",
+            "ar": "الأكثر طلبًا"
+          },
+          "features": {
+            "tr": "Zaman çizelgesi|Gelişmiş raporlar|Roller ve yetkiler|Öncelikli destek",
+            "en": "Timeline|Advanced reports|Roles and permissions|Priority support",
+            "ar": "جدول زمني|تقارير متقدمة|أدوار وصلاحيات|دعم ذو أولوية"
+          },
+          "ctaText": {
+            "tr": "Demo talep et",
+            "en": "Request a demo",
+            "ar": "اطلب عرضًا تجريبيًا"
+          },
+          "ctaUrl": "../demo-talebi/",
+          "featured": true,
+          "flag": {
+            "tr": "Önerilen",
+            "en": "Recommended",
+            "ar": "موصى بها"
+          }
+        },
+        {
+          "plan": {
+            "tr": "Kurumsal",
+            "en": "Enterprise",
+            "ar": "المؤسسات"
+          },
+          "price": {
+            "tr": "Teklif",
+            "en": "Quote",
+            "ar": "عرض"
+          },
+          "period": {
+            "tr": "/ kullanıcı / ay",
+            "en": "/ user / month",
+            "ar": "/ مستخدم / شهريًا"
+          },
+          "note": {
+            "tr": "Büyük kurumlar için",
+            "en": "For large organisations",
+            "ar": "للمؤسسات الكبيرة"
+          },
+          "features": {
+            "tr": "Tek oturum açma|API ve webhook|Veri İşleme Sözleşmesi|Atanmış müşteri sorumlusu",
+            "en": "Single sign-on|API and webhooks|Data Processing Agreement|Dedicated account manager",
+            "ar": "تسجيل دخول موحد|API وwebhook|اتفاقية معالجة البيانات|مسؤول حساب مخصص"
+          },
+          "ctaText": {
+            "tr": "Demo talep et",
+            "en": "Request a demo",
+            "ar": "اطلب عرضًا تجريبيًا"
+          },
+          "ctaUrl": "../demo-talebi/",
+          "featured": false
+        }
+      ],
+      "category": "pricing",
+      "description": "Fiyatlandırma kartları modülü. Plan adı, fiyat, özellik listesi ve CTA butonlarını responsive grid düzende gösterir. Öne çıkan plan vurgusu (featured + rozet), çok dilli veri ve animasyonlu giriş içerir.",
+      "version": "1.0.0",
+      "icon": "payments",
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing/data"
+      },
+      "id": "lz428v",
+      "path": "pricing-1",
+      "local": "body",
+      "index": 32
+    }
+  ]
+}

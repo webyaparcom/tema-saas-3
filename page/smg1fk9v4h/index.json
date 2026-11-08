@@ -1,0 +1,39 @@
+{
+  "id": "smg1fk9v4h",
+  "name": {
+    "tr": "Demo Talebi",
+    "en": "Request a Demo",
+    "ar": "طلب عرض تجريبي"
+  },
+  "description": {
+    "tr": "Konuyu ve uygun günü seçin; talebiniz bu demo sitede yalnızca tarayıcınızda oluşturulur. Hesap açılmaz.",
+    "en": "Choose a topic and a convenient day; on this demo site your request is created only in your browser. No account is created.",
+    "ar": "اختر الموضوع واليوم المناسب؛ يُنشأ طلبك في متصفحك فقط. لا يُنشأ حساب."
+  },
+  "keyword": {
+    "tr": "proje yönetimi, görev takibi, SaaS",
+    "en": "project management, task tracking, SaaS",
+    "ar": "إدارة المشاريع، تتبع المهام، SaaS"
+  },
+  "path": "demo-talebi",
+  "icon": "smart_display",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "wxfiwe"
+    ],
+    "footer": []
+  },
+  "index": 2,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Demo Talebi",
+    "en": "Request a Demo",
+    "ar": "طلب عرض تجريبي"
+  },
+  "date": "2026-11-05T23:18:14.388Z",
+  "update": "2026-11-05T23:18:14.393Z"
+}

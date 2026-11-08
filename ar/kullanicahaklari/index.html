@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+  <title>حقوق المستخدم</title>
+  <meta name="description" content="حقوق المستخدم" />
+  <meta name="keywords" content="إدارة المشاريع، تتبع المهام، SaaS" />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="canonical" href="https://saas-3.webyapar.com/ar/kullanicahaklari/" />
+  <link rel="alternate" hreflang="tr" href="https://saas-3.webyapar.com/tr/kullanicahaklari/" />
+  <link rel="alternate" hreflang="en" href="https://saas-3.webyapar.com/en/kullanicahaklari/" />
+  <link rel="alternate" hreflang="ar" href="https://saas-3.webyapar.com/ar/kullanicahaklari/" />
+  <link rel="alternate" hreflang="x-default" href="https://saas-3.webyapar.com/tr/kullanicahaklari/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="حقوق المستخدم" />
+  <meta property="og:description" content="حقوق المستخدم" />
+  <meta property="og:url" content="https://saas-3.webyapar.com/ar/kullanicahaklari/" />
+  <meta property="og:image" content="https://saas-3.webyapar.com/img/logo.png" />
+  <meta property="og:image:alt" content="حقوق المستخدم" />
+  <meta property="og:site_name" content="Düzkanban" />
+  <meta property="og:locale" content="ar_SA" />
+  <meta property="og:locale:alternate" content="tr_TR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="حقوق المستخدم" />
+  <meta name="twitter:description" content="حقوق المستخدم" />
+  <meta name="twitter:image" content="https://saas-3.webyapar.com/img/logo.png" />
+
+  <meta name="theme-color" content="#1A1A1A" />
+  <meta name="mx-api-base" content="none" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="preload" href="/src/fonts/inter/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/inter/inter-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/inter/inter-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/inter/inter-latin-ext-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/inter/inter-latin-ext-500-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/inter/inter-latin-ext-700-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/src/fonts/inter.css?v=a1dca" />
+  <link rel="stylesheet" href="/src/fonts/ibm-plex-sans-arabic.css?v=a1dca" />
+  <link rel="stylesheet" href="/src/fonts/noto-kufi-arabic.css?v=a1dca" />
+  <link rel="stylesheet" href="/src/rubik.css?v=a1dca" />
+  <link rel="stylesheet" href="/src/css.css?v=a1dca" />
+  <link rel="stylesheet" href="/src/mx-ds.css?v=a1dca" />
+  
+  <link rel="stylesheet" href="/src/mx-ui.css?v=a1dca" />
+  <link rel="preload" href="/src/material-symbols-outlined.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/src/material-symbols-outlined.css?v=a1dca" />
+  
+  <link rel="stylesheet" href="/src/cookie.css?v=a1dca" />
+  <link rel="stylesheet" href="/src/swiper-bundle.min.css?v=a1dca" />
+  <link rel="shortcut icon" href="/img/icon.png?v=a1dca" type="image/png" />
+  <link rel="apple-touch-icon" href="/img/icon.png" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://saas-3.webyapar.com/#website",
+      "url": "https://saas-3.webyapar.com/",
+      "name": "Düzkanban",
+      "description": "دوزكانبان: برنامج إدارة المشاريع والمهام للفرق مع الميزات والأسعار وأمن البيانات وطلب عرض تجريبي. (موقع تجريبي — لا يوجد تسجيل فعلي)",
+      "inLanguage": "ar",
+      "publisher": {
+        "@id": "https://saas-3.webyapar.com/#organization"
+      }
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://saas-3.webyapar.com/#organization",
+      "name": "Düzkanban",
+      "url": "https://saas-3.webyapar.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://saas-3.webyapar.com/img/logo.png"
+      },
+      "image": "https://saas-3.webyapar.com/img/logo.png",
+      "description": "دوزكانبان: برنامج إدارة المشاريع والمهام للفرق مع الميزات والأسعار وأمن البيانات وطلب عرض تجريبي. (موقع تجريبي — لا يوجد تسجيل فعلي)",
+      "telephone": "+90 342 000 00 00",
+      "email": "merhaba@duzkanban.example",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Teknokent Bina 3 No: 21, Şehitkamil, Gaziantep (kurgusal adres)"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "telephone": "+90 342 000 00 00",
+        "email": "merhaba@duzkanban.example"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://saas-3.webyapar.com/ar/kullanicahaklari/#webpage",
+      "url": "https://saas-3.webyapar.com/ar/kullanicahaklari/",
+      "name": "حقوق المستخدم",
+      "description": "حقوق المستخدم",
+      "inLanguage": "ar",
+      "isPartOf": {
+        "@id": "https://saas-3.webyapar.com/#website"
+      },
+      "about": {
+        "@id": "https://saas-3.webyapar.com/#organization"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://saas-3.webyapar.com/img/logo.png"
+      },
+      "dateModified": "2026-11-05T23:18:14.467Z",
+      "breadcrumb": {
+        "@id": "https://saas-3.webyapar.com/ar/kullanicahaklari/#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://saas-3.webyapar.com/ar/kullanicahaklari/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Düzkanban",
+          "item": "https://saas-3.webyapar.com/ar/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "حقوق المستخدم",
+          "item": "https://saas-3.webyapar.com/ar/kullanicahaklari/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+  
+<link rel="stylesheet" href="style.css?v=a1dca">
+</head>
+
+<body>
+  <a class="mx-skip-link" href="#content">انتقل إلى المحتوى</a>
+  <script>
+    (function () {
+      window.user = window.user || { id: null, email: null, name: null, isLoggedIn: false, loginMethod: null };
+      var emptySnapshot = { empty: true, forEach: function () {} };
+      var emptyDoc = { exists: false, data: function () { return null; } };
+      if (typeof window.dataAddWeb !== "function") window.dataAddWeb = function () { return Promise.resolve(); };
+      if (typeof window.dataDeleteWeb !== "function") window.dataDeleteWeb = function () { return Promise.resolve(); };
+      if (typeof window.dataUpdateWeb !== "function") window.dataUpdateWeb = function () { return Promise.resolve(); };
+      if (typeof window.dataGetWeb !== "function") window.dataGetWeb = function () { return Promise.resolve(emptyDoc); };
+      if (typeof window.dataListWeb !== "function") window.dataListWeb = function () { return Promise.resolve(emptySnapshot); };
+      if (typeof window.authStateListenerWeb !== "function") {
+        window.authStateListenerWeb = function (cb) {
+          if (typeof cb === "function") setTimeout(function () { cb(null); }, 0);
+        };
+      }
+    })();
+  </script>
+  <div id="header"><div class="h0000-db" id="db-g3db01" role="region" aria-label="تنبيه الموقع التجريبي" data-tone="info" style="--db-bg:var(--mx-site-text, #1b1b1b);--db-fg:var(--mx-site-bg, #ffffff)">
+  <span class="material-symbols-outlined h0000-db-icon" aria-hidden="true">info</span>
+  <p class="h0000-db-text">هذا موقع تجريبي — المحتوى افتراضي ولا يتم تحصيل أي مدفوعات</p>
+  <a class="h0000-db-cta" href="https://webyapar.com/temalar#saas-3" target="_blank" rel="noopener noreferrer">
+    <span>اطلب هذا القالب</span><span class="mx-visually-hidden"> (يفتح في علامة تبويب جديدة)</span>
+    <span class="material-symbols-outlined mx-flip h0000-db-arrow" aria-hidden="true">arrow_forward</span>
+  </a>
+  
+</div>
+
+<script>
+  
+  (function () {
+    var kok = document.getElementById("db-g3db01");
+    if (!kok) {
+      return;
+    }
+    var itilenler = [];
+    var gorulen = [];
+
+    function ustaTasi() {
+      var govde = document.body;
+      if (!govde || kok.parentNode === govde) {
+        return;
+      }
+      var ilk = document.getElementById("header");
+      if (ilk && ilk.parentNode === govde) {
+        govde.insertBefore(kok, ilk);
+      } else {
+        govde.insertBefore(kok, govde.firstChild);
+      }
+    }
+
+    function adayMi(el) {
+      if (el === kok || kok.contains(el) || el.nodeType !== 1) {
+        return false;
+      }
+      var cs = window.getComputedStyle(el);
+      if ((cs.position !== "fixed" && cs.position !== "sticky") || cs.display === "none") {
+        return false;
+      }
+      
+      return parseFloat(cs.top) === 0 && el.offsetHeight > 0 && el.offsetHeight <= 200;
+    }
+
+    function it() {
+      var h = kok.offsetHeight;
+      document.documentElement.style.setProperty("--mx-demo-bandi-h", h + "px");
+      var liste = document.querySelectorAll("#header *, body > *");
+      for (var i = 0; i < liste.length; i++) {
+        var el = liste[i];
+        if (gorulen.indexOf(el) !== -1) {
+          continue;
+        }
+        if (adayMi(el)) {
+          gorulen.push(el);
+          itilenler.push(el);
+        }
+      }
+      for (var j = 0; j < itilenler.length; j++) {
+        itilenler[j].style.top = h + "px";
+      }
+    }
+
+    ustaTasi();
+    it();
+    window.addEventListener("load", function () {
+      ustaTasi();
+      it();
+      setTimeout(it, 400);
+      setTimeout(it, 1500);
+    });
+    window.addEventListener("resize", it);
+    if (window.ResizeObserver) {
+      new window.ResizeObserver(it).observe(kok);
+    }
+  })();
+</script>
+<div class="h0001">
+  <div class="h0001title">
+    <div class="h0001titlebody">
+      <div class="h0001titlebodylang">
+        <ul>
+          <li class="wm-lang-item"><a href="/tr/kullanicahaklari/" hreflang="tr" lang="tr">TR</a></li><li class="wm-lang-item"><a href="/en/kullanicahaklari/" hreflang="en" lang="en">EN</a></li><li class="wm-lang-item wm-lang-active"><a href="/ar/kullanicahaklari/" hreflang="ar" lang="ar" aria-current="true">AR</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="h0001body">
+    <a href="/ar/">
+      <img
+        src="/img/logo.png?v=zbe5i"
+        alt="Düzkanban Logo"
+        class="h0001bodylogo"
+        loading="lazy"
+      />
+    </a>
+    
+    <details class="h0001-lang-top">
+      <summary aria-label="محدد اللغة">
+        <span class="h0001-lang-top-code">ar</span>
+        <span class="material-symbols-outlined" aria-hidden="true">expand_more</span>
+      </summary>
+      <ul>
+        <li class="wm-lang-item"><a href="/tr/kullanicahaklari/" hreflang="tr" lang="tr">TR</a></li><li class="wm-lang-item"><a href="/en/kullanicahaklari/" hreflang="en" lang="en">EN</a></li><li class="wm-lang-item wm-lang-active"><a href="/ar/kullanicahaklari/" hreflang="ar" lang="ar" aria-current="true">AR</a></li>
+      </ul>
+    </details>
+    <button type="button" class="h0001-mobile-toggle" onclick="menu2_toggle()" aria-label="فتح/إغلاق القائمة">
+      <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+    </button>
+  </div>
+  
+  <div class="h0001-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="h0001menubody">
+    <div class="h0001menu" id="menu-2-root">
+      <button type="button" class="h0001-menu2-drawer-close" onclick="menu2_toggle()" aria-label="إغلاق القائمة">
+        <span class="material-symbols-outlined" aria-hidden="true">close</span>
+      </button>
+      <div class="h0001menulistbody">
+        <div class="h0001menulist">
+          <ul>
+            <a href="/ar/">الصفحة الرئيسية</a><a href="/ar/ozellikler/">الميزات</a><a href="/ar/fiyatlar/">الأسعار</a><a href="/ar/demo-talebi/">طلب عرض تجريبي</a><a href="/ar/veri-guvenligi/">أمن البيانات</a><a href="/ar/sss/">الأسئلة الشائعة</a><a href="/ar/galeri/">المنتج</a><a href="/ar/hakkimizda/">من نحن</a><a href="/ar/iletisim/">اتصل بنا</a>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="h0001languages-mobile">
+        <ul>
+          <li class="wm-lang-item"><a href="/tr/kullanicahaklari/" hreflang="tr" lang="tr">TR</a></li><li class="wm-lang-item"><a href="/en/kullanicahaklari/" hreflang="en" lang="en">EN</a></li><li class="wm-lang-item wm-lang-active"><a href="/ar/kullanicahaklari/" hreflang="ar" lang="ar" aria-current="true">AR</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  
+  if (typeof menu2_isMobileLayout === "undefined") {
+    
+    function menu2_isMobileLayout() {
+      return window.innerWidth <= 1024;
+    }
+  }
+  if (typeof menu2_isTouchNav === "undefined") {
+    function menu2_isTouchNav() {
+      return window.innerWidth <= 1024;
+    }
+  }
+  if (typeof menu2_setBodyScroll === "undefined") {
+    function menu2_setBodyScroll(lock) {
+      if (!menu2_isMobileLayout()) {
+        document.body.style.overflow = "";
+        return;
+      }
+      document.body.style.overflow = lock ? "hidden" : "";
+    }
+  }
+  if (typeof menu2_toggle === "undefined") {
+    function menu2_toggle() {
+      var root = document.getElementById("menu-2-root");
+      if (!root) {
+        return;
+      }
+      var wrapper = root.closest ? root.closest(".h0001") : null;
+      var target = wrapper || root;
+      if (target.classList.contains("h0001menu-open")) {
+        target.classList.remove("h0001menu-open");
+        menu2_setBodyScroll(false);
+      } else {
+        target.classList.add("h0001menu-open");
+        menu2_setBodyScroll(true);
+        menu2_openActiveBranch();
+      }
+    }
+  }
+  if (typeof menu2_closeDrawer === "undefined") {
+    function menu2_closeDrawer() {
+      var root = document.getElementById("menu-2-root");
+      if (!root) {
+        return;
+      }
+      var wrapper = root.closest ? root.closest(".h0001") : null;
+      var target = wrapper || root;
+      target.classList.remove("h0001menu-open");
+      menu2_setBodyScroll(false);
+    }
+  }
+  if (typeof menu2_openActiveBranch === "undefined") {
+    function menu2_openActiveBranch() {
+      if (!menu2_isMobileLayout()) {
+        return;
+      }
+      var root = document.getElementById("menu-2-root");
+      if (!root) {
+        return;
+      }
+      var activeWrap = root.querySelector(".h0001menulist-menu.dropdown-content-active-h0001");
+      if (activeWrap) {
+        activeWrap.classList.add("h0001-dropdown-open");
+      }
+    }
+  }
+  if (typeof menu2_setup === "undefined") {
+    function menu2_setup() {
+      var root = document.getElementById("menu-2-root");
+      if (!root) {
+        return;
+      }
+      var dropdownLinks = root.querySelectorAll(".h0001menulist-menu > a");
+      for (var i = 0; i < dropdownLinks.length; i++) {
+        if (dropdownLinks[i].getAttribute("data-menu2-listener") === "true") {
+          continue;
+        }
+        dropdownLinks[i].setAttribute("data-menu2-listener", "true");
+        dropdownLinks[i].addEventListener("click", function(event) {
+          if (!menu2_isTouchNav()) {
+            return;
+          }
+          var parent = this.parentNode;
+          if (!parent || !parent.querySelector(".dropdown-content-h0001")) {
+            return;
+          }
+          event.preventDefault();
+          var menuRoot = parent.parentNode;
+          var toggled = parent.classList.contains("h0001-dropdown-open");
+          var siblings = menuRoot.querySelectorAll(".h0001menulist-menu");
+          for (var j = 0; j < siblings.length; j++) {
+            siblings[j].classList.remove("h0001-dropdown-open");
+          }
+          if (!toggled) {
+            parent.classList.add("h0001-dropdown-open");
+          }
+        });
+      }
+      var navLinks = root.querySelectorAll(".h0001menulist a[href]");
+      for (var k = 0; k < navLinks.length; k++) {
+        if (navLinks[k].getAttribute("data-menu2-nav-close") === "true") {
+          continue;
+        }
+        navLinks[k].setAttribute("data-menu2-nav-close", "true");
+        navLinks[k].addEventListener("click", function(event) {
+          if (!menu2_isMobileLayout()) {
+            return;
+          }
+          if (event.defaultPrevented) {
+            return;
+          }
+          menu2_closeDrawer();
+        });
+      }
+      menu2_openActiveBranch();
+    }
+    function menu2_resetDropdowns() {
+      if (!menu2_isTouchNav()) {
+        var root = document.getElementById("menu-2-root");
+        if (!root) {
+          return;
+        }
+        var items = root.querySelectorAll(".h0001menulist-menu");
+        for (var i = 0; i < items.length; i++) {
+          items[i].classList.remove("h0001-dropdown-open");
+        }
+      }
+      if (!menu2_isMobileLayout()) {
+        menu2_setBodyScroll(false);
+        menu2_closeDrawer();
+      }
+    }
+    setTimeout(menu2_setup, 150);
+    window.addEventListener("resize", menu2_resetDropdowns);
+  }
+  if (typeof menu2_sigdir === "undefined") {
+    
+    function menu2_sigdir() {
+      var root = document.getElementById("menu-2-root");
+      var ul = root ? root.querySelector(".h0001menulist ul") : null;
+      if (!ul || !ul.firstElementChild) {
+        return;
+      }
+      ul.classList.remove("h0001-menu-sar");
+      if (!menu2_isMobileLayout() && ul.lastElementChild.offsetTop > ul.firstElementChild.offsetTop) {
+        ul.classList.add("h0001-menu-sar");
+      }
+    }
+    menu2_sigdir();
+    window.addEventListener("resize", menu2_sigdir);
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(menu2_sigdir);
+    }
+  }
+</script>
+</div>
+  <div id="content"><div class="b0000-title f36" data-stil="yatay-kart">
+  <h1>حقوق المستخدم</h1>
+</div>
+<div class="b0000" data-stil="yatay-kart">
+  <button
+    type="button"
+    class="b0000-menu-btn"
+    aria-expanded="false"
+    aria-controls="b0000-menu"
+  >
+    <span class="b0000-menu-btn-label">قائمة الصفحات</span>
+    <span class="material-symbols-outlined b0000-icon" aria-hidden="true">menu</span>
+  </button>
+  <div class="b0000-menu-overlay" id="b0000-menu-overlay" aria-hidden="true"></div>
+  <nav class="b0000-menu" id="b0000-menu" aria-label="قائمة الصفحات">
+    <button class="b0000-menu-close" type="button" aria-label="إغلاق القائمة" aria-controls="b0000-menu">
+      <span class="material-symbols-outlined" aria-hidden="true">close</span>
+    </button>
+    <a class="b0000-menu-link" href="/ar/misyon/">المهمة</a><a class="b0000-menu-link" href="/ar/vizyon/">الرؤية</a><a class="b0000-menu-link" href="/ar/kalitepolitikamiz/">سياسة الجودة</a><a class="b0000-menu-link" href="/ar/gizlilikpolitikasi/">سياسة الخصوصية</a><a class="b0000-menu-link" href="/ar/kisiselveriler/">البيانات الشخصية</a><a class="b0000-menu-link active" href="/ar/kullanicahaklari/">حقوق المستخدم</a><a class="b0000-menu-link" href="/ar/yasaluyari/">إشعار قانوني</a>
+  </nav>
+  <div class="b0000-main">
+    
+    
+    <div class="b0000-body"><h2>حقوق المستخدم</h2>
+<p>يحق للمستخدمين معرفة ما إذا كانت بياناتهم الشخصية تُعالَج، وطلب تصحيحها أو حذفها، والاعتراض على معالجتها.</p>
+<p>ولأن هذا الموقع التجريبي لا يحفظ أي بيانات، فلا يوجد إجراء يستدعي ممارسة هذه الحقوق؛ وفي المواقع الفعلية تُذكر قناة تقديم الطلبات في هذه الصفحة.</p>
+<p><em>هذا النص مثال لأغراض العرض التجريبي ولا يُعدّ استشارة قانونية.</em></p></div>
+    
+  </div>
+</div>
+
+<script>
+  setTimeout(function() {
+    var menuToggleBtn = document.querySelector(".b0000-menu-btn");
+    var menu = document.querySelector(".b0000-menu");
+    var overlay = document.querySelector(".b0000-menu-overlay");
+    var closeButton = document.querySelector(".b0000-menu-close");
+
+    if (!menuToggleBtn || !menu) {
+      return;
+    }
+
+    var mql = window.matchMedia("(max-width: 1024px)");
+
+    function openMenu() {
+      menu.classList.add("active");
+      if (overlay) {
+        overlay.classList.add("active");
+        overlay.setAttribute("aria-hidden", "false");
+      }
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeMenu() {
+      menu.classList.remove("active");
+      if (overlay) {
+        overlay.classList.remove("active");
+        overlay.setAttribute("aria-hidden", "true");
+      }
+      document.body.style.overflow = "";
+      if (menuToggleBtn) {
+        menuToggleBtn.focus();
+      }
+    }
+
+    menuToggleBtn.addEventListener("click", function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      if (menu.classList.contains("active")) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
+    });
+
+    if (closeButton) {
+      closeButton.addEventListener("click", function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        closeMenu();
+      });
+    }
+
+    if (overlay) {
+      overlay.addEventListener("click", function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        closeMenu();
+      });
+    }
+
+    menu.addEventListener("click", function(event) {
+      var link = event.target.closest("a");
+      var closeBtn = event.target.closest(".b0000-menu-close");
+      if (link && !closeBtn) {
+        closeMenu();
+      }
+    });
+
+    document.addEventListener("keydown", function(e) {
+      if (e.key === "Escape" && menu.classList.contains("active")) {
+        closeMenu();
+      }
+    });
+
+    menuToggleBtn.addEventListener("keydown", function(e) {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        if (menu.classList.contains("active")) {
+          closeMenu();
+        } else {
+          openMenu();
+        }
+      }
+    });
+
+    function handleBreakpoint() {
+      if (!mql.matches) {
+        menu.classList.remove("active");
+        if (overlay) {
+          overlay.classList.remove("active");
+          overlay.setAttribute("aria-hidden", "true");
+        }
+        document.body.style.overflow = "";
+      }
+    }
+
+    if (typeof mql.addEventListener === "function") {
+      mql.addEventListener("change", handleBreakpoint);
+    } else if (typeof mql.addListener === "function") {
+      mql.addListener(handleBreakpoint);
+    }
+    handleBreakpoint();
+
+    var topButtons = document.querySelectorAll(".b0000-top");
+    var bi;
+    for (bi = 0; bi < topButtons.length; bi++) {
+      topButtons[bi].addEventListener("click", function(e) {
+        e.stopPropagation();
+        var group = this.closest(".b0000-menu-group");
+        if (!group) {
+          return;
+        }
+        var sub = group.querySelector(".b0000-sub");
+        var isOpen = group.classList.toggle("open");
+        this.classList.toggle("active", isOpen);
+        var icon = this.querySelector(".b0000-icon");
+        if (icon) {
+          icon.textContent = isOpen ? "expand_less" : "expand_more";
+        }
+        if (sub) {
+          sub.classList.toggle("show", isOpen);
+        }
+      });
+    }
+  }, 100);
+</script>
+</div>
+  <div id="footer"><footer class="f0000-f9" role="contentinfo">
+  <div class="f0000-f9__main f0000-f9__main--c3">
+    <div class="f0000-f9__col f0000-f9__brand">
+      <a href="/ar/" class="f0000-f9__logo" aria-label="الصفحة الرئيسية - Düzkanban">
+        <img src="/img/logo.png" alt="Düzkanban Logo" loading="lazy" />
+      </a>
+      <p class="f0000-f9__about">دوزكانبان: برنامج إدارة المشاريع والمهام للفرق مع الميزات والأسعار وأمن البيانات وطلب عرض تجريبي. (موقع تجريبي — لا يوجد تسجيل فعلي)</p>
+    </div>
+    <nav class="f0000-f9__col f0000-f9__pages" aria-label="التنقل">
+      <h3 class="f0000-f9__title">الصفحات</h3>
+      <ul class="f0000-f9__list">
+        <li><a class="f0000-f9__link" href="/ar/">الصفحة الرئيسية</a></li><li><a class="f0000-f9__link" href="/ar/ozellikler/">الميزات</a></li><li><a class="f0000-f9__link" href="/ar/fiyatlar/">الأسعار</a></li><li><a class="f0000-f9__link" href="/ar/demo-talebi/">طلب عرض تجريبي</a></li><li><a class="f0000-f9__link" href="/ar/veri-guvenligi/">أمن البيانات</a></li><li><a class="f0000-f9__link" href="/ar/sss/">الأسئلة الشائعة</a></li><li><a class="f0000-f9__link" href="/ar/galeri/">المنتج</a></li><li><a class="f0000-f9__link" href="/ar/hakkimizda/">من نحن</a></li><li><a class="f0000-f9__link" href="/ar/iletisim/">اتصل بنا</a></li>
+      </ul>
+    </nav>
+    <div class="f0000-f9__col f0000-f9__contact"><h3 class="f0000-f9__title">اتصل بنا</h3><ul class="f0000-f9__list"><li><span class="material-symbols-outlined" aria-hidden="true">location_on</span><span>المنطقة التقنية، مبنى 3 رقم 21، شهيد كامل، غازي عنتاب (عنوان افتراضي)</span></li><li><span class="material-symbols-outlined" aria-hidden="true">call</span><a class="f0000-f9__link" href="tel:+903420000000" dir="ltr">+90 342 000 00 00</a></li><li><span class="material-symbols-outlined" aria-hidden="true">mail</span><a class="f0000-f9__link" href="mailto:merhaba@duzkanban.example">merhaba@duzkanban.example</a></li></ul></div>
+    
+  </div>
+  <div class="f0000-f9__bottom">
+    <p class="f0000-f9__rights">&copy; 2026 Düzkanban. جميع الحقوق محفوظة.</p>
+    <ul class="f0000-f9__legal"><li><a class="f0000-f9__link" href="/ar/gizlilikpolitikasi/">سياسة الخصوصية</a></li><li><a class="f0000-f9__link" href="/ar/kisiselveriler/">البيانات الشخصية</a></li><li><a class="f0000-f9__link" href="/ar/kullanicahaklari/">حقوق المستخدم</a></li><li><a class="f0000-f9__link" href="/ar/yasaluyari/">إشعار قانوني</a></li></ul>
+    <nav class="wm-langbar" aria-label="محدد اللغة"><ul><li class="wm-lang-item"><a href="/tr/kullanicahaklari/" hreflang="tr" lang="tr">TR</a></li><li class="wm-lang-item"><a href="/en/kullanicahaklari/" hreflang="en" lang="en">EN</a></li><li class="wm-lang-item wm-lang-active"><a href="/ar/kullanicahaklari/" hreflang="ar" lang="ar" aria-current="true">AR</a></li></ul></nav>
+  </div>
+</footer>
+
+<div class="f0001-dk" role="contentinfo" aria-label="معلومات العرض التجريبي">
+  <p class="f0001-dk-text">تم إعداد هذا العرض التجريبي بواسطة <bdi class="f0001-dk-brand" dir="ltr">Webyapar</bdi> — <a class="f0001-dk-cta" href="https://webyapar.com/temalar#saas-3" target="_blank" rel="noopener noreferrer"><span>اطلب هذا القالب</span><span class="mx-visually-hidden"> (يفتح في علامة تبويب جديدة)</span><span class="material-symbols-outlined mx-flip f0001-dk-arrow" aria-hidden="true">arrow_forward</span></a></p>
+</div>
+
+<nav class="wm-yasal" aria-label="الشركة والشؤون القانونية" style="box-sizing:border-box;width:100%;max-width:100%;padding:12px 16px;background:var(--mx-site-bg, #FAFAF8);color:var(--mx-site-text, #f3f4f6);display:flex;flex-wrap:wrap;gap:4px 16px;align-items:center;justify-content:center;text-align:center;overflow-wrap:anywhere"><strong style="color:var(--mx-site-text, #f3f4f6)">الشركة والشؤون القانونية</strong><a href="/ar/misyon/" style="color:var(--mx-site-text, #f3f4f6);padding:6px 0;text-decoration:underline;min-width:0">المهمة</a><a href="/ar/vizyon/" style="color:var(--mx-site-text, #f3f4f6);padding:6px 0;text-decoration:underline;min-width:0">الرؤية</a><a href="/ar/kalitepolitikamiz/" style="color:var(--mx-site-text, #f3f4f6);padding:6px 0;text-decoration:underline;min-width:0">سياسة الجودة</a></nav></div>
+
+  
+
+  <script defer src="/src/swiper-bundle.min.js"></script>
+  <script defer src="/src/mx-ui.js?v=a1dca"></script>
+  <script defer src="/src/mx-store.js?v=a1dca"></script>
+  <script defer type="text/javascript" src="/src/js.js?v=a1dca"></script>
+  <script defer src="/src/cookie.js?v=a1dca"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+{
+  "name": "Düzkanban",
+  "short_name": "Düzkanban",
+  "description": "Düzkanban: ekipler için proje ve görev yönetimi yazılımı; özellikler, fiyatlar, veri güvenliği ve demo talebi. (Demo site — gerçek kayıt yoktur)",
+  "start_url": "/tr/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1A1A1A",
+  "lang": "tr",
+  "icons": [
+    {
+      "src": "/img/icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/icon.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

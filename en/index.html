@@ -1,0 +1,684 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+  <title>Düzkanban</title>
+  <meta name="description" content="Düzkanban: project and task management software for teams; features, pricing, data security and demo requests. (Demo site — no real sign-up)" />
+  <meta name="keywords" content="project management, task tracking, SaaS" />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="canonical" href="https://saas-3.webyapar.com/en/" />
+  <link rel="alternate" hreflang="tr" href="https://saas-3.webyapar.com/tr/" />
+  <link rel="alternate" hreflang="en" href="https://saas-3.webyapar.com/en/" />
+  <link rel="alternate" hreflang="ar" href="https://saas-3.webyapar.com/ar/" />
+  <link rel="alternate" hreflang="x-default" href="https://saas-3.webyapar.com/tr/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Düzkanban" />
+  <meta property="og:description" content="Düzkanban: project and task management software for teams; features, pricing, data security and demo requests. (Demo site — no real sign-up)" />
+  <meta property="og:url" content="https://saas-3.webyapar.com/en/" />
+  <meta property="og:image" content="https://saas-3.webyapar.com/img/logo.png" />
+  <meta property="og:image:alt" content="Düzkanban" />
+  <meta property="og:site_name" content="Düzkanban" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="tr_TR" />
+  <meta property="og:locale:alternate" content="ar_SA" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Düzkanban" />
+  <meta name="twitter:description" content="Düzkanban: project and task management software for teams; features, pricing, data security and demo requests. (Demo site — no real sign-up)" />
+  <meta name="twitter:image" content="https://saas-3.webyapar.com/img/logo.png" />
+
+  <meta name="theme-color" content="#1A1A1A" />
+  <meta name="mx-api-base" content="none" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="preload" href="/src/fonts/inter/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/inter/inter-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/inter/inter-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/inter/inter-latin-ext-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/inter/inter-latin-ext-500-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/inter/inter-latin-ext-700-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/src/fonts/inter.css?v=fk3i3" />
+  <link rel="stylesheet" href="/src/fonts/ibm-plex-sans-arabic.css?v=fk3i3" />
+  <link rel="stylesheet" href="/src/fonts/noto-kufi-arabic.css?v=fk3i3" />
+  <link rel="stylesheet" href="/src/rubik.css?v=fk3i3" />
+  <link rel="stylesheet" href="/src/css.css?v=fk3i3" />
+  <link rel="stylesheet" href="/src/mx-ds.css?v=fk3i3" />
+  
+  <link rel="stylesheet" href="/src/mx-ui.css?v=fk3i3" />
+  <link rel="preload" href="/src/material-symbols-outlined.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/src/material-symbols-outlined.css?v=fk3i3" />
+  
+  <link rel="stylesheet" href="/src/cookie.css?v=fk3i3" />
+  <link rel="stylesheet" href="/src/swiper-bundle.min.css?v=fk3i3" />
+  <link rel="shortcut icon" href="/img/icon.png?v=fk3i3" type="image/png" />
+  <link rel="apple-touch-icon" href="/img/icon.png" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://saas-3.webyapar.com/#website",
+      "url": "https://saas-3.webyapar.com/",
+      "name": "Düzkanban",
+      "description": "Düzkanban: project and task management software for teams; features, pricing, data security and demo requests. (Demo site — no real sign-up)",
+      "inLanguage": "en",
+      "publisher": {
+        "@id": "https://saas-3.webyapar.com/#organization"
+      }
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://saas-3.webyapar.com/#organization",
+      "name": "Düzkanban",
+      "url": "https://saas-3.webyapar.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://saas-3.webyapar.com/img/logo.png"
+      },
+      "image": "https://saas-3.webyapar.com/img/logo.png",
+      "description": "Düzkanban: project and task management software for teams; features, pricing, data security and demo requests. (Demo site — no real sign-up)",
+      "telephone": "+90 342 000 00 00",
+      "email": "merhaba@duzkanban.example",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Teknokent Bina 3 No: 21, Şehitkamil, Gaziantep (kurgusal adres)"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "telephone": "+90 342 000 00 00",
+        "email": "merhaba@duzkanban.example"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://saas-3.webyapar.com/en/#webpage",
+      "url": "https://saas-3.webyapar.com/en/",
+      "name": "Düzkanban",
+      "description": "Düzkanban: project and task management software for teams; features, pricing, data security and demo requests. (Demo site — no real sign-up)",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://saas-3.webyapar.com/#website"
+      },
+      "about": {
+        "@id": "https://saas-3.webyapar.com/#organization"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://saas-3.webyapar.com/img/logo.png"
+      }
+    }
+  ]
+}
+</script>
+  
+<link rel="stylesheet" href="style.css?v=fk3i3">
+</head>
+
+<body>
+  <a class="mx-skip-link" href="#content">Skip to content</a>
+  <script>
+    (function () {
+      window.user = window.user || { id: null, email: null, name: null, isLoggedIn: false, loginMethod: null };
+      var emptySnapshot = { empty: true, forEach: function () {} };
+      var emptyDoc = { exists: false, data: function () { return null; } };
+      if (typeof window.dataAddWeb !== "function") window.dataAddWeb = function () { return Promise.resolve(); };
+      if (typeof window.dataDeleteWeb !== "function") window.dataDeleteWeb = function () { return Promise.resolve(); };
+      if (typeof window.dataUpdateWeb !== "function") window.dataUpdateWeb = function () { return Promise.resolve(); };
+      if (typeof window.dataGetWeb !== "function") window.dataGetWeb = function () { return Promise.resolve(emptyDoc); };
+      if (typeof window.dataListWeb !== "function") window.dataListWeb = function () { return Promise.resolve(emptySnapshot); };
+      if (typeof window.authStateListenerWeb !== "function") {
+        window.authStateListenerWeb = function (cb) {
+          if (typeof cb === "function") setTimeout(function () { cb(null); }, 0);
+        };
+      }
+    })();
+  </script>
+  <div id="header"><div class="h0000-db" id="db-g3db01" role="region" aria-label="Demo site notice" data-tone="info" style="--db-bg:var(--mx-site-text, #1b1b1b);--db-fg:var(--mx-site-bg, #ffffff)">
+  <span class="material-symbols-outlined h0000-db-icon" aria-hidden="true">info</span>
+  <p class="h0000-db-text">This is a demo site — the content is fictional and no payment is taken</p>
+  <a class="h0000-db-cta" href="https://webyapar.com/temalar#saas-3" target="_blank" rel="noopener noreferrer">
+    <span>Get this theme</span><span class="mx-visually-hidden"> (opens in a new tab)</span>
+    <span class="material-symbols-outlined mx-flip h0000-db-arrow" aria-hidden="true">arrow_forward</span>
+  </a>
+  
+</div>
+
+<script>
+  
+  (function () {
+    var kok = document.getElementById("db-g3db01");
+    if (!kok) {
+      return;
+    }
+    var itilenler = [];
+    var gorulen = [];
+
+    function ustaTasi() {
+      var govde = document.body;
+      if (!govde || kok.parentNode === govde) {
+        return;
+      }
+      var ilk = document.getElementById("header");
+      if (ilk && ilk.parentNode === govde) {
+        govde.insertBefore(kok, ilk);
+      } else {
+        govde.insertBefore(kok, govde.firstChild);
+      }
+    }
+
+    function adayMi(el) {
+      if (el === kok || kok.contains(el) || el.nodeType !== 1) {
+        return false;
+      }
+      var cs = window.getComputedStyle(el);
+      if ((cs.position !== "fixed" && cs.position !== "sticky") || cs.display === "none") {
+        return false;
+      }
+      
+      return parseFloat(cs.top) === 0 && el.offsetHeight > 0 && el.offsetHeight <= 200;
+    }
+
+    function it() {
+      var h = kok.offsetHeight;
+      document.documentElement.style.setProperty("--mx-demo-bandi-h", h + "px");
+      var liste = document.querySelectorAll("#header *, body > *");
+      for (var i = 0; i < liste.length; i++) {
+        var el = liste[i];
+        if (gorulen.indexOf(el) !== -1) {
+          continue;
+        }
+        if (adayMi(el)) {
+          gorulen.push(el);
+          itilenler.push(el);
+        }
+      }
+      for (var j = 0; j < itilenler.length; j++) {
+        itilenler[j].style.top = h + "px";
+      }
+    }
+
+    ustaTasi();
+    it();
+    window.addEventListener("load", function () {
+      ustaTasi();
+      it();
+      setTimeout(it, 400);
+      setTimeout(it, 1500);
+    });
+    window.addEventListener("resize", it);
+    if (window.ResizeObserver) {
+      new window.ResizeObserver(it).observe(kok);
+    }
+  })();
+</script>
+<div class="h0001">
+  <div class="h0001title">
+    <div class="h0001titlebody">
+      <div class="h0001titlebodylang">
+        <ul>
+          <li class="wm-lang-item"><a href="/tr/" hreflang="tr" lang="tr">TR</a></li><li class="wm-lang-item wm-lang-active"><a href="/en/" hreflang="en" lang="en" aria-current="true">EN</a></li><li class="wm-lang-item"><a href="/ar/" hreflang="ar" lang="ar">AR</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="h0001body">
+    <a href="/en/">
+      <img
+        src="/img/logo.png?v=hjtxp"
+        alt="Düzkanban Logo"
+        class="h0001bodylogo"
+        loading="lazy"
+      />
+    </a>
+    
+    <details class="h0001-lang-top">
+      <summary aria-label="Language Selector">
+        <span class="h0001-lang-top-code">en</span>
+        <span class="material-symbols-outlined" aria-hidden="true">expand_more</span>
+      </summary>
+      <ul>
+        <li class="wm-lang-item"><a href="/tr/" hreflang="tr" lang="tr">TR</a></li><li class="wm-lang-item wm-lang-active"><a href="/en/" hreflang="en" lang="en" aria-current="true">EN</a></li><li class="wm-lang-item"><a href="/ar/" hreflang="ar" lang="ar">AR</a></li>
+      </ul>
+    </details>
+    <button type="button" class="h0001-mobile-toggle" onclick="menu2_toggle()" aria-label="Toggle menu">
+      <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+    </button>
+  </div>
+  
+  <div class="h0001-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="h0001menubody">
+    <div class="h0001menu" id="menu-2-root">
+      <button type="button" class="h0001-menu2-drawer-close" onclick="menu2_toggle()" aria-label="Close menu">
+        <span class="material-symbols-outlined" aria-hidden="true">close</span>
+      </button>
+      <div class="h0001menulistbody">
+        <div class="h0001menulist">
+          <ul>
+            <a href="/en/">Home</a><a href="/en/ozellikler/">Features</a><a href="/en/fiyatlar/">Pricing</a><a href="/en/demo-talebi/">Request a Demo</a><a href="/en/veri-guvenligi/">Data Security</a><a href="/en/sss/">FAQ</a><a href="/en/galeri/">Product</a><a href="/en/hakkimizda/">About</a><a href="/en/iletisim/">Contact</a>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="h0001languages-mobile">
+        <ul>
+          <li class="wm-lang-item"><a href="/tr/" hreflang="tr" lang="tr">TR</a></li><li class="wm-lang-item wm-lang-active"><a href="/en/" hreflang="en" lang="en" aria-current="true">EN</a></li><li class="wm-lang-item"><a href="/ar/" hreflang="ar" lang="ar">AR</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  
+  if (typeof menu2_isMobileLayout === "undefined") {
+    
+    function menu2_isMobileLayout() {
+      return window.innerWidth <= 1024;
+    }
+  }
+  if (typeof menu2_isTouchNav === "undefined") {
+    function menu2_isTouchNav() {
+      return window.innerWidth <= 1024;
+    }
+  }
+  if (typeof menu2_setBodyScroll === "undefined") {
+    function menu2_setBodyScroll(lock) {
+      if (!menu2_isMobileLayout()) {
+        document.body.style.overflow = "";
+        return;
+      }
+      document.body.style.overflow = lock ? "hidden" : "";
+    }
+  }
+  if (typeof menu2_toggle === "undefined") {
+    function menu2_toggle() {
+      var root = document.getElementById("menu-2-root");
+      if (!root) {
+        return;
+      }
+      var wrapper = root.closest ? root.closest(".h0001") : null;
+      var target = wrapper || root;
+      if (target.classList.contains("h0001menu-open")) {
+        target.classList.remove("h0001menu-open");
+        menu2_setBodyScroll(false);
+      } else {
+        target.classList.add("h0001menu-open");
+        menu2_setBodyScroll(true);
+        menu2_openActiveBranch();
+      }
+    }
+  }
+  if (typeof menu2_closeDrawer === "undefined") {
+    function menu2_closeDrawer() {
+      var root = document.getElementById("menu-2-root");
+      if (!root) {
+        return;
+      }
+      var wrapper = root.closest ? root.closest(".h0001") : null;
+      var target = wrapper || root;
+      target.classList.remove("h0001menu-open");
+      menu2_setBodyScroll(false);
+    }
+  }
+  if (typeof menu2_openActiveBranch === "undefined") {
+    function menu2_openActiveBranch() {
+      if (!menu2_isMobileLayout()) {
+        return;
+      }
+      var root = document.getElementById("menu-2-root");
+      if (!root) {
+        return;
+      }
+      var activeWrap = root.querySelector(".h0001menulist-menu.dropdown-content-active-h0001");
+      if (activeWrap) {
+        activeWrap.classList.add("h0001-dropdown-open");
+      }
+    }
+  }
+  if (typeof menu2_setup === "undefined") {
+    function menu2_setup() {
+      var root = document.getElementById("menu-2-root");
+      if (!root) {
+        return;
+      }
+      var dropdownLinks = root.querySelectorAll(".h0001menulist-menu > a");
+      for (var i = 0; i < dropdownLinks.length; i++) {
+        if (dropdownLinks[i].getAttribute("data-menu2-listener") === "true") {
+          continue;
+        }
+        dropdownLinks[i].setAttribute("data-menu2-listener", "true");
+        dropdownLinks[i].addEventListener("click", function(event) {
+          if (!menu2_isTouchNav()) {
+            return;
+          }
+          var parent = this.parentNode;
+          if (!parent || !parent.querySelector(".dropdown-content-h0001")) {
+            return;
+          }
+          event.preventDefault();
+          var menuRoot = parent.parentNode;
+          var toggled = parent.classList.contains("h0001-dropdown-open");
+          var siblings = menuRoot.querySelectorAll(".h0001menulist-menu");
+          for (var j = 0; j < siblings.length; j++) {
+            siblings[j].classList.remove("h0001-dropdown-open");
+          }
+          if (!toggled) {
+            parent.classList.add("h0001-dropdown-open");
+          }
+        });
+      }
+      var navLinks = root.querySelectorAll(".h0001menulist a[href]");
+      for (var k = 0; k < navLinks.length; k++) {
+        if (navLinks[k].getAttribute("data-menu2-nav-close") === "true") {
+          continue;
+        }
+        navLinks[k].setAttribute("data-menu2-nav-close", "true");
+        navLinks[k].addEventListener("click", function(event) {
+          if (!menu2_isMobileLayout()) {
+            return;
+          }
+          if (event.defaultPrevented) {
+            return;
+          }
+          menu2_closeDrawer();
+        });
+      }
+      menu2_openActiveBranch();
+    }
+    function menu2_resetDropdowns() {
+      if (!menu2_isTouchNav()) {
+        var root = document.getElementById("menu-2-root");
+        if (!root) {
+          return;
+        }
+        var items = root.querySelectorAll(".h0001menulist-menu");
+        for (var i = 0; i < items.length; i++) {
+          items[i].classList.remove("h0001-dropdown-open");
+        }
+      }
+      if (!menu2_isMobileLayout()) {
+        menu2_setBodyScroll(false);
+        menu2_closeDrawer();
+      }
+    }
+    setTimeout(menu2_setup, 150);
+    window.addEventListener("resize", menu2_resetDropdowns);
+  }
+  if (typeof menu2_sigdir === "undefined") {
+    
+    function menu2_sigdir() {
+      var root = document.getElementById("menu-2-root");
+      var ul = root ? root.querySelector(".h0001menulist ul") : null;
+      if (!ul || !ul.firstElementChild) {
+        return;
+      }
+      ul.classList.remove("h0001-menu-sar");
+      if (!menu2_isMobileLayout() && ul.lastElementChild.offsetTop > ul.firstElementChild.offsetTop) {
+        ul.classList.add("h0001-menu-sar");
+      }
+    }
+    menu2_sigdir();
+    window.addEventListener("resize", menu2_sigdir);
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(menu2_sigdir);
+    }
+  }
+</script>
+</div>
+  <div id="content"><section class="b0000-h4 b0000-h4--kare-kesit" data-mx-hero="1" aria-labelledby="h4-5t95rl-baslik">
+  <div class="b0000-h4-wrap">
+    <div class="b0000-h4-icerik">
+      <p class="b0000-h4-eyebrow b0000-h4-in">Task management · simple</p>
+      <h1 class="b0000-h4-baslik b0000-h4-in" id="h4-5t95rl-baslik">Fewer buttons, more finished work</h1>
+      <p class="b0000-h4-metin b0000-h4-in">Duzkanban is a fictional demo software that offers a task board and team report with as few clicks as possible. Plan prices, auto-renewal notices and data-processor terms can be read on one page; no real sign-up is taken.</p>
+      <div class="b0000-h4-ctalar b0000-h4-in"><a class="b0000-h4-cta b0000-h4-cta--dolgu" href="/en/demo-talebi/">Request a demo<span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a><a class="b0000-h4-cta b0000-h4-cta--cerceve" href="/en/fiyatlar/">Pricing</a></div>
+      <ul class="b0000-h4-guven b0000-h4-in"><li><span class="material-symbols-outlined" aria-hidden="true">view_kanban</span><span>Task boards</span></li><li><span class="material-symbols-outlined" aria-hidden="true">timeline</span><span>Timeline</span></li><li><span class="material-symbols-outlined" aria-hidden="true">bar_chart</span><span>Team reports</span></li></ul>
+    </div>
+    <div class="b0000-h4-gorsel b0000-h4-in">
+      <div class="b0000-h4-sekil" aria-hidden="true"></div>
+      <div class="b0000-h4-sekil2" aria-hidden="true"></div>
+      <div class="b0000-h4-cerceve"><img class="b0000-h4-img" src="/img/saas-rapor.webp" alt="Abstract charts and indicators" width="1000" height="800" loading="eager" fetchpriority="high" decoding="async" /></div>
+      <div class="b0000-h4-rozet"><span class="b0000-h4-rozet-ikon"><span class="material-symbols-outlined" aria-hidden="true">dashboard</span></span><span><bdi class="b0000-h4-rozet-deger">6</bdi><span class="b0000-h4-rozet-etiket">Feature areas</span></span></div>
+    </div>
+  </div>
+</section>
+
+
+<script>
+  (function () {
+    var kok = document.querySelector(".b0000-h4");
+    if (!kok) { return; }
+    var azalt = false;
+    try { azalt = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches; } catch (e) { azalt = false; }
+    if (azalt || !("IntersectionObserver" in window)) { return; }
+    kok.classList.add("b0000-h4-js");
+    var io = new IntersectionObserver(function (girdiler) {
+      for (var i = 0; i < girdiler.length; i++) {
+        if (girdiler[i].isIntersecting) {
+          kok.classList.add("b0000-h4-goster");
+          io.disconnect();
+        }
+      }
+    }, { threshold: 0.15 });
+    io.observe(kok);
+    
+    setTimeout(function () { kok.classList.add("b0000-h4-goster"); }, 600);
+  })();
+</script>
+<section class="b0001-hs b0001-hs-yatay-ust" id="hs-w920gv">
+  <div class="b0001-hs-wrap">
+    <header class="b0001-hs-head"><p class="b0001-hs-eyebrow">Features</p><h2 class="b0001-hs-title">Tools that make work visible</h2><p class="b0001-hs-desc">Features that scale from small teams to organisations.</p></header>
+    <div class="b0001-hs-body">
+      <div class="b0001-hs-tabs" role="tablist" aria-label="Service tabs" aria-orientation="horizontal"><button type="button" class="b0001-hs-tab" role="tab" id="hs-w920gv-t0" aria-controls="hs-w920gv-p0" aria-selected="true" tabindex="0"><span class="b0001-hs-ikon"><span class="material-symbols-outlined" aria-hidden="true">view_kanban</span></span><span class="b0001-hs-tab-ad">Task boards</span><span class="b0001-hs-ok" aria-hidden="true"><span class="material-symbols-outlined">arrow_forward</span></span></button><button type="button" class="b0001-hs-tab" role="tab" id="hs-w920gv-t1" aria-controls="hs-w920gv-p1" aria-selected="false" tabindex="-1"><span class="b0001-hs-ikon"><span class="material-symbols-outlined" aria-hidden="true">timeline</span></span><span class="b0001-hs-tab-ad">Timeline</span><span class="b0001-hs-ok" aria-hidden="true"><span class="material-symbols-outlined">arrow_forward</span></span></button><button type="button" class="b0001-hs-tab" role="tab" id="hs-w920gv-t2" aria-controls="hs-w920gv-p2" aria-selected="false" tabindex="-1"><span class="b0001-hs-ikon"><span class="material-symbols-outlined" aria-hidden="true">bar_chart</span></span><span class="b0001-hs-tab-ad">Team reports</span><span class="b0001-hs-ok" aria-hidden="true"><span class="material-symbols-outlined">arrow_forward</span></span></button><button type="button" class="b0001-hs-tab" role="tab" id="hs-w920gv-t3" aria-controls="hs-w920gv-p3" aria-selected="false" tabindex="-1"><span class="b0001-hs-ikon"><span class="material-symbols-outlined" aria-hidden="true">extension</span></span><span class="b0001-hs-tab-ad">Integrations</span><span class="b0001-hs-ok" aria-hidden="true"><span class="material-symbols-outlined">arrow_forward</span></span></button><button type="button" class="b0001-hs-tab" role="tab" id="hs-w920gv-t4" aria-controls="hs-w920gv-p4" aria-selected="false" tabindex="-1"><span class="b0001-hs-ikon"><span class="material-symbols-outlined" aria-hidden="true">admin_panel_settings</span></span><span class="b0001-hs-tab-ad">Permissions and roles</span><span class="b0001-hs-ok" aria-hidden="true"><span class="material-symbols-outlined">arrow_forward</span></span></button><button type="button" class="b0001-hs-tab" role="tab" id="hs-w920gv-t5" aria-controls="hs-w920gv-p5" aria-selected="false" tabindex="-1"><span class="b0001-hs-ikon"><span class="material-symbols-outlined" aria-hidden="true">api</span></span><span class="b0001-hs-tab-ad">Developer API</span><span class="b0001-hs-ok" aria-hidden="true"><span class="material-symbols-outlined">arrow_forward</span></span></button></div>
+      <div class="b0001-hs-panels"><div class="b0001-hs-panel b0001-hs-on" role="tabpanel" id="hs-w920gv-p0" aria-labelledby="hs-w920gv-t0" tabindex="0"><button type="button" class="b0001-hs-acc" aria-expanded="true" aria-controls="hs-w920gv-p0"><span class="b0001-hs-ikon"><span class="material-symbols-outlined" aria-hidden="true">view_kanban</span></span><span class="b0001-hs-tab-ad">Task boards</span><span class="b0001-hs-acc-ok" aria-hidden="true"><span class="material-symbols-outlined">expand_more</span></span></button><div class="b0001-hs-panel-in"><div class="b0001-hs-media"><img src="/img/saas-zaman.webp" alt="An abstract timeline with colourful bars" width="1200" height="675" loading="lazy" decoding="async" /></div><div class="b0001-hs-metin"><h3 class="b0001-hs-panel-ad">Task boards</h3><p class="b0001-hs-panel-ozet">Drag-and-drop cards, status columns and filters.</p><p class="b0001-hs-maddeler-baslik">What&#39;s included?</p><ul class="b0001-hs-maddeler"><li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span><span>Keyboard shortcuts</span></li><li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span><span>Interface in three languages</span></li><li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span><span>Data export at the end of the contract</span></li></ul><a class="b0001-hs-btn" href="/en/ozellikler/"><span>Learn more</span><span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a></div></div></div><div class="b0001-hs-panel" role="tabpanel" id="hs-w920gv-p1" aria-labelledby="hs-w920gv-t1" tabindex="0"><button type="button" class="b0001-hs-acc" aria-expanded="false" aria-controls="hs-w920gv-p1"><span class="b0001-hs-ikon"><span class="material-symbols-outlined" aria-hidden="true">timeline</span></span><span class="b0001-hs-tab-ad">Timeline</span><span class="b0001-hs-acc-ok" aria-hidden="true"><span class="material-symbols-outlined">expand_more</span></span></button><div class="b0001-hs-panel-in"><div class="b0001-hs-media"><img src="/img/saas-rapor.webp" alt="Abstract charts and indicators" width="1200" height="675" loading="lazy" decoding="async" /></div><div class="b0001-hs-metin"><h3 class="b0001-hs-panel-ad">Timeline</h3><p class="b0001-hs-panel-ozet">Dependencies and due dates in one view.</p><p class="b0001-hs-maddeler-baslik">What&#39;s included?</p><ul class="b0001-hs-maddeler"><li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span><span>Keyboard shortcuts</span></li><li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span><span>Interface in three languages</span></li><li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span><span>Data export at the end of the contract</span></li></ul><a class="b0001-hs-btn" href="/en/ozellikler/"><span>Learn more</span><span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a></div></div></div><div class="b0001-hs-panel" role="tabpanel" id="hs-w920gv-p2" aria-labelledby="hs-w920gv-t2" tabindex="0"><button type="button" class="b0001-hs-acc" aria-expanded="false" aria-controls="hs-w920gv-p2"><span class="b0001-hs-ikon"><span class="material-symbols-outlined" aria-hidden="true">bar_chart</span></span><span class="b0001-hs-tab-ad">Team reports</span><span class="b0001-hs-acc-ok" aria-hidden="true"><span class="material-symbols-outlined">expand_more</span></span></button><div class="b0001-hs-panel-in"><div class="b0001-hs-media"><img src="/img/saas-ekip-alani.webp" alt="An empty modern workspace" width="1200" height="675" loading="lazy" decoding="async" /></div><div class="b0001-hs-metin"><h3 class="b0001-hs-panel-ad">Team reports</h3><p class="b0001-hs-panel-ozet">Charts of completed work and workload distribution.</p><p class="b0001-hs-maddeler-baslik">What&#39;s included?</p><ul class="b0001-hs-maddeler"><li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span><span>Keyboard shortcuts</span></li><li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span><span>Interface in three languages</span></li><li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span><span>Data export at the end of the contract</span></li></ul><a class="b0001-hs-btn" href="/en/ozellikler/"><span>Learn more</span><span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a></div></div></div><div class="b0001-hs-panel" role="tabpanel" id="hs-w920gv-p3" aria-labelledby="hs-w920gv-t3" tabindex="0"><button type="button" class="b0001-hs-acc" aria-expanded="false" aria-controls="hs-w920gv-p3"><span class="b0001-hs-ikon"><span class="material-symbols-outlined" aria-hidden="true">extension</span></span><span class="b0001-hs-tab-ad">Integrations</span><span class="b0001-hs-acc-ok" aria-hidden="true"><span class="material-symbols-outlined">expand_more</span></span></button><div class="b0001-hs-panel-in"><div class="b0001-hs-media"><img src="/img/saas-dizustu.webp" alt="A laptop beside a notebook" width="1200" height="675" loading="lazy" decoding="async" /></div><div class="b0001-hs-metin"><h3 class="b0001-hs-panel-ad">Integrations</h3><p class="b0001-hs-panel-ozet">Calendar, e-mail and file-storage connections.</p><p class="b0001-hs-maddeler-baslik">What&#39;s included?</p><ul class="b0001-hs-maddeler"><li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span><span>Keyboard shortcuts</span></li><li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span><span>Interface in three languages</span></li><li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span><span>Data export at the end of the contract</span></li></ul><a class="b0001-hs-btn" href="/en/ozellikler/"><span>Learn more</span><span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a></div></div></div><div class="b0001-hs-panel" role="tabpanel" id="hs-w920gv-p4" aria-labelledby="hs-w920gv-t4" tabindex="0"><button type="button" class="b0001-hs-acc" aria-expanded="false" aria-controls="hs-w920gv-p4"><span class="b0001-hs-ikon"><span class="material-symbols-outlined" aria-hidden="true">admin_panel_settings</span></span><span class="b0001-hs-tab-ad">Permissions and roles</span><span class="b0001-hs-acc-ok" aria-hidden="true"><span class="material-symbols-outlined">expand_more</span></span></button><div class="b0001-hs-panel-in"><div class="b0001-hs-media"><img src="/img/saas-hero-pano.webp" alt="An abstract task board with colourful cards" width="1200" height="675" loading="lazy" decoding="async" /></div><div class="b0001-hs-metin"><h3 class="b0001-hs-panel-ad">Permissions and roles</h3><p class="b0001-hs-panel-ozet">Project-level roles and access control.</p><p class="b0001-hs-maddeler-baslik">What&#39;s included?</p><ul class="b0001-hs-maddeler"><li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span><span>Keyboard shortcuts</span></li><li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span><span>Interface in three languages</span></li><li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span><span>Data export at the end of the contract</span></li></ul><a class="b0001-hs-btn" href="/en/ozellikler/"><span>Learn more</span><span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a></div></div></div><div class="b0001-hs-panel" role="tabpanel" id="hs-w920gv-p5" aria-labelledby="hs-w920gv-t5" tabindex="0"><button type="button" class="b0001-hs-acc" aria-expanded="false" aria-controls="hs-w920gv-p5"><span class="b0001-hs-ikon"><span class="material-symbols-outlined" aria-hidden="true">api</span></span><span class="b0001-hs-tab-ad">Developer API</span><span class="b0001-hs-acc-ok" aria-hidden="true"><span class="material-symbols-outlined">expand_more</span></span></button><div class="b0001-hs-panel-in"><div class="b0001-hs-media"><img src="/img/saas-zaman.webp" alt="An abstract timeline with colourful bars" width="1200" height="675" loading="lazy" decoding="async" /></div><div class="b0001-hs-metin"><h3 class="b0001-hs-panel-ad">Developer API</h3><p class="b0001-hs-panel-ozet">Custom flows with webhooks and a REST API.</p><p class="b0001-hs-maddeler-baslik">What&#39;s included?</p><ul class="b0001-hs-maddeler"><li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span><span>Keyboard shortcuts</span></li><li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span><span>Interface in three languages</span></li><li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span><span>Data export at the end of the contract</span></li></ul><a class="b0001-hs-btn" href="/en/ozellikler/"><span>Learn more</span><span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a></div></div></div></div>
+    </div>
+  </div>
+</section>
+
+
+
+<script>
+  
+  (function () {
+    var kok = document.getElementById("hs-w920gv");
+    if (!kok || kok.getAttribute("data-hs-hazir") === "1") { return; }
+    kok.setAttribute("data-hs-hazir", "1");
+    kok.className += " b0001-hs-js";
+    var sekmeler = kok.querySelectorAll(".b0001-hs-tab");
+    var paneller = kok.querySelectorAll(".b0001-hs-panel");
+    var accler = kok.querySelectorAll(".b0001-hs-acc");
+    var yatay = kok.querySelector(".b0001-hs-tabs").getAttribute("aria-orientation") !== "vertical";
+    var n = sekmeler.length;
+    if (!n) { return; }
+
+    function rtlMi() {
+      var el = kok;
+      while (el && el !== document.documentElement) {
+        if (el.getAttribute("dir")) { return el.getAttribute("dir") === "rtl"; }
+        el = el.parentNode;
+      }
+      return (document.documentElement.getAttribute("dir") || "") === "rtl";
+    }
+
+    function sec(i, odakla) {
+      var j;
+      for (j = 0; j < n; j++) {
+        var acik = j === i;
+        sekmeler[j].setAttribute("aria-selected", acik ? "true" : "false");
+        sekmeler[j].setAttribute("tabindex", acik ? "0" : "-1");
+        if (paneller[j]) {
+          if (acik) { paneller[j].className += " b0001-hs-on"; }
+          else { paneller[j].className = paneller[j].className.replace(/\s*b0001-hs-on\b/g, ""); }
+        }
+        if (accler[j]) { accler[j].setAttribute("aria-expanded", acik ? "true" : "false"); }
+      }
+      if (odakla) { sekmeler[i].focus(); }
+    }
+
+    function tusla(ev) {
+      var i = parseInt(ev.currentTarget.getAttribute("data-hs-i"), 10);
+      var k = ev.key;
+      var ileri = yatay ? (rtlMi() ? "ArrowLeft" : "ArrowRight") : "ArrowDown";
+      var geri = yatay ? (rtlMi() ? "ArrowRight" : "ArrowLeft") : "ArrowUp";
+      var hedef = -1;
+      if (k === ileri) { hedef = (i + 1) % n; }
+      else if (k === geri) { hedef = (i - 1 + n) % n; }
+      else if (k === "Home") { hedef = 0; }
+      else if (k === "End") { hedef = n - 1; }
+      if (hedef !== -1) { ev.preventDefault(); sec(hedef, true); }
+    }
+
+    var i;
+    for (i = 0; i < n; i++) {
+      sekmeler[i].setAttribute("data-hs-i", String(i));
+      sekmeler[i].addEventListener("click", function (ev) { sec(parseInt(ev.currentTarget.getAttribute("data-hs-i"), 10), false); });
+      sekmeler[i].addEventListener("keydown", tusla);
+      if (accler[i]) {
+        accler[i].setAttribute("data-hs-i", String(i));
+        accler[i].addEventListener("click", function (ev) {
+          var idx = parseInt(ev.currentTarget.getAttribute("data-hs-i"), 10);
+          var acikMi = ev.currentTarget.getAttribute("aria-expanded") === "true";
+          if (acikMi) {
+            
+            paneller[idx].className = paneller[idx].className.replace(/\s*b0001-hs-on\b/g, "");
+            ev.currentTarget.setAttribute("aria-expanded", "false");
+          } else { sec(idx, false); }
+        });
+      }
+    }
+    sec(0, false);
+  })();
+</script>
+<section class="b0002-kt b0002-kt-sade" id="kt-wuuh76">
+  <div class="b0002-kt-wrap">
+    <header class="b0002-kt-head"><p class="b0002-kt-eyebrow">Pricing</p><h2 class="b0002-kt-title">Three plans, one page</h2><p class="b0002-kt-desc">Subscriptions renew automatically at the end of the term; a notice is sent by e-mail at least 7 days before renewal and you can cancel from account settings. Prices are fictional.</p></header>
+    <p class="b0002-kt-hint" aria-hidden="true"><span class="material-symbols-outlined">swipe</span> Swipe the table sideways</p>
+    <div class="b0002-kt-scroll" role="region" aria-label="Plan comparison table" tabindex="0">
+      <table class="b0002-kt-table">
+        <thead><tr><th scope="col" class="b0002-kt-ilk">Feature</th><th scope="col" class="b0002-kt-paket"><span class="b0002-kt-rozet b0002-kt-rozet-bos" aria-hidden="true"></span><span class="b0002-kt-ad">Starter</span><span class="b0002-kt-fiyat"><bdi dir="ltr">₺149</bdi></span><span class="b0002-kt-fiyat-not">/ user / month</span></th><th scope="col" class="b0002-kt-paket b0002-kt-oner"><span class="b0002-kt-rozet">Recommended</span><span class="b0002-kt-ad">Team</span><span class="b0002-kt-fiyat"><bdi dir="ltr">₺299</bdi></span><span class="b0002-kt-fiyat-not">/ user / month</span></th><th scope="col" class="b0002-kt-paket"><span class="b0002-kt-rozet b0002-kt-rozet-bos" aria-hidden="true"></span><span class="b0002-kt-ad">Enterprise</span><span class="b0002-kt-fiyat"><bdi dir="ltr">[object Object]</bdi></span><span class="b0002-kt-fiyat-not">annual contract</span></th></tr></thead>
+        <tbody><tr><th scope="row" class="b0002-kt-ilk">Unlimited boards</th><td class=""><span class="b0002-kt-evet"><span class="material-symbols-outlined" aria-hidden="true">check</span><span class="b0002-kt-sr">Included</span></span></td><td class="b0002-kt-oner"><span class="b0002-kt-evet"><span class="material-symbols-outlined" aria-hidden="true">check</span><span class="b0002-kt-sr">Included</span></span></td><td class=""><span class="b0002-kt-evet"><span class="material-symbols-outlined" aria-hidden="true">check</span><span class="b0002-kt-sr">Included</span></span></td></tr><tr><th scope="row" class="b0002-kt-ilk">Timeline</th><td class=""><span class="b0002-kt-hayir"><span class="material-symbols-outlined" aria-hidden="true">close</span><span class="b0002-kt-sr">Not included</span></span></td><td class="b0002-kt-oner"><span class="b0002-kt-evet"><span class="material-symbols-outlined" aria-hidden="true">check</span><span class="b0002-kt-sr">Included</span></span></td><td class=""><span class="b0002-kt-evet"><span class="material-symbols-outlined" aria-hidden="true">check</span><span class="b0002-kt-sr">Included</span></span></td></tr><tr><th scope="row" class="b0002-kt-ilk">Advanced reports</th><td class=""><span class="b0002-kt-hayir"><span class="material-symbols-outlined" aria-hidden="true">close</span><span class="b0002-kt-sr">Not included</span></span></td><td class="b0002-kt-oner"><span class="b0002-kt-evet"><span class="material-symbols-outlined" aria-hidden="true">check</span><span class="b0002-kt-sr">Included</span></span></td><td class=""><span class="b0002-kt-evet"><span class="material-symbols-outlined" aria-hidden="true">check</span><span class="b0002-kt-sr">Included</span></span></td></tr><tr><th scope="row" class="b0002-kt-ilk">Roles and permissions</th><td class=""><span class="b0002-kt-hayir"><span class="material-symbols-outlined" aria-hidden="true">close</span><span class="b0002-kt-sr">Not included</span></span></td><td class="b0002-kt-oner"><span class="b0002-kt-evet"><span class="material-symbols-outlined" aria-hidden="true">check</span><span class="b0002-kt-sr">Included</span></span></td><td class=""><span class="b0002-kt-evet"><span class="material-symbols-outlined" aria-hidden="true">check</span><span class="b0002-kt-sr">Included</span></span></td></tr><tr><th scope="row" class="b0002-kt-ilk">API and webhooks</th><td class=""><span class="b0002-kt-hayir"><span class="material-symbols-outlined" aria-hidden="true">close</span><span class="b0002-kt-sr">Not included</span></span></td><td class="b0002-kt-oner"><span class="b0002-kt-hayir"><span class="material-symbols-outlined" aria-hidden="true">close</span><span class="b0002-kt-sr">Not included</span></span></td><td class=""><span class="b0002-kt-evet"><span class="material-symbols-outlined" aria-hidden="true">check</span><span class="b0002-kt-sr">Included</span></span></td></tr><tr><th scope="row" class="b0002-kt-ilk">Data Processing Agreement</th><td class="">Standard</td><td class="b0002-kt-oner">Standard</td><td class="">Custom</td></tr><tr><th scope="row" class="b0002-kt-ilk">Auto-renewal notice</th><td class="">7 days before</td><td class="b0002-kt-oner">7 days before</td><td class="">30 days before</td></tr></tbody>
+        <tfoot><tr><td class="b0002-kt-ilk"></td><td class=""><a class="b0002-kt-btn" href="/en/demo-talebi/">Request a demo</a></td><td class="b0002-kt-oner"><a class="b0002-kt-btn" href="/en/demo-talebi/">Request a demo</a></td><td class=""><a class="b0002-kt-btn" href="/en/demo-talebi/">Request a demo</a></td></tr></tfoot>
+      </table>
+    </div>
+  </div>
+</section>
+
+
+<section class="b0003-s2 b0003-s2-ayrik-cizgili b0003-s2-desen-noktalar" id="s2-omh78s" data-s2-dil="en" data-s2-sure="1000" style="--s2-n:4">
+  <span class="b0003-s2-desen" aria-hidden="true"></span>
+  <div class="b0003-s2-wrap">
+    <header class="b0003-s2-head"><h2 class="b0003-s2-title">By the numbers</h2></header>
+    <ul class="b0003-s2-list"><li class="b0003-s2-item"><span class="b0003-s2-ikon" aria-hidden="true"><span class="material-symbols-outlined">dashboard</span></span><div class="b0003-s2-deger"><bdi dir="ltr"><span class="b0003-s2-sayi" data-s2-hedef="6" data-s2-ondalik="0">6</span></bdi></div><p class="b0003-s2-etiket">Feature areas</p></li><li class="b0003-s2-item"><span class="b0003-s2-ikon" aria-hidden="true"><span class="material-symbols-outlined">sell</span></span><div class="b0003-s2-deger"><bdi dir="ltr"><span class="b0003-s2-sayi" data-s2-hedef="3" data-s2-ondalik="0">3</span></bdi></div><p class="b0003-s2-etiket">Plans</p></li><li class="b0003-s2-item"><span class="b0003-s2-ikon" aria-hidden="true"><span class="material-symbols-outlined">notifications</span></span><div class="b0003-s2-deger"><bdi dir="ltr"><span class="b0003-s2-sayi" data-s2-hedef="7" data-s2-ondalik="0">7</span></bdi></div><p class="b0003-s2-etiket">Days of renewal notice</p></li><li class="b0003-s2-item"><span class="b0003-s2-ikon" aria-hidden="true"><span class="material-symbols-outlined">translate</span></span><div class="b0003-s2-deger"><bdi dir="ltr"><span class="b0003-s2-sayi" data-s2-hedef="3" data-s2-ondalik="0">3</span></bdi></div><p class="b0003-s2-etiket">Interface languages</p></li></ul>
+  </div>
+</section>
+
+
+
+<script>
+  
+  (function () {
+    var kok = document.getElementById("s2-omh78s");
+    if (!kok || kok.getAttribute("data-s2-hazir") === "1") { return; }
+    kok.setAttribute("data-s2-hazir", "1");
+    var azalt = false;
+    try { azalt = window.matchMedia("(prefers-reduced-motion: reduce)").matches; } catch (e) { azalt = false; }
+    if (azalt || !("IntersectionObserver" in window) || !window.requestAnimationFrame) { return; }
+    var dil = (kok.getAttribute("data-s2-dil") || document.documentElement.getAttribute("lang") || "tr").split("-")[0];
+    var sure = parseInt(kok.getAttribute("data-s2-sure"), 10);
+    if (!isFinite(sure) || sure < 200) { sure = 1000; }
+    var bicim = null;
+    function yaz(n, ondalik) {
+      try {
+        if (!bicim) { bicim = {}; }
+        if (!bicim[ondalik]) { bicim[ondalik] = new Intl.NumberFormat(dil + "-u-nu-latn", { minimumFractionDigits: ondalik, maximumFractionDigits: ondalik }); }
+        return bicim[ondalik].format(n);
+      } catch (e) { return n.toFixed(ondalik); }
+    }
+    function say(el) {
+      var hedef = parseFloat(el.getAttribute("data-s2-hedef"));
+      var ondalik = parseInt(el.getAttribute("data-s2-ondalik"), 10) || 0;
+      if (!isFinite(hedef)) { return; }
+      var bas = null;
+      function adim(ts) {
+        if (bas === null) { bas = ts; }
+        var p = Math.min(1, (ts - bas) / sure);
+        var e = 1 - Math.pow(1 - p, 3);
+        el.textContent = yaz(hedef * e, ondalik);
+        if (p < 1) { window.requestAnimationFrame(adim); } else { el.textContent = yaz(hedef, ondalik); }
+      }
+      el.textContent = yaz(0, ondalik);
+      window.requestAnimationFrame(adim);
+    }
+    var sayilar = kok.querySelectorAll(".b0003-s2-sayi[data-s2-hedef]");
+    var io = new IntersectionObserver(function (girdiler) {
+      var j;
+      for (j = 0; j < girdiler.length; j++) {
+        if (girdiler[j].isIntersecting) { say(girdiler[j].target); io.unobserve(girdiler[j].target); }
+      }
+    }, { threshold: 0.4 });
+    var i;
+    for (i = 0; i < sayilar.length; i++) { io.observe(sayilar[i]); }
+  })();
+</script>
+<section class="b0004-c3 b0004-c3-cerceveli-kart" id="c3-5cinvn">
+  <div class="b0004-c3-wrap">
+    <div class="b0004-c3-kutu">
+      <span class="b0004-c3-daire b0004-c3-daire-1" aria-hidden="true"></span>
+      <span class="b0004-c3-daire b0004-c3-daire-2" aria-hidden="true"></span>
+      <span class="b0004-c3-daire b0004-c3-daire-3" aria-hidden="true"></span>
+      <div class="b0004-c3-icerik">
+        <h2 class="b0004-c3-title">Ask for a demo for your team</h2>
+        <p class="b0004-c3-text">Subscriptions renew automatically at the end of the chosen term; a notice is sent by e-mail at least 7 days before renewal and you can cancel from account settings.</p>
+        <div class="b0004-c3-btns"><a class="b0004-c3-btn b0004-c3-btn-1" href="/en/demo-talebi/"><span>Request a demo</span><span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a><a class="b0004-c3-btn b0004-c3-btn-2" href="/en/veri-guvenligi/">Data security</a></div>
+      </div>
+      <div class="b0004-c3-yan"><div class="b0004-c3-kart"><div class="b0004-c3-kart-bas"><span class="b0004-c3-wa-ikon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 12 12 0 0 0 4.6 4 5.3 5.3 0 0 0 3.2.7 2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg></span><p class="b0004-c3-kart-title">Reach us now</p></div><a class="b0004-c3-num" href="tel:+903420000000"><bdi dir="ltr">+90 342 000 00 00</bdi></a><p class="b0004-c3-saat"><span class="material-symbols-outlined" aria-hidden="true">schedule</span><span><span class="b0004-c3-saat-etiket">Opening hours:</span> Support weekdays 09:00 – 18:00 · Reply within 4 business hours</span></p><a class="b0004-c3-wa" href="https://wa.me/903420000000?text=Hello%2C%20I%20am%20reaching%20out%20via%20your%20demo%20site." target="_blank" rel="noopener"><span class="b0004-c3-wa-ikon b0004-c3-wa-ikon-kucuk" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 12 12 0 0 0 4.6 4 5.3 5.3 0 0 0 3.2.7 2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg></span><span>Message us on WhatsApp</span></a></div></div>
+    </div>
+  </div>
+</section>
+
+
+</div>
+  <div id="footer"><footer class="f0000-f9" role="contentinfo">
+  <div class="f0000-f9__main f0000-f9__main--c3">
+    <div class="f0000-f9__col f0000-f9__brand">
+      <a href="/en/" class="f0000-f9__logo" aria-label="Home - Düzkanban">
+        <img src="/img/logo.png" alt="Düzkanban Logo" loading="lazy" />
+      </a>
+      <p class="f0000-f9__about">Düzkanban: project and task management software for teams; features, pricing, data security and demo requests. (Demo site — no real sign-up)</p>
+    </div>
+    <nav class="f0000-f9__col f0000-f9__pages" aria-label="Navigation">
+      <h3 class="f0000-f9__title">Pages</h3>
+      <ul class="f0000-f9__list">
+        <li><a class="f0000-f9__link" href="/en/">Home</a></li><li><a class="f0000-f9__link" href="/en/ozellikler/">Features</a></li><li><a class="f0000-f9__link" href="/en/fiyatlar/">Pricing</a></li><li><a class="f0000-f9__link" href="/en/demo-talebi/">Request a Demo</a></li><li><a class="f0000-f9__link" href="/en/veri-guvenligi/">Data Security</a></li><li><a class="f0000-f9__link" href="/en/sss/">FAQ</a></li><li><a class="f0000-f9__link" href="/en/galeri/">Product</a></li><li><a class="f0000-f9__link" href="/en/hakkimizda/">About</a></li><li><a class="f0000-f9__link" href="/en/iletisim/">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="f0000-f9__col f0000-f9__contact"><h3 class="f0000-f9__title">Contact</h3><ul class="f0000-f9__list"><li><span class="material-symbols-outlined" aria-hidden="true">location_on</span><span>21 Building 3, Technopark, Sehitkamil, Gaziantep (fictional address)</span></li><li><span class="material-symbols-outlined" aria-hidden="true">call</span><a class="f0000-f9__link" href="tel:+903420000000" dir="ltr">+90 342 000 00 00</a></li><li><span class="material-symbols-outlined" aria-hidden="true">mail</span><a class="f0000-f9__link" href="mailto:merhaba@duzkanban.example">merhaba@duzkanban.example</a></li></ul></div>
+    
+  </div>
+  <div class="f0000-f9__bottom">
+    <p class="f0000-f9__rights">&copy; 2026 Düzkanban. All rights reserved.</p>
+    <ul class="f0000-f9__legal"><li><a class="f0000-f9__link" href="/en/gizlilikpolitikasi/">Privacy Policy</a></li><li><a class="f0000-f9__link" href="/en/kisiselveriler/">Personal Data</a></li><li><a class="f0000-f9__link" href="/en/kullanicahaklari/">User Rights</a></li><li><a class="f0000-f9__link" href="/en/yasaluyari/">Legal Notice</a></li></ul>
+    <nav class="wm-langbar" aria-label="Language Selector"><ul><li class="wm-lang-item"><a href="/tr/" hreflang="tr" lang="tr">TR</a></li><li class="wm-lang-item wm-lang-active"><a href="/en/" hreflang="en" lang="en" aria-current="true">EN</a></li><li class="wm-lang-item"><a href="/ar/" hreflang="ar" lang="ar">AR</a></li></ul></nav>
+  </div>
+</footer>
+
+<div class="f0001-dk" role="contentinfo" aria-label="Demo credit">
+  <p class="f0001-dk-text">This demo was prepared by <bdi class="f0001-dk-brand" dir="ltr">Webyapar</bdi> — <a class="f0001-dk-cta" href="https://webyapar.com/temalar#saas-3" target="_blank" rel="noopener noreferrer"><span>Get this theme</span><span class="mx-visually-hidden"> (opens in a new tab)</span><span class="material-symbols-outlined mx-flip f0001-dk-arrow" aria-hidden="true">arrow_forward</span></a></p>
+</div>
+
+<nav class="wm-yasal" aria-label="Company &amp; Legal" style="box-sizing:border-box;width:100%;max-width:100%;padding:12px 16px;background:var(--mx-site-bg, #FAFAF8);color:var(--mx-site-text, #f3f4f6);display:flex;flex-wrap:wrap;gap:4px 16px;align-items:center;justify-content:center;text-align:center;overflow-wrap:anywhere"><strong style="color:var(--mx-site-text, #f3f4f6)">Company &amp; Legal</strong><a href="/en/misyon/" style="color:var(--mx-site-text, #f3f4f6);padding:6px 0;text-decoration:underline;min-width:0">Mission</a><a href="/en/vizyon/" style="color:var(--mx-site-text, #f3f4f6);padding:6px 0;text-decoration:underline;min-width:0">Vision</a><a href="/en/kalitepolitikamiz/" style="color:var(--mx-site-text, #f3f4f6);padding:6px 0;text-decoration:underline;min-width:0">Quality Policy</a></nav></div>
+
+  
+
+  <script defer src="/src/swiper-bundle.min.js"></script>
+  <script defer src="/src/mx-ui.js?v=fk3i3"></script>
+  <script defer src="/src/mx-store.js?v=fk3i3"></script>
+  <script defer type="text/javascript" src="/src/js.js?v=fk3i3"></script>
+  <script defer src="/src/cookie.js?v=fk3i3"></script>
+
+</body>
+
+</html>
