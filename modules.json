@@ -30,6 +30,12 @@
           "tr": "(yeni sekmede açılır)",
           "en": "(opens in a new tab)",
           "ar": "(يفتح في علامة تبويب جديدة)"
+        },
+        "girisHref": "",
+        "girisText": {
+          "tr": "Üye Girişi",
+          "en": "Login",
+          "ar": "تسجيل الدخول"
         }
       },
       "version": "1.0.0",
@@ -507,7 +513,12 @@
         "social_media": false,
         "logo_maxh": "60px",
         "logo_plate": false,
-        "contact_line": "auto"
+        "contact_line": "auto",
+        "logoDark": "",
+        "duzen": "",
+        "slogan": "",
+        "ikinciSutun": "",
+        "iletisimNot": ""
       },
       "version": "1.0.0",
       "icon": "widgets",
@@ -964,7 +975,13 @@
         "logoimg": "",
         "tekSatir": "",
         "langcolor": "currentColor",
-        "langbg": "transparent"
+        "langbg": "transparent",
+        "logoDark": "",
+        "duzen": "",
+        "ctaText": "",
+        "ctaHref": "",
+        "temaDugmesi": "",
+        "temaAnahtar": ""
       },
       "category": "menu",
       "description": "Sticky header navigasyon menüsü. Logo, sayfa linkleri ve mobil hamburger menü içerir. 16 farklı projede kullanılır: üretim, e-ticaret, kurumsal, eğitim, ajans ve hizmet sektörü firmalarında. Scroll animasyonu, aktif sayfa vurgulama ve responsive menü geçişi özellikleri vardır.",
@@ -2382,15 +2399,11 @@
               "en": "Enterprise",
               "ar": "المؤسسات"
             },
-            "fiyat": {
-              "tr": "Teklif",
-              "en": "Quote",
-              "ar": "عرض"
-            },
+            "fiyat": "—",
             "fiyatNot": {
-              "tr": "yıllık sözleşme",
-              "en": "annual contract",
-              "ar": "عقد سنوي"
+              "tr": "teklifle · yıllık sözleşme",
+              "en": "by quote · annual contract",
+              "ar": "بعرض سعر · عقد سنوي"
             },
             "onerilen": false,
             "url": "demo-talebi"
@@ -3703,24 +3716,24 @@
         "errcolor": "var(--mx-color-danger, #b42318)",
         "radius": "2px",
         "title": {
-          "tr": "Bize Ulaşın",
-          "en": "Get in Touch",
-          "ar": "تواصل معنا"
+          "tr": "Bize yazın",
+          "en": "Write to us",
+          "ar": "راسلنا"
         },
         "description": {
-          "tr": "Sorularınız, teklif talepleriniz ve iş birlikleri için formu doldurun; en kısa sürede dönüş yapalım.",
-          "en": "Fill in the form for questions, quote requests and partnerships; we will get back to you shortly.",
-          "ar": "املأ النموذج لأسئلتك وطلبات عروض الأسعار والشراكات؛ سنعود إليك في أقرب وقت."
+          "tr": "Ürün soruları, demo talebi ve destek için formu doldurun; iş günü içinde dönüş yapalım.",
+          "en": "Fill in the form for product questions, demo requests and support; we reply within a business day.",
+          "ar": "املأ النموذج للأسئلة عن المنتج وطلبات العرض التجريبي والدعم؛ نردّ خلال يوم عمل."
         },
         "panelTitle": {
-          "tr": "İletişim Bilgileri",
-          "en": "Contact Details",
-          "ar": "بيانات الاتصال"
+          "tr": "Destek ve satış",
+          "en": "Support and sales",
+          "ar": "الدعم والمبيعات"
         },
         "panelText": {
-          "tr": "Ofisimize uğrayın, arayın ya da yazın — size yardımcı olmaktan mutluluk duyarız.",
-          "en": "Drop by our office, call or write — we are happy to help.",
-          "ar": "تفضّل بزيارة مكتبنا أو اتصل بنا أو اكتب لنا — يسعدنا مساعدتك."
+          "tr": "Bizi arayın ya da yazın; demo ve kurulum sorularını yanıtlarız.",
+          "en": "Call or write to us; we answer demo and set-up questions.",
+          "ar": "اتصل بنا أو راسلنا؛ نجيب عن أسئلة العرض التجريبي والإعداد."
         },
         "address": {
           "tr": "Teknokent Bina 3 No: 21, Şehitkamil, Gaziantep (kurgusal adres)",
@@ -3821,27 +3834,27 @@
         },
         "subjects": [
           {
-            "id": "teklif",
+            "id": "demo",
             "name": {
-              "tr": "Teklif talebi",
-              "en": "Quote request",
-              "ar": "طلب عرض سعر"
+              "tr": "Demo talebi",
+              "en": "Demo request",
+              "ar": "طلب عرض تجريبي"
             }
           },
           {
-            "id": "bilgi",
+            "id": "fiyat",
             "name": {
-              "tr": "Bilgi almak istiyorum",
-              "en": "I would like information",
-              "ar": "أرغب في الحصول على معلومات"
+              "tr": "Fiyat ve paketler",
+              "en": "Pricing and plans",
+              "ar": "الأسعار والباقات"
             }
           },
           {
             "id": "destek",
             "name": {
-              "tr": "Destek",
-              "en": "Support",
-              "ar": "الدعم"
+              "tr": "Teknik destek",
+              "en": "Technical support",
+              "ar": "الدعم الفني"
             }
           },
           {
@@ -3928,7 +3941,8 @@
           "tr": "Merhaba, web sitenizden yazıyorum.",
           "en": "Hello, I am writing from your website.",
           "ar": "مرحبًا، أكتب إليكم من موقعكم الإلكتروني."
-        }
+        },
+        "formAction": ""
       },
       "data": [],
       "veri": {
