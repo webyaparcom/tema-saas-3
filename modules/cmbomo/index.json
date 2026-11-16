@@ -1,43 +1,51 @@
 {
-  "name": "Menu 2",
-  "desing": {
-    "bgcolor": "#1e3046",
-    "color": "#ffffff",
-    "activebgcolor": "#ffffff",
-    "activecolor": "#000000",
-    "height": "100px",
-    "ariaToggle": {
-      "tr": "Menüyü aç/kapat",
-      "en": "Toggle menu", "ar": "تبديل القائمة"
-    },
-    "ariaClose": {
-      "tr": "Menüyü kapat",
-      "en": "Close menu"
-    },
-    "logobg": "transparent",
-    "logoborder": "none",
-    "logoradius": "0",
-    "logopad": "0",
-    "logopadmobil": "0",
-    "logomaxh": "100px",
-    "logoimg": "",
-    "tekSatir": "",
-    "langcolor": "currentColor",
-    "langbg": "transparent",
-    "logoDark": "",
-    "duzen": "",
-    "ctaText": "",
-    "ctaHref": "",
-    "temaDugmesi": "",
-    "temaAnahtar": ""
-  },
+  "name": "Üst Tam Ekran — dev bağlantılı tam ekran menü katmanı",
+  "description": "Çubukta yalnız logo, dil ve menü düğmesi. Düğme ekranı vurgu renkli bir katmanla kaplar: dev, sıra numaralı bağlantılar kademeli belirir; altta düğme, telefon ve e-posta. Menü bir sahne geçişi: tüm ekranı kaplayan cesur tipografi (ajans/portföy dili); masaüstünde de aynı deneyim. Sayfalar site sayfalarından, dil seçici {{langbar}}, logo {{logo}}. Mobil menü erişilebilir (aria-expanded, Esc, odak). Renkler desing + var(--mx-site-*); mantıksal CSS → RTL.",
+  "version": "1.0.0",
+  "icon": "fullscreen",
   "category": "menu",
-  "description": "Sticky header navigasyon menüsü. Logo, sayfa linkleri ve mobil hamburger menü içerir. 16 farklı projede kullanılır: üretim, e-ticaret, kurumsal, eğitim, ajans ve hizmet sektörü firmalarında. Scroll animasyonu, aktif sayfa vurgulama ve responsive menü geçişi özellikleri vardır.",
-  "version": "1.0.4",
-  "icon": "menu",
+  "subCategory": "fullscreen-overlay",
+  "tags": [
+    "menu",
+    "fullscreen",
+    "overlay",
+    "typographic",
+    "modal",
+    "rtl",
+    "fabrika"
+  ],
+  "desing": {
+    "max": "1200px",
+    "bosluk": "0px",
+    "yuvarlak": "18px",
+    "ust": "",
+    "baslik": "",
+    "metin": "",
+    "cta_ad": "",
+    "cta_url": "",
+    "tel": "",
+    "bg": "var(--mx-site-bg, #ffffff)",
+    "text": "var(--mx-site-text, #111318)",
+    "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 68%, var(--mx-site-bg, #ffffff))",
+    "kartBg": "var(--mx-site-surface, #f6f7f9)",
+    "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+    "accent": "var(--mx-site-primary, #2563eb)",
+    "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+    "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+    "vurguBg": "var(--mx-site-primary, #2563eb)",
+    "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+    "logoH": "44px",
+    "bgcolor": "var(--mx-site-bg, #ffffff)",
+    "color": "var(--mx-site-text, #111318)"
+  },
+  "data": [],
   "veri": {
     "statik": true,
     "dinamik": false,
-    "kaynak": "desing/data"
+    "kaynak": "data",
+    "alanlar": {
+      "name": "ek bağlantı adı (dil sözlüğü)",
+      "url": "iç yol ya da dış adres (dış adres yeni sekmede)"
+    }
   }
 }

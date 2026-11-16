@@ -1,129 +1,69 @@
-<section class="modulex-c3{{c3class}}" id="c3-{{id}}">
-  <div class="modulex-c3-wrap">
-    <div class="modulex-c3-kutu">
-      <span class="modulex-c3-daire modulex-c3-daire-1" aria-hidden="true"></span>
-      <span class="modulex-c3-daire modulex-c3-daire-2" aria-hidden="true"></span>
-      <span class="modulex-c3-daire modulex-c3-daire-3" aria-hidden="true"></span>
-      <div class="modulex-c3-icerik">
-        {{c3title}}
-        {{c3text}}
-        <div class="modulex-c3-btns">{{c3btns}}</div>
-      </div>
-      {{c3yan}}
-    </div>
+<section class="modulex-cagri-hap{{fbsinif}}" {{fbetiket}}>
+  <div class="modulex-cagri-hap-ic">
+    {{fbbas}}
+    {{fbgovde}}
   </div>
 </section>
 
 <style>
-  /* Bant CTA (31 Eki 2026, G8-B). Zemin + yazı ÇİFT token (bgcolor/textcolor); gradient katmanı ve daireler ayrı öğe → metin
-     kontrastı düz zemine göre ölçülür. WhatsApp kartı opak yüzey (cardbg/cardtext). Koyu mod paletten. */
-  .modulex-c3 {
-    box-sizing: border-box;
-    width: 100%;
-    color: --textcolor--;
-  }
-  .modulex-c3 *, .modulex-c3 *::before, .modulex-c3 *::after { box-sizing: border-box; }
-  /* ham css.css `* { font-size:14px; font-weight:400 }` kalıtımı kırar → buton etiketi, numara (bdi) ebeveynden alır */
-  .modulex-c3 :where(span:not(.material-symbols-outlined), bdi, b, strong, em) { font: inherit; }
-  .modulex-c3-wrap { max-width: --max--; margin-inline: auto; }
-  .modulex-c3-kutu {
-    position: relative; overflow: hidden; isolation: isolate;
-    display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: clamp(24px, 4vw, 56px); align-items: center;
-    background: --bgcolor--;
-  }
-  /* Hafif gradient katmanı (metnin atası değil) */
-  .modulex-c3-kutu::before {
-    content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
-    background: linear-gradient(135deg, transparent 0%, color-mix(in srgb, --textcolor-- 14%, transparent) 100%);
-  }
-  .modulex-c3-daire { position: absolute; z-index: -1; border-radius: 50%; pointer-events: none; background: color-mix(in srgb, --textcolor-- 10%, transparent); }
-  .modulex-c3-daire-1 { width: 320px; height: 320px; inset-inline-end: -120px; inset-block-start: -140px; }
-  .modulex-c3-daire-2 { width: 200px; height: 200px; inset-inline-start: 38%; inset-block-end: -120px; background: color-mix(in srgb, --textcolor-- 7%, transparent); }
-  .modulex-c3-daire-3 { width: 90px; height: 90px; inset-inline-start: -30px; inset-block-start: 30%; border: 2px solid color-mix(in srgb, --textcolor-- 30%, transparent); background: transparent; }
+  /* cagri-hap — En sıkışık çağrı — sayfa ortasında az yer kaplayan bildirim kapsülü. */
+  .modulex-cagri-hap { box-sizing: border-box; width: 100%; padding: --bosluk-- 20px; background: --bg--; color: --yaziRenk--; font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .modulex-cagri-hap *, .modulex-cagri-hap *::before, .modulex-cagri-hap *::after { box-sizing: border-box; }
+  /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
+  .modulex-cagri-hap :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  /* aynı «*» kuralı font-weight 400 · line-height 1.2 · font-family de basar — modül içinde kalıtım */
+  .modulex-cagri-hap :where(*:not(.material-symbols-outlined)) { font-weight: inherit; line-height: inherit; font-family: inherit; }
+  .modulex-cagri-hap :where(h2, h3, h4, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+  .modulex-cagri-hap :where(ul, ol) { padding: 0; list-style: none; }
+  .modulex-cagri-hap img { display: block; max-width: 100%; }
+  /* <img width height> öznitelik yüksekliği CSS aspect-ratio'yu ezer — sıfır özgüllükle auto (modül sınıfının height'ı yine kazanır) */
+  :where(.modulex-cagri-hap) img { height: auto; }
+  .modulex-cagri-hap [hidden] { display: none !important; }
+  .modulex-cagri-hap :where(a, button, summary, [data-cevir]) { cursor: pointer; }
+  .modulex-cagri-hap :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid --accent--; outline-offset: 3px; }
+  .modulex-cagri-hap-ic { max-width: --max--; margin-inline: auto; }
+  .modulex-cagri-hap-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
+  .modulex-cagri-hap--bassiz .modulex-cagri-hap-bas { display: none; }
+  .modulex-cagri-hap-ust { color: --accentInk--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-cagri-hap-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.025em; line-height: 1.1; }
+  .modulex-cagri-hap-metin { color: --muted--; font-size: 1.05rem; line-height: 1.7; }
+  .modulex-cagri-hap-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
+  .modulex-cagri-hap-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid --accent--; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+  .modulex-cagri-hap-dugme:hover { transform: translateY(-2px); }
+  .modulex-cagri-hap-dugme--ikincil { background: transparent; color: --yaziRenk--; border-color: --cizgi--; }
+  .modulex-cagri-hap-dugme--ikincil:hover { border-color: --accent--; }
+  .modulex-cagri-hap-dugme .material-symbols-outlined { font-size: 20px; }
 
-  .modulex-c3-icerik { position: relative; min-width: 0; text-align: start; }
-  .modulex-c3-title { margin: 0 0 14px; font-size: clamp(1.8rem, 1.2rem + 2.2vw, 2.8rem); line-height: 1.12; color: --textcolor--; text-wrap: balance; }
-  .modulex-c3-text { margin: 0 0 26px; max-width: 54ch; font-size: 1.08rem; line-height: 1.7; color: --mutedcolor--; }
-  .modulex-c3-btns { display: flex; flex-wrap: wrap; gap: 12px; }
-  .modulex-c3 a.modulex-c3-btn, .modulex-c3 a.modulex-c3-btn:link, .modulex-c3 a.modulex-c3-btn:visited {
-    display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 50px; padding: 13px 26px;
-    border-radius: 999px; font-weight: 700; font-size: 1rem; text-decoration: none; cursor: pointer; border: 2px solid transparent;
-    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
-  }
-  .modulex-c3 a.modulex-c3-btn-1, .modulex-c3 a.modulex-c3-btn-1:link, .modulex-c3 a.modulex-c3-btn-1:visited { background: --textcolor--; color: --bgcolor--; border-color: --textcolor--; }
-  .modulex-c3 a.modulex-c3-btn-2, .modulex-c3 a.modulex-c3-btn-2:link, .modulex-c3 a.modulex-c3-btn-2:visited { background: transparent; color: --textcolor--; border-color: --textcolor--; }
-  .modulex-c3 a.modulex-c3-btn:hover, .modulex-c3 a.modulex-c3-btn:focus-visible { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18); }
-  .modulex-c3 a.modulex-c3-btn-1:hover { color: --bgcolor--; }
-  .modulex-c3 a.modulex-c3-btn-2:hover, .modulex-c3 a.modulex-c3-btn-2:focus-visible { background: color-mix(in srgb, --textcolor-- 14%, transparent); color: --textcolor--; }
-  .modulex-c3 a.modulex-c3-btn:focus-visible { outline: 3px solid --textcolor--; outline-offset: 3px; }
-  [dir="rtl"] .modulex-c3-btn .material-symbols-outlined { transform: scaleX(-1); }
-
-  /* Sağ sütun */
-  .modulex-c3-yan { position: relative; min-width: 0; }
-  .modulex-c3-kart {
-    position: relative; display: grid; gap: 14px; padding: 28px; border-radius: calc(--radius-- - 4px);
-    background: --cardbg--; color: --cardtext--; border: 1px solid --bordercolor--; box-shadow: 0 24px 48px rgba(0, 0, 0, 0.2);
-  }
-  .modulex-c3-kart-bas { display: flex; align-items: center; gap: 12px; }
-  .modulex-c3-wa-ikon { display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 14px; background: color-mix(in srgb, --bgcolor-- 14%, transparent); color: --bgcolor--; flex: 0 0 auto; }
-  .modulex-c3-wa-ikon svg { width: 26px; height: 26px; display: block; }
-  .modulex-c3-wa .modulex-c3-wa-ikon-kucuk { width: 24px; height: 24px; border-radius: 0; background: transparent; color: inherit; }
-  .modulex-c3-wa .modulex-c3-wa-ikon-kucuk svg { width: 22px; height: 22px; }
-  .modulex-c3-tek .modulex-c3-kutu { grid-template-columns: 1fr; }
-  .modulex-c3-kart-title { margin: 0; font-size: 1.05rem; font-weight: 700; color: --cardtext--; }
-  .modulex-c3 a.modulex-c3-num, .modulex-c3 a.modulex-c3-num:link, .modulex-c3 a.modulex-c3-num:visited { display: inline-block; font-size: clamp(1.4rem, 1.1rem + 1vw, 1.9rem); font-weight: 800; letter-spacing: 0.01em; color: --cardtext--; text-decoration: none; font-variant-numeric: tabular-nums; min-height: 44px; line-height: 44px; }
-  .modulex-c3 a.modulex-c3-num:hover, .modulex-c3 a.modulex-c3-num:focus-visible { color: --bgcolor--; text-decoration: underline; }
-  .modulex-c3-saat { display: flex; align-items: flex-start; gap: 8px; margin: 0; font-size: 0.92rem; line-height: 1.5; color: --cardmuted--; }
-  .modulex-c3-saat .material-symbols-outlined { font-size: 20px; flex: 0 0 auto; color: --bgcolor--; }
-  .modulex-c3-saat-etiket { font-weight: 600; color: --cardtext--; }
-  .modulex-c3 a.modulex-c3-wa, .modulex-c3 a.modulex-c3-wa:link, .modulex-c3 a.modulex-c3-wa:visited {
-    display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 12px 20px; border-radius: 999px;
-    background: --bgcolor--; color: --textcolor--; font-weight: 700; text-decoration: none; cursor: pointer; transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  .modulex-c3 a.modulex-c3-wa:hover, .modulex-c3 a.modulex-c3-wa:focus-visible { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.16); color: --textcolor--; }
-  .modulex-c3 a.modulex-c3-wa:focus-visible { outline: 3px solid --bgcolor--; outline-offset: 3px; }
-  .modulex-c3-gorsel { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: calc(--radius-- - 4px); box-shadow: 0 24px 48px rgba(0, 0, 0, 0.2); }
-  .modulex-c3-ill { position: relative; aspect-ratio: 4 / 3; border-radius: calc(--radius-- - 4px); border: 2px dashed color-mix(in srgb, --textcolor-- 40%, transparent); display: flex; align-items: center; justify-content: center; color: --textcolor--; }
-  .modulex-c3-ill .material-symbols-outlined { font-size: 96px; opacity: 0.55; }
-
-  /* ── Varyant: gradient (varsayılan) — tam genişlik bant, köşesiz */
-  .modulex-c3-gradient .modulex-c3-wrap { max-width: none; }
-  .modulex-c3-gradient .modulex-c3-kutu { padding-block: clamp(48px, 7vw, 96px); padding-inline: max(clamp(16px, 4vw, 32px), calc((100% - --max--) / 2)); }
-
-  /* ── Varyant: gorselli — gradient yok, sağ sütun tam yükseklik görsel/kart; sol metin */
-  .modulex-c3-gorselli .modulex-c3-wrap { max-width: none; }
-  .modulex-c3-gorselli .modulex-c3-kutu { gap: 0; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: stretch; }
-  .modulex-c3-gorselli .modulex-c3-kutu::before { display: none; }
-  .modulex-c3-gorselli .modulex-c3-daire { display: none; }
-  .modulex-c3-gorselli .modulex-c3-icerik { padding-block: clamp(48px, 7vw, 96px); padding-inline-start: max(clamp(16px, 4vw, 32px), calc(50vw - --max-- / 2)); padding-inline-end: clamp(24px, 4vw, 56px); }
-  .modulex-c3-gorselli .modulex-c3-yan { display: flex; align-items: center; justify-content: center; }
-  .modulex-c3-gorselli .modulex-c3-gorsel { height: 100%; aspect-ratio: auto; border-radius: 0; box-shadow: none; }
-  .modulex-c3-gorselli .modulex-c3-kart, .modulex-c3-gorselli .modulex-c3-ill { margin: clamp(24px, 4vw, 56px); width: min(100% - 2 * clamp(24px, 4vw, 56px), 440px); }
-
-  /* ── Varyant: cerceveli-kart — sayfa zemini üstünde yüzen kart */
-  .modulex-c3-cerceveli-kart { padding-block: clamp(32px, 6vw, 80px); padding-inline: clamp(16px, 4vw, 32px); background: --pagebg--; }
-  .modulex-c3-cerceveli-kart .modulex-c3-kutu { padding: clamp(32px, 5vw, 64px); border-radius: --radius--; box-shadow: 0 30px 60px rgba(0, 0, 0, 0.22); }
-
-  @media (max-width: 1024px) {
-    .modulex-c3-kutu { grid-template-columns: 1fr; }
-    .modulex-c3-gorselli .modulex-c3-kutu { grid-template-columns: 1fr; }
-    .modulex-c3-gorselli .modulex-c3-icerik { padding-inline: clamp(16px, 4vw, 32px); order: 2; }
-    .modulex-c3-gorselli .modulex-c3-yan { order: 1; }
-    .modulex-c3-gorselli .modulex-c3-gorsel { aspect-ratio: 16 / 9; height: auto; }
-    .modulex-c3-gorselli .modulex-c3-kart, .modulex-c3-gorselli .modulex-c3-ill { margin: clamp(16px, 4vw, 32px) clamp(16px, 4vw, 32px) 0; width: auto; }
-  }
+  .modulex-cagri-hap-kapsul { display: flex; align-items: center; gap: 20px; padding: 12px; padding-inline-end: 12px; border: 1px solid --cizgi--; border-radius: 999px; background: --kartBg--; transition: box-shadow 0.3s ease, border-color 0.3s ease; }
+  .modulex-cagri-hap-kapsul:hover { border-color: --accent--; box-shadow: 0 16px 32px -24px color-mix(in srgb, --yaziRenk-- 70%, transparent); }
+  .modulex-cagri-hap-daire { display: grid; place-items: center; flex: none; width: 64px; height: 64px; border-radius: 50%; background: --accent--; color: --accentText--; }
+  .modulex-cagri-hap-daire .material-symbols-outlined { font-size: 30px; animation: modulex-cagri-hap-salla 3s ease-in-out infinite; }
+  .modulex-cagri-hap-yazi { flex: 1; display: grid; gap: 2px; min-width: 0; }
+  .modulex-cagri-hap-kbas { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.1rem, 1.8vw, 1.35rem); font-weight: 750; line-height: 1.25; }
+  .modulex-cagri-hap-kmetin { color: --muted--; font-size: 0.95rem; }
+  .modulex-cagri-hap-cta { flex: none; margin: 0; }
+  @keyframes modulex-cagri-hap-salla { 0%, 80%, 100% { transform: rotate(0); } 85% { transform: rotate(-14deg); } 92% { transform: rotate(10deg); } }
   @media (max-width: 768px) {
-    .modulex-c3-gradient .modulex-c3-kutu { padding-block: 40px; }
-    .modulex-c3-cerceveli-kart { padding-block: 24px; padding-inline: 12px; }
-    .modulex-c3-cerceveli-kart .modulex-c3-kutu { padding: 28px 20px; }
-    .modulex-c3-btns { flex-direction: column; }
-    .modulex-c3 a.modulex-c3-btn { width: 100%; }
-    .modulex-c3-kart { padding: 20px; }
-    .modulex-c3-daire-1 { width: 200px; height: 200px; inset-inline-end: -90px; inset-block-start: -100px; }
-    [class*="modulex"] { max-width: 100%; box-sizing: border-box; }
+    .modulex-cagri-hap-kapsul { flex-direction: column; align-items: flex-start; border-radius: --yuvarlak--; padding: 22px; }
+  }
+  .modulex-cagri-hap-wasvg { width: 1.25em; height: 1.25em; flex: none; }
+  .modulex-cagri-hap-maddeler { display: grid; gap: 12px; }
+  .modulex-cagri-hap-madde { display: flex; align-items: flex-start; gap: 12px; }
+  .modulex-cagri-hap-mikon { flex: none; color: --accentInk--; font-size: 24px; }
+  .modulex-cagri-hap-myazi { display: grid; gap: 2px; }
+  .modulex-cagri-hap-myazi strong { font-weight: 700; }
+  .modulex-cagri-hap-myazi small { color: --muted--; font-size: 0.92rem; }
+  .modulex-cagri-hap-not { color: --muted--; font-size: 0.9rem; }
+  .modulex-cagri-hap-saat { display: flex; align-items: center; gap: 8px; color: --muted--; font-size: 0.95rem; }
+  .modulex-cagri-hap-saat .material-symbols-outlined { font-size: 20px; color: --accentInk--; }
+  .modulex-cagri-hap-metin { max-width: 62ch; }
+
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-cagri-hap :is(.modulex-cagri-hap-baslik, .modulex-cagri-hap-ust, h3, h4, strong) { letter-spacing: 0; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-cagri-hap-baslik { line-height: 1.35; }
+  @media (max-width: 768px) {
+    .modulex-cagri-hap { padding-inline: 16px; }
   }
   @media (prefers-reduced-motion: reduce) {
-    .modulex-c3 *, .modulex-c3 *::before, .modulex-c3 *::after { animation: none !important; transition: none !important; }
-    .modulex-c3 a:hover { transform: none; }
+    .modulex-cagri-hap *, .modulex-cagri-hap *::before, .modulex-cagri-hap *::after { animation: none !important; transition: none !important; }
   }
 </style>

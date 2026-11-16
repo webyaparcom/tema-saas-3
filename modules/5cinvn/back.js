@@ -1,88 +1,126 @@
-/* cta-3 — sunucu tarafı: butonlar + sağ sütun (WhatsApp kartı / görsel / illüstrasyon); yer tutucular: c3class c3text c3btns c3yan.
-   desing: stil (gradient|gorselli|cerceveli-kart), sag (whatsapp|gorsel|yok), btn1Label/btn1Url, btn2Label/btn2Url,
-   number (yalnız rakam; boşsa setting.whatsapp/phone), numberText (görünen biçim), waLabel, waTitle, hours, hoursLabel, waMessage, img, alt. */
-var c3Des = json.desing || {};
-var c3Lang = json.lang || "tr";
-
-function c3Esc(s) {
-  return String(s == null ? "" : s)
-    .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
-}
-function c3Pick(v) { return wmPickLang(v, c3Lang); }
-function c3Url(v) {
-  var s = String(v == null ? "" : v).trim();
-  if (!s) { return ""; }
-  if (/^\s*(javascript|vbscript|file|data):/i.test(s)) { return ""; }
-  if (s.charAt(0) === "/" || /^https?:\/\//i.test(s)) { return s; }
-  return "/img/" + s;
-}
-function c3Href(v) {
-  var s = String(v == null ? "" : v).trim();
-  if (!s) { return ""; }
-  if (/^\s*(javascript|vbscript|file|data):/i.test(s)) { return ""; }
-  if (/^(https?:)?\/\//i.test(s) || /^(mailto:|tel:|#)/i.test(s) || s.charAt(0) === "/") { return s; }
+/* cagri-hap — Çağrı Hap — tek satır yuvarlak kapsül (15 Kas 2026 · mcp:webmaker/20261115-224259-bpa9 · D17).
+   Tüm çağrı tek bir uzun kapsülde: ikon dairesi + başlık (ve küçük metin) + düğme. Mobilde yuvarlatılmış kart olur.
+   Üretici: scripts/modul-fabrika (aile cta) — elle düzenleme yerine tanımı değiştirip yeniden üret.
+   Veri: desing: { ust?, baslik, metin?, btn1Text/btn1Url, btn2Text/btn2Url, img?, ikon?, not?, number?, waLabel?, hours? } · data (isteğe bağlı): [{ ikon?, baslik, aciklama? }] kısa maddeler — metinler dil sözlüğü. */
+const P = "modulex-cagri-hap";
+const IMG_KOK = "/img/";
+/* --- ortak ön ek (scripts/modul-fabrika/on-ek.js) — dil · güvenlik · sayı yardımcıları --- */
+const pick = (v) => {
+  if (v == null) return "";
+  if (typeof v !== "object") return String(v);
+  if (typeof wmPickLang === "function") { try { return wmPickLang(v, json.lang) || ""; } catch (e) { /* alt satır */ } }
+  return String(v[json.lang] ?? Object.values(v)[0] ?? "");
+};
+const esc = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+const medyaUrl = (v) => {
+  const s = String(v ?? "").trim();
+  if (!s || /^\s*(javascript|vbscript|file):/i.test(s)) return "";
+  if (/^data:/i.test(s)) return /^data:(image|video|audio)\//i.test(s) ? s : "";
+  if (s.startsWith("/") || /^https?:\/\//i.test(s)) return s;
+  return `${IMG_KOK}${s}`;
+};
+const href = (v) => {
+  const s = String(v ?? "").trim();
+  if (!s || /^\s*(javascript|vbscript|data):/i.test(s)) return "";
+  if (/^(https?:)?\/\//i.test(s) || /^(mailto:|tel:|#)/i.test(s)) return s;
   return wxLangInternalHref(s);
+};
+const dogru = (v, d) => (v === undefined || v === null || v === "") ? d : !(v === false || v === "false" || v === 0 || v === "0");
+const ikonAd = (v) => String(v ?? "").trim().replace(/[^a-z0-9_]/gi, "");
+const satirlar = (s) => esc(s).replace(/\r?\n/g, "<br />");
+/* ilk dolu alan: yeni ad önce, eski kuşak şablonun adı yedek (G6 yalnız path değiştirerek takas eder) */
+const ilk = (o, ks) => {
+  for (const k of ks) {
+    const v = o == null ? undefined : o[k];
+    if (v == null || v === "") continue;
+    if (typeof v === "object" && !Array.isArray(v) && !Object.keys(v).length) continue;
+    return v;
+  }
+  return "";
+};
+const metinAl = (o, ks) => pick(ilk(o, ks)).trim();
+const { desing: des = {} } = json;
+const setting = webmakerdata?.setting ?? {};
+const veri = Array.isArray(json.data) ? json.data : [];
+const dil = String(json.lang || "");
+const sayiBicim = (v, ondalik) => {
+  try { return new Intl.NumberFormat(dil || undefined, { minimumFractionDigits: ondalik, maximumFractionDigits: ondalik }).format(v); } catch (e) { return String(v); }
+};
+const ikonH = (ad, sinif) => (ad ? `<span class="${sinif} material-symbols-outlined" aria-hidden="true">${ad}</span>` : "");
+const no = (i) => String(i + 1).padStart(2, "0");
+const ctaHtml = () => {
+  const a1 = metinAl(des, ["cta_ad", "button"]); const u1 = href(ilk(des, ["cta_url", "buttonurl", "url"]));
+  const a2 = metinAl(des, ["cta2_ad"]); const u2 = href(ilk(des, ["cta2_url"]));
+  const d = (a, u, ek) => (a && u ? `<a class="${P}-dugme${ek}" href="${esc(u)}">${esc(a)}<span class="material-symbols-outlined mx-flip" aria-hidden="true">arrow_forward</span></a>` : "");
+  const ic = d(a1, u1, "") + d(a2, u2, ` ${P}-dugme--ikincil`);
+  return ic ? `<div class="${P}-cta">${ic}</div>` : "";
+};
+const basHtml = (B, ek) => {
+  if (!B.ust && !B.baslik && !B.metin && !ek) return "";
+  return `<header class="${P}-bas">`
+    + (B.ust ? `<p class="${P}-ust">${esc(B.ust)}</p>` : "")
+    + (B.baslik ? `<h2 class="${P}-baslik" id="${P}-{{id}}-b">${esc(B.baslik)}</h2>` : "")
+    + (B.metin ? `<p class="${P}-metin">${satirlar(B.metin)}</p>` : "")
+    + (ek || "")
+    + "</header>";
+};
+/* --- aile: cta --- */
+/* bağlantı: dil önekli sabit değer (/tr/iletisim) aktif dile çevrilir (cta-1 F3 onarımıyla aynı) */
+const urlAl = (v) => { const s = pick(v).trim(); if (!s) return ""; return href(/^(https?:)?\/\//i.test(s) ? s : s.replace(/^\/[a-z]{2}(\/|$)/i, "/")); };
+const dugmeler = [
+  [metinAl(des, ["btn1Text", "btn1Label", "btnText", "cta_ad", "button"]), urlAl(ilk(des, ["btn1Url", "btnUrl", "cta_url", "buttonurl", "url"]))],
+  [metinAl(des, ["btn2Text", "btn2Label", "cta2_ad"]), urlAl(ilk(des, ["btn2Url", "cta2_url"]))],
+].filter((d) => d[0] && d[1]).map((d, i) => ({ ad: d[0], url: d[1], i }));
+/* telefon / WhatsApp: desing.number > setting.whatsapp > setting.phone (yalnız rakam, en az 8) */
+const telHam = String(pick(ilk(des, ["number", "tel"])) || setting.whatsapp || setting.phone || "").replace(/[^\d]/g, "");
+const tel = telHam.length >= 8 ? telHam : "";
+const waMesaj = metinAl(des, ["waMessage"]);
+const D = {
+  dugmeler, img: medyaUrl(ilk(des, ["img", "image", "gorsel"])), alt: metinAl(des, ["alt"]), ikon: ikonAd(ilk(des, ["ikon", "icon"])),
+  not: metinAl(des, ["not", "note"]), tel, telYazi: metinAl(des, ["numberText"]) || (tel ? "+" + tel : ""),
+  wa: tel ? `https://wa.me/${tel}${waMesaj ? "?text=" + encodeURIComponent(waMesaj) : ""}` : "",
+  waAd: metinAl(des, ["waLabel"]), waBaslik: metinAl(des, ["waTitle"]), saat: metinAl(des, ["hours"]), saatAd: metinAl(des, ["hoursLabel"]),
+};
+const kayitlar = veri.map((o) => ({
+  ikon: ikonAd(ilk(o, ["ikon", "icon"])), baslik: metinAl(o, ["baslik", "name", "title", "metin", "text"]),
+  metin: metinAl(o, ["aciklama", "description"]),
+})).filter((k) => k.baslik);
+/* parça yardımcıları — başlık kimliği bölümün aria-labelledby'sine bağlı */
+const bslk = (B, s, t) => (B.baslik ? `<${t || "h2"} class="${P}-${s || "baslik"}" id="${P}-{{id}}-b">${esc(B.baslik)}</${t || "h2"}>` : "");
+const ustH = (B, s) => (B.ust ? `<p class="${P}-${s || "ust"}">${esc(B.ust)}</p>` : "");
+const metH = (B, s) => (B.metin ? `<p class="${P}-${s || "metin"}">${satirlar(B.metin)}</p>` : "");
+const okH = (ad) => `<span class="material-symbols-outlined mx-flip" aria-hidden="true">${ad || "arrow_forward"}</span>`;
+const dgTek = (d, s) => `<a class="${P}-dugme${d.i ? ` ${P}-dugme--ikincil` : ""}${s ? ` ${P}-${s}` : ""}" href="${esc(d.url)}">${esc(d.ad)}${d.i ? "" : okH()}</a>`;
+const dgH = (s) => (D.dugmeler.length ? `<div class="${P}-${s || "cta"}">${D.dugmeler.map((d) => dgTek(d)).join("")}</div>` : "");
+const notH = (s) => (D.not ? `<p class="${P}-${s || "not"}">${esc(D.not)}</p>` : "");
+const maddeH = (ic, s) => (ic ? `<ul class="${P}-${s || "maddeler"}" role="list">${ic}</ul>` : "");
+const gorH = (s, w, h) => (D.img ? `<img class="${P}-${s || "gorsel"}" src="${esc(D.img)}" alt="${esc(D.alt)}" width="${w || 1200}" height="${h || 900}" loading="lazy" decoding="async" />` : "");
+const WA = `<svg class="${P}-wasvg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 12 12 0 0 0 4.6 4 5.3 5.3 0 0 0 3.2.7 2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg>`;
+const telH = (s) => (D.tel ? `<a class="${P}-${s || "tel"}" href="tel:+${D.tel}"><bdi dir="ltr">${esc(D.telYazi)}</bdi></a>` : "");
+const waH = (s) => (D.wa ? `<a class="${P}-${s || "wa"}" href="${esc(D.wa)}" target="_blank" rel="noopener">${WA}<span>${esc(D.waAd || D.telYazi)}</span></a>` : "");
+const saatH = (s) => (D.saat ? `<p class="${P}-${s || "saat"}"><span class="material-symbols-outlined" aria-hidden="true">schedule</span><span>${D.saatAd ? `<strong>${esc(D.saatAd)}:</strong> ` : ""}${esc(D.saat)}</span></p>` : "");
+/* renk anahtarı köprüsü (aile.renkAd): eski veride `text` RENK değeriyse renk olarak kalır (yer tutucu eski ada döner),
+   değilse içerik sayılır; renk değeri hiçbir zaman metin olarak basılmaz. Yeni anahtar varsayılandan farklı verilmişse o kazanır. */
+const renkMi = (v) => typeof v === "string" && /^\s*(#[0-9a-f]{3,8}|(?:rgba?|hsla?|hwb|lab|lch|oklab|oklch|color|color-mix|var)\(.+\)|transparent|currentcolor)\s*$/i.test(v);
+const RENK_KOPRU = {"yaziRenk":["text","var(--mx-site-text, #111318)"]};
+const desMetin = { ...des };
+for (const [yeni, [eski, vars]] of Object.entries(RENK_KOPRU)) {
+  if (!renkMi(des[eski])) continue;
+  desMetin[eski] = "";
+  if (des[yeni] == null || des[yeni] === "" || des[yeni] === vars) html = html.split(`--${yeni}--`).join(`--${eski}--`);
 }
-
-var c3Stil = String(c3Des.stil || "gradient");
-if (c3Stil !== "gradient" && c3Stil !== "gorselli" && c3Stil !== "cerceveli-kart") { c3Stil = "gradient"; }
-var c3Sag = String(c3Des.sag || "whatsapp");
-if (c3Sag !== "whatsapp" && c3Sag !== "gorsel" && c3Sag !== "yok") { c3Sag = "whatsapp"; }
-
-/* Metin */
-var c3Title = c3Pick(c3Des.title);
-var c3TitleHtml = c3Title ? '<h2 class="modulex-c3-title">' + c3Esc(c3Title) + "</h2>" : "";
-var c3Text = c3Pick(c3Des.text);
-var c3TextHtml = c3Text ? '<p class="modulex-c3-text">' + c3Esc(c3Text) + "</p>" : "";
-
-/* Butonlar */
-var c3Btns = "";
-var c3B1 = c3Pick(c3Des.btn1Label);
-var c3U1 = c3Href(c3Des.btn1Url);
-var c3B2 = c3Pick(c3Des.btn2Label);
-var c3U2 = c3Href(c3Des.btn2Url);
-if (c3B1 && c3U1) {
-  c3Btns += '<a class="modulex-c3-btn modulex-c3-btn-1" href="' + c3Esc(c3U1) + '"><span>' + c3Esc(c3B1) + '</span><span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>';
-}
-if (c3B2 && c3U2) {
-  c3Btns += '<a class="modulex-c3-btn modulex-c3-btn-2" href="' + c3Esc(c3U2) + '">' + c3Esc(c3B2) + "</a>";
-}
-
-/* WhatsApp numarası: desing.number > setting.whatsapp > setting.phone (yalnız rakam) */
-var c3Setting = (webmakerdata && webmakerdata.setting) || {};
-var c3NumRaw = c3Des.number || c3Setting.whatsapp || c3Setting.phone || "";
-var c3Num = String(c3NumRaw).replace(/[^\d]/g, "");
-if (c3Num.length < 8) { c3Num = ""; }
-var c3NumText = String(c3Des.numberText || "").trim() || (c3Num ? "+" + c3Num : "");
-
-/* Sağ sütun */
-var c3Img = c3Url(c3Des.img);
-var c3Alt = c3Pick(c3Des.alt);
-var c3Yan = "";
-var c3WaIkon = '<span class="modulex-c3-wa-ikon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 12 12 0 0 0 4.6 4 5.3 5.3 0 0 0 3.2.7 2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg></span>';
-if (c3Sag === "whatsapp" && c3Num) {
-  var c3Saat = c3Pick(c3Des.hours);
-  var c3SaatEt = c3Pick(c3Des.hoursLabel);
-  var c3WaLabel = c3Pick(c3Des.waLabel);
-  var c3WaTitle = c3Pick(c3Des.waTitle);
-  var c3Msg = c3Pick(c3Des.waMessage);
-  var c3WaHref = "https://wa.me/" + c3Num + (c3Msg ? "?text=" + encodeURIComponent(c3Msg) : "");
-  c3Yan = '<div class="modulex-c3-yan"><div class="modulex-c3-kart">' +
-    '<div class="modulex-c3-kart-bas">' + c3WaIkon + (c3WaTitle ? '<p class="modulex-c3-kart-title">' + c3Esc(c3WaTitle) + "</p>" : "") + "</div>" +
-    '<a class="modulex-c3-num" href="tel:+' + c3Num + '"><bdi dir="ltr">' + c3Esc(c3NumText) + "</bdi></a>" +
-    (c3Saat ? '<p class="modulex-c3-saat"><span class="material-symbols-outlined" aria-hidden="true">schedule</span><span>' +
-      (c3SaatEt ? '<span class="modulex-c3-saat-etiket">' + c3Esc(c3SaatEt) + ":</span> " : "") + c3Esc(c3Saat) + "</span></p>" : "") +
-    (c3WaLabel ? '<a class="modulex-c3-wa" href="' + c3Esc(c3WaHref) + '" target="_blank" rel="noopener">' + c3WaIkon.replace("modulex-c3-wa-ikon", "modulex-c3-wa-ikon modulex-c3-wa-ikon-kucuk") + "<span>" + c3Esc(c3WaLabel) + "</span></a>" : "") +
-    "</div></div>";
-} else if (c3Sag !== "yok" && c3Img) {
-  c3Yan = '<div class="modulex-c3-yan"><img class="modulex-c3-gorsel" src="' + c3Esc(c3Img) + '" alt="' + c3Esc(c3Alt) + '" width="1200" height="900" loading="lazy" decoding="async" /></div>';
-} else if (c3Sag !== "yok") {
-  c3Yan = '<div class="modulex-c3-yan"><div class="modulex-c3-ill" role="img" aria-label="' + c3Esc(c3Alt) + '"><span class="material-symbols-outlined" aria-hidden="true">forum</span></div></div>';
-}
-
-html = html.replace(/\{\{c3class\}\}/g, function () { return " modulex-c3-" + c3Stil + (c3Yan ? "" : " modulex-c3-tek"); });
-html = html.replace(/\{\{c3title\}\}/g, function () { return c3TitleHtml; });
-html = html.replace(/\{\{c3text\}\}/g, function () { return c3TextHtml; });
-html = html.replace(/\{\{c3btns\}\}/g, function () { return c3Btns; });
-html = html.replace(/\{\{c3yan\}\}/g, function () { return c3Yan; });
+/* --- modül: cagri-hap --- */
+const kart = (k) => `<li class="${P}-madde">${ikonH(k.ikon || "check_circle", `${P}-mikon`)}<span class="${P}-myazi"><strong>${esc(k.baslik)}</strong>${k.metin ? `<small>${esc(k.metin)}</small>` : ""}</span></li>`;
+const sar = (ic, A, B) => `<div class="${P}-kapsul"><span class="${P}-daire" aria-hidden="true"><span class="material-symbols-outlined">${D.ikon || "campaign"}</span></span><div class="${P}-yazi">${bslk(B, "kbas", "h2")}${metH(B, "kmetin")}</div>${dgH()}</div>`;
+const B = { ust: metinAl(desMetin, ["ust","badge","kicker","eyebrow"]), baslik: metinAl(desMetin, ["baslik","title"]), metin: metinAl(desMetin, ["metin","description","text"]) };
+/* veri yoksa gövde hiç kurulmaz (sarmalayıcı boş listeye dokunmaz) */
+const BOS = !B.baslik && !D.dugmeler.length;
+const govde = BOS ? "" : sar(kayitlar.map((k, i) => kart(k, i, kayitlar.length, kayitlar)).join(""), kayitlar, B);
+const bas = "";
+const sinif = (bas || B.ust || B.baslik || B.metin ? "" : ` ${P}--bassiz`);
+html = html
+  .replaceAll("{{fbsinif}}", () => sinif)
+  .replaceAll("{{fbetiket}}", () => (B.baslik ? `aria-labelledby="${P}-{{id}}-b"` : ""))
+  .replaceAll("{{fbbas}}", () => bas)
+  .replaceAll("{{fbgovde}}", () => govde);
+if (BOS) html = "";
